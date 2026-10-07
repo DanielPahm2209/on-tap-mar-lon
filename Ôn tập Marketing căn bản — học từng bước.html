@@ -1,0 +1,1002 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ôn tập Marketing căn bản — lộ trình 2 giờ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap">
+<style>
+:root{color-scheme:light dark;box-sizing:border-box;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px);
+--bg:light-dark(#f2f5fa,#0e1522);--card:light-dark(#fff,#17202f);--ink:light-dark(#14233c,#e7edf7);--mut:light-dark(#566782,#9fb0c9);--line:light-dark(#d5deea,#2a374d);--acc:light-dark(#2347d6,#86a2ff);--ok:light-dark(#12805f,#4fd1a1);--bad:light-dark(#c8402a,#ff8b73);--hl:light-dark(#ffe27a,#6b5700);--hlb:light-dark(#ffe27a99,#8a6d0066)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 'Be Vietnam Pro',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+[hidden]{display:none!important}button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:.7rem 1rem 0}
+.hd,main{max-width:60rem;margin:auto}main{padding:1rem 1rem 3rem}
+.top{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+h1{font-size:1.2rem;margin:0;font-weight:700}h2{font-size:1.2rem;margin:0 0 .3rem}h3{font-size:1.05rem;margin:.2rem 0 .5rem}
+.sub,.stat{color:var(--mut);font-size:.85rem;margin:0}
+#pct{font-size:2.1rem;font-weight:700;color:var(--acc);line-height:1}
+#segs{display:flex;gap:2px;margin:.55rem 0 .3rem}
+.seg{height:16px;min-width:6px;border:0;border-radius:4px;background:var(--line);padding:0}
+.seg.on{background:var(--acc)}.seg.x.on{background:var(--ok)}
+.meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:0 1rem;font-size:.78rem;color:var(--mut)}
+.tabs{display:flex;gap:.2rem;overflow-x:auto;margin-top:.2rem}
+.tab{border:0;background:none;padding:.5rem .8rem;white-space:nowrap;border-bottom:3px solid transparent;color:var(--mut);font-weight:500}
+.tab[aria-selected=true]{color:var(--ink);border-color:var(--acc);font-weight:700}
+.btn{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:.55rem 1rem;font-weight:500}
+.btn.p{background:var(--acc);border-color:var(--acc);color:light-dark(#fff,#0e1522);font-weight:700}
+.btn:disabled{opacity:.6;cursor:default}
+#plan{list-style:none;margin:1rem 0 0;padding:0}
+#plan li{display:flex;gap:.6rem;align-items:center;border-bottom:1px solid var(--line);padding:.15rem 0}
+#plan label{flex:1;display:flex;gap:.7rem;align-items:baseline;padding:.6rem 0;cursor:pointer}
+#plan input{accent-color:var(--acc);width:1.1rem;height:1.1rem;align-self:center}
+#plan .t{color:var(--mut);min-width:2.6rem;font-variant-numeric:tabular-nums}#plan .m{margin-left:auto;color:var(--mut);font-size:.85rem;white-space:nowrap}
+#plan li.ph{display:block;border:0;padding:1.3rem 0 .2rem;font-weight:700;color:var(--acc);font-size:.9rem}#plan .w{flex:1;display:flex;flex-direction:column}#plan .w small{color:var(--mut);font-size:.85rem;line-height:1.5;margin-top:.15rem}#plan li.b b{font-weight:500;color:var(--mut)}#plan label{align-items:flex-start}#plan input{align-self:flex-start;margin-top:.3rem}.seg.b.on{background:var(--mut)}
+.ct{font-size:1.2rem;line-height:1.85;margin:.4rem 0 1rem}.ct b{box-shadow:inset 0 -.5em 0 var(--hlb)}.bl{color:var(--mut);letter-spacing:.15em}.ans{border-top:2px dashed var(--line);padding-top:.8rem}.brk{color:var(--ok);font-weight:700}html.big{font-size:125%}#ls .sc,#ls .ctl,#ls>.opt{max-width:40rem;margin-left:auto;margin-right:auto}#ls .sc{padding:1.3rem 1.4rem}
+.tx{font-size:1.08rem;line-height:1.85}.eg{border-left:4px solid var(--acc);padding-left:1rem}
+.chips,.gt,.ctl{display:flex;flex-wrap:wrap;gap:.5rem}.chips{margin-bottom:1rem}.gt{margin-bottom:1rem}.ctl{justify-content:space-between;margin-top:1.5rem}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:.3rem .85rem;font-weight:500}
+.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}.chip.dn::after{content:" ✓";color:var(--ok)}.chip.on.dn::after{color:inherit}
+article h2{font-size:1.3rem;line-height:1.35;margin-bottom:1rem}
+.body{max-width:48rem}.body p{margin:.45em 0}.body p.l1{margin-left:1.1rem}.body p.l2{margin-left:2.2rem}.body p.l3{margin-left:3.3rem}
+.body strong{box-shadow:inset 0 -.5em 0 var(--hlb)}.body img{max-width:100%;height:auto;vertical-align:middle}.body h3{margin:1.2rem 0 .3rem}
+.tw{overflow-x:auto;margin:.8rem 0}.body table{border-collapse:collapse;min-width:100%}.body td,.body th{border:1px solid var(--line);padding:.4rem .6rem;vertical-align:top;font-size:.92rem}
+.app{margin-top:2rem;padding-top:1rem;border-top:2px dashed var(--line)}.app::before{content:"Phần bổ sung của Câu 4 (nằm ở cuối file gốc)";display:block;font-weight:700;color:var(--mut)}
+.sc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1rem 1.1rem;margin:0 0 .9rem}.sc ul{margin:0 0 .7rem;padding-left:1.1rem}.sc li{margin:.35rem 0}
+.mask .sc li:not(.show){filter:blur(6px);cursor:pointer;user-select:none}
+.opt{display:block;width:100%;text-align:left;padding:.75rem 1rem;margin:.4rem 0;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+.opt.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 18%,var(--card))}.opt.no{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 16%,var(--card))}
+.opt.sel{background:var(--hl);border-color:var(--hl)}.opt:disabled{cursor:default;color:inherit}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:0 1rem}#ol{padding-left:1.4rem}#fb{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.8rem}
+@media(prefers-reduced-motion:no-preference){.opt.no{animation:sh .3s}}@keyframes sh{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+</style>
+</head>
+<body>
+<header><div class="hd">
+<div class="top"><div><h1>Marketing căn bản</h1><p class="sub">Ôn thi kết thúc học phần · đề cương 9 câu</p></div><div id="pct">0%</div></div>
+<div id="segs"></div>
+<div class="meta"><span id="hrs"></span><span id="pace"></span></div>
+<nav class="tabs"><button class="tab" data-t="plan">Lộ trình</button><button class="tab" data-t="hoc">Học từng bước</button><button class="tab" data-t="ly">Lý thuyết</button><button class="tab" data-t="tom">Tóm tắt</button><button class="tab" data-t="kt">Kiểm tra</button><button class="tab" data-t="tc">Trò chơi</button></nav>
+</div></header>
+<main>
+<section id="p-plan">
+<div class="top"><div><h2>Lộ trình 2 giờ</h2><p class="sub">Tick từng bước khi xong. Thanh trên cùng: xanh dương là học và nhớ lại, xanh lá là luyện tập, xám là nghỉ; bấm vào một đoạn để mở bước đó.</p></div></div><div class="sc" style="margin-top:.8rem"><h3>Cách học này được thiết kế cho người dễ mất tập trung</h3><ul><li><b>Mỗi lần chỉ một thẻ</b>: tab Học từng bước không bắt bạn nhìn cả trang dài.</li><li><b>Hiểu bằng ví dụ đời thường trước</b>, rồi mới đến ý chính và mẹo nhớ.</li><li><b>Tự nhắc lại ngay và nhắc lại sau</b>: thẻ chưa nhớ quay lại cuối hàng; các bước Ôn lại trộn nhiều câu để nhớ lâu hơn.</li><li><b>Học ngắn, nghỉ ngắn</b>: mỗi bài khoảng 10 phút, có đồng hồ nhắc nghỉ 2 phút. Lỡ mất tập trung thì quay lại thẻ trước, không sao cả.</li></ul></div>
+<div class="gt" style="margin-top:.8rem"><button class="btn" id="rs">Xóa tiến độ</button></div>
+<ul id="plan"></ul>
+</section>
+<section id="p-hoc" hidden>
+<div class="gt"><button class="btn" id="pk">Chọn bài khác</button><button class="btn" id="sp">Đồng hồ 10 phút tập trung</button><button class="btn" id="bg">Chữ to</button></div>
+<p id="spt" class="stat"></p>
+<div id="ls"></div>
+</section>
+<section id="p-ly" hidden>
+<div class="chips" id="qn"></div>
+<article id="a1" data-q="1" hidden><h2>Câu 1: Các giai đoạn phát triển của lý thuyết Marketing</h2><div class="body">
+<p class="l1">+ Khái niệm Thị trường, Marketing</p>
+<p class="l1">+ Tư tưởng kinh doanh: “Bán cái doanh nghiệp có”, “ Bán cái thị trường cần”</p>
+<p class="l1">+ Triết lý kinh doanh: “ Khách hàng luôn đúng”</p>
+<p>Trả lời:</p>
+<p>- <em><strong>Thị trường</strong></em>: bao gồm tất cả khách hàng hiện tại và tương lai có cùng 1 nhu cầu và mong muốn cụ thể, có khả năng tham gia vào trao đổi và giao dịch để thỏa mãn nhu cầu, mong muốn của mình.</p>
+<p><strong>*** Sự hình thành và phát triển của Marketing</strong></p>
+<p>- <strong>Tgian hình thành:</strong> cuối TK 19, đầu TK 20</p>
+<p>- <strong>Marketing</strong> là:</p>
+<p class="l1">+ một môn học kinh doanh ra đời khá muộn, hình thành và phát triển trong thế kỷ 20.</p>
+<p class="l1">+ không ngừng phát triển cả về nội dung, tư tưởng kinh doanh và lĩnh vực ứng dụng.</p>
+<p>-Quá trình phát triển này có thể chia thành <strong>hai giai đoạn chủ yếu</strong> đó là Marketing cổ điển và Marketing hiện đại.</p>
+<p><strong>* Marketing cổ điển:</strong> bao gồm các hoạt động liên quan đến luồng di chuyển sản phẩm và dịch vụ từ người sx đến tiêu dùng cuối cùng</p>
+<ul>
+<li><blockquote>
+<p>Thời gian: Cuối TK 19 - Giữa TK 20</p>
+</blockquote></li>
+<li><blockquote>
+<p>Bối cảnh ra đời:</p>
+</blockquote></li>
+<li><blockquote>
+<p>XH tương đối ổn định.</p>
+</blockquote></li>
+<li><blockquote>
+<p>TT là TT của người bán</p>
+</blockquote></li>
+</ul>
+<blockquote>
+<p class="l2">++ Cung - cầu chưa có mâu thuẫn &amp; khoảng cách lớn về vấn đề tiêu thụ sp,dv.</p>
+<p class="l2">++ Cạnh tranh TT chưa quyết liệt : Hình thái KD độc quyền còn pt mạnh.</p>
+<p class="l2">++ Người bán có quyền quyết định: sx cái gì? số lượng sx? sx ntn?</p>
+</blockquote>
+<ul>
+<li><blockquote>
+<p>MT dn: sx &amp; bán đc thật nhiều hàng</p>
+</blockquote></li>
+<li><blockquote>
+<p>Hoạt động: thúc đẩy bán hàng</p>
+</blockquote></li>
+<li><blockquote>
+<p>Tư tưởng kd “Bán cái dn có”</p>
+</blockquote></li>
+</ul>
+<blockquote>
+<p class="l1">+ mang tính chất áp đặt</p>
+<p class="l1">+ ít qtam nhu cầu thị trường</p>
+<p class="l1">+ thiếu các giải pháp nắm bắt nhu cầu</p>
+</blockquote>
+<ul>
+<li><blockquote>
+<p>ND hoạt động:</p>
+</blockquote></li>
+</ul>
+<ul>
+<li><blockquote>
+<p>Tìm kiếm TT để bán hàng</p>
+</blockquote></li>
+<li><blockquote>
+<p>Các giải pháp kích thích tiêu thụ</p>
+</blockquote></li>
+</ul>
+<ul>
+<li><blockquote>
+<p>Phạm vi phổ biến: Mỹ</p>
+</blockquote></li>
+</ul>
+<ul>
+<li><blockquote>
+<p>Lĩnh vực ứng dụng: Kinh doanh hàng hoá, dịch vụ</p>
+</blockquote></li>
+</ul>
+<p><strong>* Marketing hiện đại:</strong></p>
+<p>- Theo Philip Kotler, <em><strong>MKT:</strong></em> là một dạng hoạt động của con người nhằm thỏa mãn những nhu cầu và mong muốn thông qua trao đổi .</p>
+<p>- Thời gian:Giữa TK 20 - Nay</p>
+<p>- Bối cảnh ra đời</p>
+<p class="l1">+ Xã hội có nhiều mâu thuẫn:</p>
+<p class="l2">++ Sau Chiến tranh TG T2, do tác động mạnh mẽ của cuộc CMKHKT</p>
+<p class="l2">++ Nền kinh tế hàng hoá phát triển: cung vượt cầu</p>
+<p class="l1">+ Địa vị của người mua và người bán trên thị trường đã có những sự thay đổi căn bản: Từ thị trường của người bán chuyển sang thị trường của người mua.</p>
+<blockquote>
+<p>Cung và cầu mâu thuẫn với nhau trên mọi phương diện</p>
+<p>Cạnh tranh trên thị trường đã trở nên hết sức quyết liệt: Nhà nước ban hành và thực hiện các biện pháp chống hình thái kinh doanh độc quyền.</p>
+<p>Người mua có quyền quyết định</p>
+<p>Sản xuất cái gì?</p>
+<p>Số lượng sản xuất?</p>
+<p>Phương thức tiêu thụ như thế nào?</p>
+</blockquote>
+<p>- MT dn: thỏa mãn tốt nhất nhu cầu KH</p>
+<p>- Hoạt động: tìm hiểu, nghiên cứu nhu cầu, mong muốn của KH</p>
+<p class="l1">+ Theo Philip Kotler, “tiêu thụ chỉ là phần nổi của núi băng marketing”. Vấn đề cơ bản và cốt lõi của marketing hiện đại là “thấu hiểu khách hàng”. Tư tưởng kinh doanh “bán cái doanh nghiệp có” không còn phù hợp. Tư tưởng kinh doanh “bán cái thị trường cần” được ra đời.</p>
+<p><strong>TH1: Tư tưởng kinh doanh “bán cái thị trường cần”</strong></p>
+<p>- Với tư tưởng kinh doanh “bán cái thị trường cần”, marketing hiện đại thể hiện 1 quan điểm, 1 cách ứng xử mới của các nhà kinh doanh với nhân vật trung tâm là khách hàng.</p>
+<p class="l1">+ Đáp ứng nhu cầu của thị trường là vấn đề cơ bản nhất</p>
+<blockquote>
+<p class="l2">++ Mục tiêu cốt lõi của marketing không phải là ép người mua mua cái mình bán giống tư tưởng “bán cái doanh nghiệp có” trong marketing cổ điển mà phải hiểu khách hàng có nhu cầu mong muốn gì để đáp ứng.</p>
+<p class="l2">++ Doanh nghiệp chỉ thành công khi thoả mãn tốt nhất nhu cầu của khách hàng.</p>
+</blockquote>
+<p class="l1">+ Coi trọng hoạt động nghiên cứu, nắm bắt nhu cầu</p>
+<blockquote>
+<p class="l2">++ Muốn bán đúng cái khách hàng cần thì doanh nghiệp phải thu thập, nghiên cứu và phân tích thông tin về khách hàng như xu hướng tiêu dùng, độ tuổi, thu nhập, lối sống, thói quen,.</p>
+</blockquote>
+<p class="l1">+ Xây dựng các giải pháp nắm bắt nhu cầu.</p>
+<blockquote>
+<p class="l2">++ Không chỉ dừng ở việc tìm hiểu khách hàng cần đáp ứng gì, doanh nghiệp còn phải tạo ra sản phẩm, dịch vụ phù hợp nhất để thỏa mãn họ và tăng khả năng cạnh tranh trên thị trường .</p>
+<p class="l2">++ Doanh nghiệp cần cải tiến chất lượng sản phẩm, điều chỉnh giá, cải thiện dịch vụ bán hàng, thay đổi phương thức bán hàng để tiếp cận đến nhiều vùng khách hàng hơn, tăng cường các dịch vụ hậu mãi, tăng cường truyền thông... giúp khách hàng cảm thấy mình được quan tâm, chăm sóc khi mua và sử dụng sản phẩm.</p>
+<p class="l2">++ Hiểu khách hàng là điều quan trọng song thỏa mãn khách hàng là điều quyết định sự sống còn của doanh nghiệp.</p>
+</blockquote>
+<p><strong>TH2: Triết lý kinh doanh: “ Khách hàng luôn đúng”</strong></p>
+<p>- Triết lý kinh doanh “khách hàng luôn luôn đúng” ra đời đã phản ánh 1 tư duy kinh doanh hiện đại.</p>
+<p class="l1">+ Coi khách hàng là nhân vật trung tâm của mọi hoạt động kinh doanh.Doanh nghiệp không bán cái mình đang có, mà phải bắt đầu từ việc hiểu thị trường và từ nhu cầu, mong muốn của khách hàng.</p>
+<p class="l1">+ Coi trọng việc chăm sóc khách hàng là công việc quan trọng nhất trong kinh doanh</p>
+<p class="l1">+ Luôn <em><strong>đặt mình vào địa vị</strong></em> của khách hàng và suy nghĩ theo lối suy nghĩ của khách hàng</p>
+<p>- <strong>Giải pháp triết lý</strong></p>
+<p class="l1">+ Đa dạng hóa các giải pháp kinh doanh thỏa mãn nhu cầu đa dạng của khách hàng</p>
+<p>VD: Vinamilk không chỉ cung cấp 1 loại sữa duy nhất mà phát triển danh mục sản phẩm rất đa dạng cho từng nhóm khách hàng khác nhau. Trẻ em có sữa tăng trưởng chiều cao, người già có sữa bổ sung canxi,...Ngoài ra, doanh nghiệp còn cung cấp sữa tươi, sữa chua sữa đặc,...</p>
+<p class="l1">+ Thiết lập hệ thống giải pháp chăm sóc và phục vụ khách hàng tốt nhất.</p>
+<p>VD: Vinamilk xây dựng hệ thống phân phối rộng khắp từ siêu thị, cửa hàng tiện lợi, đại lý truyền thông đến các kênh thương mại điện tử nhằm tạo thuận lợi cho khách hàng khi mua sắm sản phẩm, bên cạnh đó, doanh nghiệp còn triển khai tổng đài tư vấn, đội ngũ chăm sóc khách hàng và các chương trình tri ân người tiêu dùng.Các hoạt động này giúp khách hàng dễ dàng tiếp cận sản phẩm và nhận được sự hỗ trợ khi cần thiết.</p>
+<p class="l1">+ <em><strong>Coi trọng</strong></em> các hoạt động nghiên cứu, nghiên cứu thị trường để nắm bắt nhu cầu, mong muốn của khách hàng.</p>
+<p>VD: Để hiểu rõ hơn nhu cầu của khách hàng, Vinamilk đặc biệt coi trọng công tác nghiên cứu thị trường thông qua việc khảo sát thói quen tiêu dùng, phân tích xu hướng dinh dưỡng, cũng như tìm hiểu nhu cầu của từng nhóm khách hàng khác nhau như người ăn chay, người cao tuổi hay người có nhu cầu cần kiểm soát sức khỏe. Trên cơ sở kết quả nghiên cứu, Vinamilk đã phát triển các dòng sản phẩm như: sữa hạt, sữa ít đường và nhiều sản phẩm dinh dưỡng chuyên biệt khác nhằm đáp ứng tốt nhất nhu cầu của khách hàng.</p>
+<p class="l1">+ Xây dựng hệ thống thu thập thông tin, phản hồi của khách hàng.</p>
+<p>VD: Vinamilk tiếp nhận ý kiến khách hàng thông qua nhiều kênh như đường dây nóng, email, website, mạng xã hội và các cuộc khảo sát thị trường. Những phản hồi về chất lượng sản phẩm, bao bì, hương vị hay dịch vụ được doanh nghiệp tổng hợp và phân tích để cải tiến sản phẩm cũng như nâng cao chất lượng phục vụ.</p>
+<p>====&gt;<em><strong>Khẳng định</strong></em>: MKT hiện đại với tư tưởng kinh doanh “bán cái thị trường cần”gắn liền với triết lý kinh doanh “khách hàng luôn luôn đúng”.. Đây vừa là tư tưởng kinh doanh hiện đại nhất, tiến bộ, vừa là triết lý kinh doanh quan trọng nhất và được duy trì trong suốt quá trình tồn tại và phát triển của Marketing hiện đại</p>
+<p>((((</p>
+<div class="tw"><table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 39%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>MKT cổ điển</strong></th>
+<th><strong>MKT hiện đại</strong></th>
+</tr>
+<tr class="odd">
+<th>1. Tgian ra đời</th>
+<th>Cuối TK 19 - Giữa TK 20</th>
+<th>Giữa TK 20 - Nay</th>
+</tr>
+<tr class="header">
+<th>2. Hoàn cảnh ra đời</th>
+<th><p>- XH tương đối ổn định.</p>
+<p>- TT là TT của người bán</p>
+<p class="l1">+ Cung - cầu chưa có mâu thuẫn &amp; khoảng cách lớn.</p>
+<p class="l1">+ Cạnh tranh TT chưa quyết liệt. Hình thái KD độc quyền còn pt mạnh.</p>
+<p class="l1">+ Người bán có quyền quyết định: sx cái gì? số lượng sx? sx ntn?</p>
+<p>- MT dn: sx &amp; bán đc thật nhiều hàng</p>
+<p>- Hoạt động: thúc đẩy bán hàng</p></th>
+<th><p>- XH nhiều mâu thuẫn:</p>
+<p class="l2">++ Sau Chiến tranh TG T2, do tác động mạnh mẽ của cuộc CMKHKT</p>
+<p class="l2">++ Nền kinh tế hàng hoá phát triển: cung vượt cầu</p>
+<p>- TT là TT của người mua</p>
+<p class="l1">+ Cung - cầu mâu thuẫn trên mọi phương diện</p>
+<p class="l1">+ Cạnh tranh cao trên TT</p>
+<p class="l1">+ Người mua có quyền quyết định: sx cái gì? số lượng sx? phương thức tiêu thụ ntn?</p>
+<p>- MT dn: thỏa mãn nhu cầu KH</p>
+<p>- Hoạt động: tìm hiểu, nghiên cứu nhu cầu, mong muốn của KH</p></th>
+</tr>
+<tr class="odd">
+<th>3. Tư tưởng kd</th>
+<th><p>“Bán cái dn có”</p>
+<p class="l1">+ mang tính chất áp đặt</p>
+<p class="l1">+ ít qtam nhu cầu thị trường</p>
+<p class="l1">+ thiếu các giải pháp nắm bắt nhu cầu</p></th>
+<th><p>- “Bán cái TT cần”</p>
+<p class="l2">++ đáp ứng nhu cầu của TT là vấn đề cơ bản nhất</p>
+<p class="l2">++ coi trọng nghiên cứu, nắm bắt nhu cầu</p>
+<p class="l2">++ xây dựng giải pháp nắm bắt nhu cầu</p></th>
+</tr>
+<tr class="header">
+<th>4. ND hoạt động</th>
+<th><p>- Tìm kiếm TT để bán hàng</p>
+<p>- Các giải pháp kích thích tiêu thụ</p></th>
+<th><p>- Nghiên cứu TT</p>
+<p>- Thiết kế &amp; sx sp</p>
+<p>- Tiêu thụ sp</p>
+<p>- DV sau bán hàng</p></th>
+</tr>
+<tr class="odd">
+<th>5. Phương châm kd</th>
+<th></th>
+<th>Thỏa mãn tốt nhất nhu cầu của TT &amp; KH</th>
+</tr>
+<tr class="header">
+<th>6. Phạm vụ phổ biến</th>
+<th>Mỹ</th>
+<th>Mọi quốc gia theo kinh tế TT</th>
+</tr>
+<tr class="odd">
+<th>7. Lĩnh vực ứng dụng</th>
+<th>Kinh doanh</th>
+<th>Mọi lĩnh vực của đời sống, KT, XH, chính trị</th>
+</tr>
+<tr class="header">
+<th>8. Triết lý kinh doanh</th>
+<th></th>
+<th><p>“KH luôn luôn đúng”</p>
+<p class="l1">+ coi KH là nhân vật trung tâm của mọi hoạt động kd</p>
+<p class="l1">+ coi việc CSKH là công việc quan trọng nhất trong kd</p>
+<p class="l1">+ luôn đặt mình vào địa vị của KH &amp; suy nghĩ theo lối suy nghĩ của họ</p>
+<p class="l1">+ giải pháp:</p>
+<p class="l2">++ đa dạng hóa các giải pháp kd thỏa mãn nhu cầu đa dạng của KH</p>
+<p class="l2">++ thiết lập hệ thống giải pháp chăm sóc &amp; phục vụ KH tốt nhất</p>
+<p class="l2">++ coi trọng các hoạt động nghiên cứu</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table></div>
+<p>=&gt; <strong>Bản chất của MKT:</strong> Thỏa mãn nhu cầu của KH bằng sp tốt hơn đối thủ cạnh tranh qua quá trình trao đổi trên TT trong tương quan giá trị - chi phí.</p>
+<p>*** <em><strong>Marketing hiện đại lại là sự kế thừa của Marketing cổ điển trên các khía cạnh:</strong></em></p>
+<p class="l1">+ Tư tưởng KD</p>
+<p class="l1">+ ND hoạt động</p>
+<p class="l1">+ Sự xh của phương châm và triết lý kinh doanh)</p>
+</div></article>
+<article id="a2" data-q="2" hidden><h2>Câu 2: Phân tích 1 nhân tố ảnh hưởng của môi trường vĩ mô (kinh tế, công nghệ, nhân khẩu học)</h2><div class="body">
+<p class="l1">+ Khái niệm Môi trường marketing</p>
+<p class="l1">+ Phân loại Môi trường marketing: Môi trường vi mô và Môi trường vĩ mô</p>
+<p class="l1">+ Phân loại Môi trường vĩ mô: 6 yếu tố</p>
+<p class="l1">+ Phân tích Môi trường kinh tế/ Công nghệ/ Nhân khẩu học</p>
+<p class="l2">++ Khái niệm? Vai trò?</p>
+<p class="l2">++ Gồm những yếu tố nào?</p>
+<p class="l2">++ Các yếu tố đó tác động đến chiến lược Marketing như thế nào?</p>
+<p>Trả lời:</p>
+<p>- Theo Philip Kolter,<em><strong>MKT:</strong></em> là một dạng hoạt động của con người nhằm thỏa mãn những nhu cầu và mong muốn thông qua trao đổi .</p>
+<p>- Theo Philip Kotler: Môi trường Marketing của công ty là tập hợp những tác nhân và những lực lượng hoạt động ở bên ngoài Công ty có ảnh hưởng đến khả năng quản trị Marketing trong việc thiết lập và duy trì các mối quan hệ hợp tác tốt đẹp với khách hàng mục tiêu</p>
+<p class="l1">+ Môi trường vĩ mô gồm các yếu tố, các lực lượng xã hội rộng lớn ảnh hưởng đến mọi nhân tố trong môi trường vi mô cũng như các quyết định Marketing của DN. Các yếu tố này nằm ngoài tầm kiểm soát và làm thay đổi được những tác động của nó đến hoạt động kinh doanh của doanh nghiệp.</p>
+<p class="l2">++ Môi trường vĩ mô bao gồm: MT kinh tế, MT nhân khẩu học, MT tự nhiên, MT công nghệ, MT chính trị - pháp luật, MT văn hoá - xã hội</p>
+<p><strong>TH1: Phân tích môi trường kinh tế</strong></p>
+<p>- Môi trường kinh tế đóng <strong>vai trò quan trọng</strong> nhất trong sự vận động và phát triển của thị trường: có thể ảnh hưởng trực tiếp hoặc gián tiếp đến sự diễn biến của cung, cầu và mối quan hệ cung - cầu trên thị trường, ảnh hưởng đến sức mua của thị trường và đặc điểm mua hàng của người tiêu dùng.</p>
+<p>- Môi trường kinh tế được phản ánh thông qua tốc độ tăng trưởng của nền kinh tế, xu hướng của GDP, tỷ lệ lạm phát, tỷ lệ thất nghiệp, thu nhập của khách hàng và tốc độ tăng thu nhập của họ, cơ cấu chi tiêu và sự thay đổi cơ cấu chi tiêu của khách hàng,…</p>
+<p>-Tác động đến hoạt động Marketing</p>
+<p class="l1">+ Tốc độ phát triển của nền kinh tế, xu hướng tăng của GDP và tỷ lệ lạm phát ảnh hưởng trực tiếp đến sức mua thị trường, từ đó tác động đến đặc điểm mua hàng của người tiêu dùng.</p>
+<p class="l1">+ Sự phát triển của nền kinh tế đồng thời làm thay đổi cơ cấu hàng hóa kinh doanh của các đối thủ cạnh tranh và cơ cấu chi tiêu của người tiêu dùng. Cơ cấu chi tiêu phản ánh tỷ lệ phân bổ thu nhập thực tế cho các nhóm hàng hoá, dịch vụ khác nhau, trong đó mức thu nhập khác nhau thì <em><strong>nhu cầu</strong></em> cũng khác nhau.</p>
+<p class="l2">++ Khi kinh tế Việt Nam tăng trưởng, thu nhập người dân tăng, nhu cầu tiêu dùng có xu hướng chi nhiều hơn cho các sản phẩm cao cấp và tốt cho sức khỏe.</p>
+<p>—&gt; DN đa dạng hóa danh mục sản phẩm, nâng cao chất lượng, giá trị sản phẩm và áp dụng chiến lược giá cao</p>
+<p class="l2">++ Khi Nền kinh tế suy thoái hoặc lạm phát tăng cao, người dân thắt chặt chi tiêu và ưu tiên sản phẩm thiết yếu, các sản phẩm giá rẻ hơn</p>
+<p>—&gt; DN phải điều chỉnh cơ cấu sản phẩm và chính sách giá, ra mắt các gói dung tích lớn để tiết kiệm chi phí cho khách hàng, đi kèm với chiến lược định giá thấp hoặc tăng cường chương trình khuyến mại để duy trì thị phần và vẫn giữ thu hút KH.</p>
+<p>=&gt; Doanh nghiệp không chỉ phải đổi mới sản phẩm, chiến lược giá phù hợp mà còn phải tăng cường thông điệp quảng cáo giá trị và lợi ích của sản phẩm đối với khách hàng .</p>
+<p><strong>VD: Thực tiễn tại Công ty Cổ phần Sữa Việt Nam (Vinamilk)</strong>:</p>
+<ul>
+<li><blockquote>
+<p>Khi thu nhập và nhu cầu chăm sóc sức khỏe của người tiêu dùng tăng, Vinamilk phát triển các sản phẩm có giá trị gia tăng cao như sữa tươi Vinamilk 100% Organic, sữa tươi A2 và Sure Prevent dành cho người lớn;...tập trung vào các giá trị như chất lượng, dinh dưỡng và sức khỏe.</p>
+</blockquote></li>
+</ul>
+<p>—&gt; Điều này cho thấy doanh nghiệp không chỉ đáp ứng sự gia tăng về <strong>quy mô nhu cầu</strong> mà còn thích ứng với sự thay đổi về <strong>cơ cấu nhu cầu</strong> của người tiêu dùng.</p>
+<ul>
+<li><blockquote>
+<p>Ngược lại, khi người tiêu dùng chịu áp lực về thu nhập và chi phí sinh hoạt, Vinamilk có thể tăng cường các sản phẩm và quy cách đóng gói phù hợp với nhu cầu tiêu dùng đại chúng, kết hợp các chương trình khuyến mại và chính sách giá hợp lý. Các sản phẩm đóng gói lớn giúp người tiêu dùng có thể tiết kiệm chi phí tính trên mỗi đơn vị sản phẩm, trong khi khuyến mại làm giảm chi phí mua hàng trong ngắn hạn.</p>
+</blockquote></li>
+</ul>
+<p>—&gt; Qua đó, doanh nghiệp vừa đáp ứng khả năng chi trả của khách hàng, vừa duy trì sức mua và thị phần trong điều kiện kinh tế khó khăn.</p>
+<p><strong>TH2: Phân tích môi trường nhân khẩu học</strong></p>
+<p>- Môi trường nhân khẩu học là yếu tố quan tâm hàng đầu của các nhà quản trị marketing bởi vì con người tạo ra thị trường. Môi trường nhân khẩu học ảnh hưởng đến số lượng, đặc điểm, tính chất của nhu cầu thị trường.</p>
+<p>- Các yếu tố thuộc về môi trường nhân khẩu học tác động tới thị trường bao gồm quy mô và mật độ dân số, sự phân bố của dân cư, tốc độ tăng dân số, độ tuổi, giới tính, sắc tộc, nghề nghiệp.</p>
+<p>- Tác động đến chiến lược Marketing</p>
+<p class="l1">+ Quy mô và tốc độ gia tăng dân số sẽ quyết định quy mô của thị trường ở hiện tại và tương lai. Đồng thời, phản ánh sự phát triển hay suy thoái của thị trường.</p>
+<p class="l1">+ Cơ cấu dân cư theo độ tuổi sẽ ảnh hưởng đến cơ cấu hàng hóa cầu.</p>
+<p class="l2">++ Có nhu cầu, ý muốn, hành vi mua hàng khác nhau giữa các nhóm dân cư. Lớp trẻ từng quan tâm đến hàng thời trang, mẫu mã, nhu cầu thay đổi rất nhanh thì người cao tuổi thường thận trọng hơn khi mua sắm ít nhạy cảm với cái mới và quan tâm đến các sản phẩm mang văn hóa truyền thống.</p>
+<p class="l2">++ Việc nắm vững cơ cấu dân cư và những thay đổi trong cơ cấu này sẽ giúp doanh nghiệp đa dạng hóa mặt hàng kinh doanh, đổi mới, cải tiến và nâng cấp sản phẩm kinh doanh kịp thời, từ đó, chớp được các cơ hội kinh doanh tốt.</p>
+<p class="l2">++ Cơ cấu dân cư theo độ tuổi quyết định lực lượng lao động trên thị trường và ảnh hưởng đến lực lượng lao động của doanh nghiệp, từ đó ảnh hưởng đến chất lượng hàng hóa, dịch vụ và hiệu quả kinh doanh.</p>
+<p class="l1">+ Sự thay đổi cơ cấu và quy mô của các hộ gia đình ảnh hưởng đến sự biến đổi của thị trường và các hoạt động marketing của doanh nghiệp.</p>
+<p class="l2">++ Quy mô gia đình đang có sự thay đổi rõ rệt khi các gia đình lớn bao gồm nhiều thế hệ dần được thay bằng các hộ gia đình nhỏ do lớp trẻ có xu hướng tách khỏi gia đình khi trưởng thành để sống độc lập ngày gia tăng cùng với cuộc vận động sinh đẻ có kế hoạch góp phần thúc đẩy tiến trình này. Vai trò của người phụ nữ trong xã hội ngày càng được nâng cao.</p>
+<p>---&gt; Những thay đổi trên làm cho các đối tượng mà hoạt động marketing của doanh nghiệp cần hướng tới cũng thay đổi. Các chính sách marketing hỗn hợp cần phải phù hợp hơn, từ các quyết định về sản phẩm đến cách thức định giá cũng như các thông điệp quảng cáo và các công cụ xúc tiến bán hàng, ...</p>
+<p class="l1">+ Tình trạng hôn nhân cũng là 1 yếu tố cần quan tâm, nghiên cứu và nắm vững được tuổi kết hôn và cả ly dị phần lớn ở lứa tuổi nào để có được các sản phẩm thích hợp.</p>
+<p class="l2">++ VD:Ở Mỹ, sau khi ly hôn, NTD có nhu cầu sắm sửa lại dụng cụ gia đình nhưng yêu cầu mua sắm khác lúc kết hôn.</p>
+<p class="l2">++ <strong>Quá trình đô thị hóa</strong> ảnh hưởng mạnh đến hoạt động marketing của DN. Dân cư có xu hướng di chuyển đến những nơi có điều kiện sinh sống và làm việc thuận lợi hơn. Các thành phố lớn, khu vực đô thị là những thị trường quan trọng đối với các nhà quản trị marketing.</p>
+<p class="l1">+ Trình độ văn hóa của người dân ngày càng được nâng cao làm nhu cầu và mong muốn của người tiêu dùng trở nên đa dạng, phong phú.</p>
+<p class="l2">++ Người tiêu dùng mua hàng hóa không chỉ đòi hỏi cao về giá trị và giá trị sử dụng mà họ còn đòi hỏi thỏa mãn các yếu tố tâm lý tiêu dùng,...</p>
+<p class="l2">++ Sự khác biệt về thu nhập, khả năng thanh toán và địa vị xã hội dẫn đến sự khác biệt khá lớn trong yêu cầu đối với cùng 1 loại sản phẩm ở các nhóm khách hàng khác nhau</p>
+<p>----&gt; Doanh nghiệp cần xây dựng được các chính sách marketing cho phù hợp với từng đối tượng khách hàng.</p>
+<p><strong>VD: Vinamilk</strong> là doanh nghiệp điển hình trong việc khai thác tối đa các đặc điểm nhân khẩu học của thị trường Việt Nam để hoạch định chiến lược sản phẩm.</p>
+<ul>
+<li><blockquote>
+<p>Trước hết, nhận thấy Việt Nam có quy mô dân số lớn với tỷ lệ trẻ em cao và các hộ gia đình nhỏ ngày càng chú trọng đầu tư cho con cái, Vinamilk đã tập trung phát triển các dòng sữa công thức <em>Dielac</em> và sữa tươi dinh dưỡng nhằm đáp ứng đúng nhu cầu phát triển chiều cao, trí não của trẻ nhỏ.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Bên cạnh đó, để đón đầu xu hướng già hóa dân số khi tỷ lệ người cao tuổi ngày càng tăng, hãng cho ra đời dòng sản phẩm chuyên biệt <em>Sure Prevent Gold</em> giúp phục hồi sức khỏe, hỗ trợ xương khớp và tim mạch cho người lớn tuổi.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Ngoài ra, sự gia tăng về thu nhập và trình độ học vấn tại các khu vực đô thị đã thúc đẩy hành vi tiêu dùng hướng tới các sản phẩm cao cấp, lành mạnh.</p>
+</blockquote></li>
+</ul>
+<p>=&gt; Vì vậy, Vinamilk mở rộng phân khúc sang các dòng sản phẩm <em>Sữa tươi Organic</em> đạt chuẩn châu Âu, <em>Sữa chua Probi</em> hỗ trợ tiêu hóa và các loại <em>Sữa hạt</em> (óc chó, hạnh nhân, đậu nành) dành cho nhóm khách hàng trẻ có lối sống thuần chay và hiện đại.</p>
+<p><strong>TH3: Phân tích môi trường công nghệ</strong></p>
+<p>- Công nghệ là yếu tố quan trọng nhất định hình nên cuộc sống của con người, ảnh hưởng trực tiếp đến sự sáng tạo sản phẩm và tạo ra cơ hội thị trường mới.</p>
+<p>- <strong>Các yếu tố thuộc môi trường công nghệ</strong> như sự phát triển của CMKHKT và CNTT.</p>
+<p>- Tác động đến chiến lược Marketing của DN:</p>
+<p class="l1">+ Sự cạnh tranh về CN,KT mới không chỉ đảm bảo cho DN có thể giành lợi thế trên phạm vi toàn cầu mà còn làm thay đổi cả bản chất của sự cạnh tranh. KTCN có ảnh hưởng mạnh mẽ đến chi phí sxkd và nslđ. KHKT phát triển làm tăng nslđ, tạo điều kiện cho doanh nghiệp giảm giá thành, hạ giá bán.</p>
+<p class="l1">+ Tiến bộ kĩ thuật thúc đẩy nghiên cứu và phát triển để tạo sản phẩm mới, từ đó hình thành lợi thế cạnh tranh trên thị trường.</p>
+<p class="l2">++ Nghiên cứu cơ bản tạo cơ sở cho nghiên cứu ứng dụng. Nghiên cứu ứng dụng là 1 quá trình chuyển hóa công nghệ kĩ thuật từ phòng thí nghiệm ra đời sống thực tế biến nó thành sản phẩm hàng hóa, dịch vụ. Vì thế, các công ty kinh doanh ngày nay cũng quan tâm nhiều hơn đến việc đầu tư cho hoạt động nghiên cứu và phát triển.</p>
+<p class="l1">+ Ảnh hưởng đến chu kỳ sống của sản phẩm: CMKHKT làm chu kỳ sống của sản phẩm bị rút ngắn dần. Điều này buộc các DN phải tăng cường sự nghiên cứu, liên tục cải tiến hoàn thiện sản phẩm hiện có hoặc phát triển sản phẩm mới nhằm kéo dài vòng đời của sản phẩm, đưa nó vào 1 chu kỳ phục hồi và tăng trưởng mới</p>
+<p>—&gt; DN phát tr và mở rộng thị trường mới.</p>
+<p>=&gt;Trước sự phát triển nhanh chóng của CM KHKT,các nhà quản trị Marketing cần nắm bắt và hiểu rõ bản chất của những thay đổi trong môi trường công nghệ kĩ thuật, từ đó, DN chủ động ứng phó, phát hiện kịp thời những tình huống xấu có thể gây thiệt hại tới người tiêu dùng và ảnh hưởng không tốt đến kết quả hoạt động sản xuất kinh doanh của DN.</p>
+<p><strong>VD: Vinamilk</strong> chứng minh sức mạnh cạnh tranh vượt trội nhờ việc ứng dụng khoa học kỹ thuật tiên tiến vào toàn bộ chuỗi giá trị từ sản xuất đến phát triển sản phẩm.</p>
+<ul>
+<li><blockquote>
+<p>Ở khâu nguyên liệu đầu vào, doanh nghiệp đầu tư hệ thống trang trại sinh thái <em>Green Farm</em> ứng dụng công nghệ nông nghiệp 4.0, sử dụng chip điện tử đeo cổ để theo dõi sức khỏe, khẩu phần ăn và năng suất sữa của từng cá thể bò, kết hợp cùng hệ thống xử lý chất thải tuần hoàn khép kín.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Trong khâu chế biến, Vinamilk đưa vào vận hành các "Siêu nhà máy sữa" với công nghệ tiệt trùng UHT hiện đại và kho thông minh tự động hóa hoàn toàn bằng robot (LGV), giúp tối ưu chi phí vận hành, nâng cao năng suất và bảo quản sản phẩm hoàn toàn tự nhiên mà không cần dùng chất bảo quản.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Đặc biệt, trước áp lực chu kỳ sống của sản phẩm bị rút ngắn do công nghệ phát triển nhanh, đội ngũ NC và Phát triển của Vinamilk liên tục đưa ra các công thức vi chất mới, cải tiến bao bì thông minh và tung ra các dòng sản phẩm bắt kịp xu hướng như sữa chua uống men sống hay sữa trái cây.</p>
+</blockquote></li>
+</ul>
+<blockquote>
+<p>=&gt; Giúp thương hiệu liên tục gia tăng giá trị sử dụng và duy trì thế chủ động trên thị trường.</p>
+</blockquote>
+</div></article>
+<article id="a3" data-q="3" hidden><h2>Câu 3: Các giai đoạn quá trình thông qua quyết định mua của người tiêu dùng</h2><div class="body">
+<p class="l1">+ Khái niệm và vai trò của người tiêu dùng và hành vi của người tiêu dùng</p>
+<p class="l1">+ Phân tích 5 bước</p>
+<p>Trả lời:</p>
+<p>- <em><strong>Người tiêu dùng cá nhân</strong></em>: Bao gồm những cá nhân và hộ gia đình hiện có và tiềm ẩn mua hàng hóa, dịch vụ để phục vụ cho nhu cầu tiêu dùng của cá nhân và gia đình. Đây là bộ phận KH chiếm tỉ trọng lớn &amp; quan trọng nhất.</p>
+<p>- <em><strong>Hành vi của người tiêu dùng</strong></em>: là toàn bộ hành động mà người tiêu dùng bộc lộ trong quá trình trao đổi sản phẩm. Đó là cách thức mà người tiêu dùng sẽ thực hiện để đưa ra các quyết định sử dụng tài sản của mình, liên quan đến việc mua sắm và sử dụng hàng hóa, dịch vụ nhằm thỏa mãn nhu cầu tiêu dùng của cá nhân.</p>
+<p>- <em><strong>Quá trình mua hàng của người tiêu dùng</strong></em> trải qua <em><strong>năm giai đoạn:</strong></em></p>
+<p class="l1">+ <em><strong>Ý thức nhu cầu:</strong></em> Quá trình mua sắm bắt đầu từ khi người mua ý thức được vấn đề hay nhu cầu. Người mua cảm thấy có sự khác biệt giữa tình trạng thực tế và tình trạng mong muốn. Nhu cầu bắt nguồn từ 2 nguyên nhân:</p>
+<p class="l2">++ <em><strong>Nhu cầu</strong></em> có thể bắt nguồn từ những tác nhân kích thích <em><strong>nội tại</strong></em>. Thông thường là những nhu cầu sinh lý cơ bản của con người như: đói, khát, tình dục, …tăng dần lên đến mức vượt ngưỡng và trở thành niềm thôi thúc.</p>
+<p class="l2">++ <em><strong>Nhu cầu</strong></em> cũng có thể bắt nguồn từ tác nhân kích thích <em><strong>bên ngoài</strong></em> như: tác động của môi trường kinh doanh, các chính sách MKT của DN tác động vào ntd làm nảy sinh, đánh thức, gợi mở những nhu cầu.</p>
+<p class="l2">++ Những tác nhân bên ngoài và các tác nhân bên trong là độc lập nhưng có sự tác động của nhóm tác nhân này có thể là tiền đề cho sự tác động của nhóm tác nhân kia.</p>
+<p class="l1">+ <em><strong>Tìm kiếm thông tin:</strong></em> sau khi ý thức được nhu cầu, người tiêu dùng sẽ bắt đầu tìm kiếm thông tin có liên quan đến sản phẩm có thể đáp ứng nhu cầu của họ. KH Thường có 2 mức độ tìm kiếm thông tin:</p>
+<p class="l2">++ <em><strong>Trạng thái tìm kiếm tương đối</strong></em> (trạng thái chú ý): người ta có thể chú ý đến thông tin ngẫu nhiên bắt gặp, hoặc có Ý thức tìm kiếm thông tin nhưng chỉ mới bắt đầu quá trình tìm kiếm. Các thông tin ở giai đoạn này thường rất rộng và tản mạn.</p>
+<p class="l2">++ <strong>Trạng thái tích cực tìm kiếm thông tin</strong>: NTD sẽ chủ động và dùng nhiều thời gian hơn cho việc tìm kiếm thông tin. Các thông tin ở giai đoạn này thường có trọng tâm hơn, các nguồn thông tin người tiêu dùng tiếp cận được chia thành <strong>4 nhóm.</strong></p>
+<p class="l3">+++ <em><strong>Nguồn thông tin cá nhân</strong></em>: gia đình, bạn bè, hàng xóm, người quen.</p>
+<p>--------&gt;Đây là nguồn thông tin:Tin cậy, hiệu quả nhất, thực hiện chức năng khẳng định hay đánh giá.</p>
+<p class="l3">+++ Nguồn thông tin thương mại: quảng cáo, nhân viên bán hàng, đại lý, bao bì, triển lãm.</p>
+<p>--------&gt;NTD nhận đc nhiều thông tin nhất, thường thực hiện chức năng thông báo</p>
+<p class="l3">+++ <em><strong>Nguồn thông tin thực nghiệm</strong></em>: sờ mó, nghiên cứu và sử dụng sản phẩm</p>
+<p class="l3">+++ Nguồn thông tin công cộng: các phương tiện thông tin đại chúng, các tổ chức nghiên cứu người tiêu dùng.</p>
+<p class="l1">+ <em><strong>Đánh giá các phương án:</strong></em> sau quá trình tìm kiếm thông tin, NTD sẽ có thông tin về sản phẩm cần mua. NTD xử lý thông tin về các nhãn hiệu cạnh tranh để đưa ra quyết định cuối cùng về sản phẩm. Khi hình thành những xét đoán hình sản phẩm, NTD chủ yếu dựa trên cơ sở Ý thức và sự hợp lý:</p>
+<p class="l2">++ Người tiêu dùng tìm kiếm đối tượng để thoả mãn tối đa nhu cầu . NTD xem mỗi sản phẩm như 1 tập hợp các thuộc tính đem lại những lợi ích được thỏa mãn nhu cầu khác nhau. Những tính chất mà người mua quan tâm thay đổi tùy theo sản phẩm</p>
+<p class="l2">++ Người tiêu dùng khác nhau về cách nhìn tính chất nổi bật của sản phẩm. Họ chú ý đến tính chất đem lại cho họ những lợi ích cần tìm kiếm. Những chính sách nổi bật quan trọng nhất theo quan điểm của người tiêu dùng có thể không phải là tính chất quan trọng nhất của sản phẩm.</p>
+<p class="l2">++ NTD có khuynh hướng xây dựng cho mình 1 tập hợp những niềm tin vào các nhãn hiệu. Niềm tin vào nhãn hiệu của NTD sẽ thay đổi theo kinh nghiệm của họ và tác động của nhận thức có chọn lọc, bóp méo có chọn lọc và ghi nhớ có chọn lọc.</p>
+<p class="l2">++ Quy trình đánh giá mà NTD sử dụng cho các sản phẩm là khác nhau</p>
+<p class="l2">++ Trong quá trình đánh giá, người tiêu dùng vẫn thường tiếp tục thu thập thông tin về những nhãn hiệu khác nhau để mở rộng căn cứ đánh giá .</p>
+<p>—&gt; Số lượng nhãn hiệu NTD tìm hiểu có xu hướng giảm dần.</p>
+<p class="l1">+ <em><strong>Quyết định mua sắm:</strong></em> trước khi quyết định, NTD đã hình thành nhóm nhãn hiệu lựa chọn. Tuy nhiên, còn 2 yếu tố có thể xen vào giữa ý định mua và quyết định mua:</p>
+<p class="l2">++ Thái độ của người khác: có thể ảnh hưởng tích cực hoặc tiêu cực. Mức độ ảnh hưởng phụ thuộc vào mức độ quyết liệt của người ảnh hưởng và động cơ thôi thúc NTD làm theo mong muốn của người khác.</p>
+<p class="l2">++ Những yếu tố TH bất ngờ: các TH rất đa dạng nên người tiêu dùng và doanh nghiệp rất khó kiểm soát. Khi người tiêu dùng sắp sửa hành động thì những trường hợp bất ngờ có thể xuất hiện đột ngột làm thay đổi quyết định mua hàng của người tiêu dùng có thể thay đổi, trì hoãn, loại bỏ ý định mua hàng. Tình huống bất ngờ có thể xuất phát từ những các yếu tố thuộc về người tiêu dùng hoặc môi trường bên ngoài.</p>
+<p class="l1">+ <em><strong>Hành vi hậu mãi:</strong></em> sau khi mua sản phẩm, người tiêu dùng có sẽ cảm nhận hài lòng hoặc không hài lòng ở 1 mức độ nào đó. Nếu thu thập được các phản ứng đó, doanh nghiệp có thể sẽ có những động thái phù hợp để phát huy ảnh hưởng tích cực và hạn chế những ảnh hưởng tiêu cực.</p>
+<p class="l2">++ Sự hài lòng sau khi mua: mức độ hài lòng của người tiêu dùng là hàm số chênh lệch giữa kỳ vọng của người tiêu dùng và thuộc tính thực tế của sản phẩm.</p>
+<p>Vượt quá kỳ vọng --&gt;rất hài lòng</p>
+<p>đáp ứng --&gt; hài lòng</p>
+<p>không tương xứng --&gt;Không hài lòng</p>
+<p>kém xa, có khuyết tật--&gt; khó chịu với sản phẩm</p>
+<p class="l2">++ Sự kỳ vọng có thể hình thành 2 nhóm: người tiêu dùng chủ động thu thập và người tiêu dùng thụ động thu thập có được từ tác động của doanh nghiệp. Nếu sự không hài lòng đến từ sự chênh lệch so với kỳ vọng được tiếp nhận từ doanh nghiệp ảnh hưởng tiêu cực đến hình ảnh, uy tín, giá trị sản phẩm.</p>
+<p class="l2">++ <em><strong>Những hành động sau khi mua</strong></em>:”Khách hàng hài lòng là cách quảng cáo tốt nhất của doanh nghiệp”</p>
+<p>Hài lòng: Xác suất tiếp tục mua sản phẩm lần tới cao</p>
+<p>Chia sẻ với những người khác, quảng cáo cho doanh nghiệp</p>
+<blockquote>
+<p>Không hài lòng: Cố gắng tìm kiếm Thông tin xác thực giá trị cao của sp hay bỏ qua những thông tin xác thực giá trị thấp của nó</p>
+</blockquote>
+<p>Phản ứng mạnh: đổi, đem trả, vứt bỏ</p>
+<blockquote>
+<p>Than về những bất lợi với người khác</p>
+</blockquote>
+<p class="l2">++ Tình trạng của sản phẩm sau khi mua: tùy thuộc vào mức độ thỏa mãn người tiêu dùng sẽ quyết định số phận của sản phẩm:</p>
+<blockquote>
+<p>Giữ lại dùng đúng mục đích ban đầu</p>
+<p>Sửa đi để dùng vào mục đích khác</p>
+<p>Không sử dụng</p>
+<p>Tạm thời không giữ sản phẩm cho thuê/ mượn</p>
+<p>Đẩy sản phẩm đi vĩnh viễn:bán lại, cho, vứt bỏ, đổi sản phẩm khác.</p>
+</blockquote>
+<h3 class="unnumbered" id="vd-bạn-muốn-mua-macbook"><strong>VD: Bạn muốn mua Macbook</strong></h3>
+<p class="l1">+ Bạn đang dùng laptop cũ nhưng máy chạy chậm, pin nhanh hết và không đáp ứng tốt yêu cầu học tập. Đồng thời, bạn thường xuyên thấy bạn bè sử dụng MacBook và bị thu hút bởi thiết kế đẹp, thời lượng pin tốt và khả năng hoạt động ổn định→ nảy sinh nhu cầu mua một chiếc laptop mới, cụ thể là MacBook.</p>
+<p>—&gt; Người làm marketing cần nhận thức rằng nhu cầu của NTD không chỉ xuất phát từ tác nhân nội tại mà còn chịu tác động của tác nhân bên ngoài như bạn bè, quảng cáo, xu hướng và truyền thông.</p>
+<p>→ Doanh nghiệp có thể sử dụng quảng cáo, truyền thông, hình ảnh sản phẩm, KOL/KOC,... để gợi mở và kích thích nhu cầu của NTD</p>
+<p class="l1">+ Sau khi có nhu cầu mua MacBook, bạn bắt đầu tìm kiếm thông tin trên website của Apple, xem các video review trên YouTube/TikTok, đọc đánh giá của người đã sử dụng, hỏi bạn bè và đến các cửa hàng máy tính để tìm hiểu về giá, cấu hình, kích thước, chip, thời lượng pin, thiết kế và chính sách bảo hành.</p>
+<p>—&gt;Doanh nghiệp cần cung cấp thông tin đầy đủ, chính xác và dễ tiếp cận thông qua website, quảng cáo, mạng xã hội,... Đồng thời cần tạo ra những đánh giá và trải nghiệm tích cực để tăng khả năng sản phẩm được khách hàng lựa chọn.</p>
+<p class="l1">+ Sau khi tìm hiểu, bạn cân nhắc giữa MacBook, Dell và Asus dựa trên các tiêu chí như giá, cấu hình, thiết kế, thời lượng pin và nhu cầu học tập. Ban đầu, bạn nghiêng về MacBook. Tuy nhiên, khi đến CellphoneS, nhân viên bán hàng giới thiệu một mẫu Samsung có cấu hình và tính năng phù hợp hơn với nhu cầu của bạn. Sau khi được tư vấn và so sánh, bạn nhận thấy sản phẩm Samsung phù hợp hơn → thay đổi đánh giá và lựa chọn Samsung thay vì MacBook.</p>
+<p>→ Doanh nghiệp cần xác định những thuộc tính mà khách hàng quan tâm, đồng thời, đào tạo đội ngũ nhân viên bán hàng có khả năng tư vấn, chào hàng và thuyết phục khách hàng.Bởi vì, nhân viên bán hàng tại điểm bán có thể tác động trực tiếp đến quá trình đánh giá, thậm chí làm thay đổi lựa chọn ban đầu của NTD.</p>
+<p class="l1">+ Sau khi đánh giá các phương án, bạn quyết định mua MacBook Air vì nhận thấy sản phẩm phù hợp nhất với nhu cầu học tập và khả năng tài chính. Tuy nhiên, trước khi thanh toán, bạn có thể bị tác động bởi thái độ của người khác như bố mẹ cho rằng giá MacBook quá cao hoặc bạn bè khuyên nên mua laptop Windows.</p>
+<p class="l2">++ Ngoài ra, có thể xuất hiện tình huống bất ngờ như MacBook hết hàng, giá sản phẩm tăng, bạn phát sinh một khoản chi tiêu khác hoặc không đủ tiền → bạn có thể thay đổi, trì hoãn hoặc từ bỏ quyết định mua.</p>
+<p>—&gt; Doanh nghiệp không thể cho rằng khách hàng đã có ý định mua thì chắc chắn sẽ mua. Doanh nghiệp cần giảm các yếu tố cản trở quyết định mua bằng cách cung cấp giá phù hợp, hàng hóa sẵn có, phương thức thanh toán thuận tiện, trả góp, khuyến mại và dịch vụ tốt. Mục tiêu là chuyển ý định mua thành quyết định mua.</p>
+<p class="l1">+ Sau khi mua MacBook và sử dụng, bạn nhận thấy máy hoạt động nhanh, pin tốt, thiết kế đúng như kỳ vọng và đáp ứng tốt nhu cầu học tập → hài lòng với sản phẩm.</p>
+<p>Bạn có thể tiếp tục sử dụng, mua MacBook ở những lần sau và giới thiệu sản phẩm cho bạn bè.</p>
+<p class="l1">+ Ngược lại, nếu máy không đáp ứng được kỳ vọng, xảy ra lỗi hoặc chất lượng không như quảng cáo → bạn có thể không hài lòng, yêu cầu đổi trả, phàn nàn hoặc chia sẻ trải nghiệm tiêu cực với người khác.</p>
+<p>→ Doanh nghiệp phải tiếp tục thực hiện marketing sau khi khách hàng đã mua, thông qua chăm sóc khách hàng, bảo hành, đổi trả và tiếp nhận phản hồi. Bởi vì,khách hàng hài lòng sẽ làm tăng khả năng mua lại và truyền miệng tích cực, trong khi khách hàng không hài lòng có thể tạo ra truyền miệng tiêu cực, ảnh hưởng đến hình ảnh và uy tín của doanh nghiệp.</p>
+</div></article>
+<article id="a4" data-q="4" hidden><h2>Câu 4: Phân đoạn thị trường (4đ)</h2><div class="body">
+<p class="l1">+ Khái niệm phân đoạn thị trường, đoạn thị trường</p>
+<p class="l1">+ Lý do phân đoạn thị trường</p>
+<p class="l1">+ Nêu các tiêu thức phân đoạn thị trường</p>
+<p>Trả lời</p>
+<p>- <strong>Phân đoạn thị trường</strong> là việc phân chia thị trường thành các bộ phận khác nhau căn cứ vào các kĩ thuật và tiêu thức phân đoạn nhất định, đảm bảo sao cho trong cùng 1 đoạn thị trường các khách hàng đều có cùng 1 đặc điểm tiêu dùng như nhau đối với sản phẩm</p>
+<p class="l1">+ <strong>Đoạn thị trường</strong> là 1 nhóm khách hàng có sự đồng nhất về nhu cầu và có sự phản ứng như nhau đối với các hoạt động marketing của doanh nghiệp.</p>
+<p>- <strong>Lý do phân đoạn thị trường</strong></p>
+<p class="l1">+ <strong>Từ phía thị trường:</strong>Một sản phẩm đồng nhất không thể thỏa mãn được nhu cầu của mọi khách hàng trên thị trường <em>Vì các khách hàng khác nhau thường có những yêu cầu không giống nhau về chủng loại sản phẩm và đặc điểm riêng của mỗi loại.</em></p>
+<p class="l1">+ <strong>Từ phía doanh nghiệp:</strong> do nguồn lực doanh nghiệp là hạn chế, không thể khai thác hiệu quả toàn bộ thị trường.</p>
+<p class="l2"><em>++Việc phân đoạn thị trường sẽ đảm bảo các doanh nghiệp có thể tiếp cận tới từng bộ phận khách hàng với những đặc điểm riêng biệt trên thị trường, đảm bảo sự thích ứng của chính sách marketing với các bộ phận thị trường, nhằm thỏa mãn tốt nhất nhu cầu khách hàng từ đó giúp doanh nghiệp nhanh chóng phát triển mở rộng thị trường và nâng cao hiệu quả kinh doanh.</em></p>
+<p class="l1">+ <strong>Hiệu quả của giải pháp marketing:</strong> giúp doanh nghiệp định hướng hoạt động marketing rõ ràng hơn, xây dựng chính sách marketing phù hợp với khách hàng nhất, từ đó, làm giảm thiểu hoạt động dư thừa, nâng cao hiệu quả của hoạt động marketing, tiết kiệm chi phí.</p>
+<p><em>(++Việc phân đoạn thị trường sẽ đảm bảo các doanh nghiệp có thể tiếp cận tới từng bộ phận khách hàng với những đặc điểm riêng biệt trên thị trường, đảm bảo sự thích ứng của chính sách marketing với các bộ phận thị trường, nhằm thỏa mãn tốt nhất nhu cầu khách hàng từ đó giúp doanh nghiệp nhanh chóng phát triển mở rộng thị trường và nâng cao hiệu quả kinh doanh.</em></p>
+<p class="l2">++Ngoài ra, phân đoạn thị trường giúp doanh nghiệp định hướng hoạt động Marketing rõ ràng hơn, giảm các hoạt động dư thừa, tiết kiệm chi phí và nâng cao hiệu quả Marketing.)</p>
+<p>- Để tiến hành phân đoạn thị trường, có 4 nhóm tiêu thức chủ yếu sau:</p>
+<p class="l1">+ <em><strong>Phân đoạn thị trường theo vị trí địa lý.</strong></em></p>
+<p class="l2">++ Ở các khu vực địa lý khác nhau, thường có sự khác biệt về phong tục, tập quán, văn hóa, đặc điểm, thói quen tiêu dùng.</p>
+<p class="l2">++ DN có thể phân đoạn thị trường theo các tiêu thức cụ thể như khu vực địa lý (tỉnh thành, các miền); quy mô vùng; mật độ dân số (nội thành, ngoại thành, nông thôn, miền núi), khí hậu (miền Nam, miền Bắc).</p>
+<p class="l1">+ <em><strong>Phân đoạn theo dân cư</strong></em>: Tiến hành chia thị trường thành những nhóm khác nhau dựa trên các tiêu thức dân số học như: Độ tuổi, giới tính, độ lớn gia đình, chu kỳ sống gia đình, thu nhập, trình độ, tôn giáo...</p>
+<p class="l2">++ Giới tính: Thực tế có sự khác biệt rất lớn giữa nam và nữ trong việc lựa chọn, mua sắm hàng hóa nhất là đối với các mặt hàng như quần áo, mỹ phẩm, tạp chí, giày dép,xe hơi,...Trước đây, có 1 số công ty sản xuất xe hơi đều thiết kế xe để thu hút cả nam lẫn nữ trên thị trường nhưng hiện nay đã có nhiều hãng xe chú ý hơn đến việc thiết kế xe hơi dành riêng cho phụ nữ.</p>
+<p class="l2">++ Độ tuổi: mong muốn của khách hàng thường thay đổi theo độ tuổi. Vì thế, các doanh nghiệp có thể tung ra thị trường những sản phẩm hay có những giải pháp khác nhau để đáp ứng nhu cầu của từng nhóm khách hàng ở các độ tuổi khác nhau.</p>
+<p class="l2">++ Thu nhập của người tiêu dùng là 1 tiêu thụ được sử dụng phổ biến để phân đoạn thị trường xe hơi, quần áo may mặc, mỹ phẩm, …</p>
+<p class="l1">+ <em><strong>Phân đoạn theo xã hội và tâm lý</strong></em>:Cách phân chia này dựa vào những yếu tố như tầng lớp xã hội, lối sống, đặc điểm tính cách của khách hàng.</p>
+<p class="l2">++ Những người ở các giai tầng xã hội khác nhau thường có những sở thích về nhãn hiệu và sản phẩm khác nhau đối với quần áo, các đồ dùng gia đình, xe hơi, cách giải trí,. Mỗi doanh nghiệp có thể tập trung các nỗ lực của mình vào 1 tầng lớp xã hội nào đó.</p>
+<p class="l2">++ Lối sống khác nhau thì cách nhìn nhận không giống nhau. Khi đi chữa bệnh:Những người thận trọng thường bám sát vào và luôn tuân thủ theo đơn thuốc của bác sĩ, họ không bao giờ dùng thuốc mà không có chỉ định của bác sĩ; những người xuề xòa thường ít quan tâm tới sức khỏe, hiếm khi lo chạy chữa thuốc men và hay hoài nghi về các cách chữa bệnh Đơn giản rẻ tiền,...</p>
+<p class="l2">++ Với cá tính khác nhau thì việc lựa chọn các đồ dùng cá nhân cũng rất khác biệt nhất là đối với quần áo, phương tiện đi lại,...<br />
++ <em><strong>Phân đoạn theo hành vi</strong></em></p>
+<p class="l2">++ Đánh giá phản ứng của người tiêu dùng và thái độ của họ đối với sản phẩm.</p>
+<p class="l2">++ Các tiêu chí thường thấy bao gồm động cơ tiêu dùng, lợi ích tìm thấy từ sản phẩm, cường độ sử dụng sản phẩm, sự lôi cuốn và mức độ thủy chung với sản phẩm, thái độ đối với hàng hóa.</p>
+<p class="l3">+++ Động cơ tiêu dùng khác nhau thì việc mua sắm hàng hóa của người tiêu dùng khác nhau. Khi mua 1 bộ quần áo xuất phát từ việc thiếu quần áo để mặc sẽ lựa chọn khác với động cơ tiêu dùng theo mốt hay tiêu dùng vì người khác.</p>
+<p class="l3">+++ Lợi ích tìm thấy từ sản phẩm: đòi hỏi các doanh nghiệp phải xác định rõ những lợi ích chủ yếu mà khách hàng mong muốn từ 1 sản phẩm, 1 nhóm khách hàng tìm kiếm lợi ích nào từ sản phẩm hay nhãn hiệu nào của NTD trên thị trường.</p>
+<p><em>Ví dụ thị trường kem đánh răng: trẻ em tìm kiếm lợi ích chống sâu răng</em></p>
+<p><em>Tầng lớp thanh niên mong muốn trắng răng thơm miệng.</em></p>
+<p class="l3">+++ Thái độ đối với sản phẩm: Doanh nghiệp có thể chia thị trường thành những đoạn thị trường như khách hàng chưa dùng, khách hàng đã từng dùng, khách hàng sẽ dùng, khách hàng lần đầu tiêu dùng, khách hàng dùng thường xuyên. Doanh nghiệp có thị phần cao thường đặc biệt quan tâm thu hút các khách hàng sẽ dùng, các công ty nhỏ thường cố gắng thu hút những khách hàng thường xuyên lựa chọn nhãn hàng hóa của mình.</p>
+<p class="l3">+++ Theo cường độ tiêu dùng có thể chia khách hàng thành khách hàng dùng nhiều, dùng vừa phải và dùng ít.Tiêu thức này thường được các hãng bia quan tâm.</p>
+<p class="l3">+++ Theo mức độ trung thành đối với nhãn hiệu có thể chia khách hàng thành loại trung thành, loại hay dao động, loại thay đổi, loại xoay vòng.</p>
+<p>=&gt; Khi lựa chọn các tiêu thức để phân đoạn thị trường cần đảm bảo 2 yêu cầu đó là tính khoa học và tính thực tiễn của quá trình phân đoạn thị trường. Điều đó có nghĩa là các công thức được dùng để phân đoạn thị trường vừa phải phù hợp với đặc điểm tiêu dùng của từng loại sản phẩm vừa đảm bảo cho các doanh nghiệp đưa ra các giải pháp marketing thích ứng để khai thác khối lượng đoạn thị trường đó.</p>
+<p><strong>VD:xét 2 tiêu thức Vinamilk:</strong></p>
+<p class="l1">+ Về độ tuổi, Vinamilk phân đoạn thị trường dựa trên sự khác biệt về nhu cầu dinh dưỡng ở từng giai đoạn cuộc đời. Với trẻ em, Vinamilk phát triển các sản phẩm như Dielac Alpha, Optimum Gold, tập trung vào nhu cầu phát triển thể chất và trí não. Với người trưởng thành, doanh nghiệp cung cấp sữa tươi Vinamilk 100% và Green Farm, đáp ứng nhu cầu dinh dưỡng hằng ngày. Với người cao tuổi, Vinamilk có sản phẩm Sure Prevent Gold, tập trung vào các nhu cầu về xương, tim mạch và sức khỏe. Như vậy, Vinamilk điều chỉnh sản phẩm và thông điệp marketing theo từng nhóm tuổi, giúp đáp ứng đúng nhu cầu của từng phân khúc.</p>
+<p class="l1">+ Về động cơ tiêu thụ, Vinamilk phân đoạn thị trường dựa trên lý do và mục đích khách hàng mua sản phẩm. Với nhóm mua sữa để bổ sung dinh dưỡng hằng ngày, Vinamilk cung cấp sữa tươi Vinamilk 100% và Green Farm. Với nhóm có động cơ chăm sóc và bảo vệ sức khỏe, doanh nghiệp phát triển Sure Prevent Gold, nhấn mạnh các lợi ích về xương và tim mạch. Với nhóm có động cơ kiểm soát vóc dáng, sống lành mạnh, Vinamilk có các sản phẩm như Vinamilk Green Farm ít đường, sữa hạt Vinamilk, phù hợp với nhu cầu giảm đường và bổ sung dinh dưỡng từ thực vật. Qua đó, Vinamilk không chỉ dựa vào đặc điểm khách hàng mà còn căn cứ vào động cơ mua hàng để thiết kế sản phẩm và thông điệp marketing phù hợp, từ đó tăng khả năng đáp ứng nhu cầu và thúc đẩy quyết định mua.</p>
+<div class="app"><p>Câu 4: (- <em><strong>Phương pháp phân đoạn:</strong></em></p>
+<blockquote>
+<p class="l1"><em><strong>+ Phương pháp chia cắt</strong></em>: phân chia thị trường thành các phân đoạn dựa trên các tiêu thức đã lựa chọn. Sau đó, kết hợp các tiêu thức chính và phụ vào trong từng đoạn thị trường.</p>
+<p class="l1"><em><strong>+ Phương pháp tập hợp</strong></em>: doanh nghiệp tập hợp từng nhóm người tiêu dùng có thái độ và đặc điểm tiêu dùng giống nhau. Các tiêu thức chủ yếu để tập hợp khách hàng là đặc điểm hành vi và tâm lý.</p>
+</blockquote>
+<p><strong>- Chiến lược phân đoạn:</strong></p>
+<blockquote>
+<p class="l1">+ <em><strong>Chiến lược không phân biệt</strong></em></p>
+<p class="l2">++ Doanh nghiệp coi thị trường là một thể đồng nhất, tất cả khách hàng đều như nhau.</p>
+<p class="l2">++ Người làm Marketing có thể áp dụng 1 chiến lược Marketing cho cả thị trường với 1 sản phẩm, 1 mức giá, các kênh phân phối và kỹ thuật xúc tiến hỗn hợp như nhau.</p>
+<p class="l1">+ <em><strong>Chiến lược đa phân đoạn thị trường</strong></em></p>
+<p class="l2">++ Doanh nghiệp coi thị trường là một thể thống nhất nhưng không đồng nhất.</p>
+<p class="l2">++ Doanh nghiệp phân chia thị trường thành nhiều đoạn khác nhau, và xây dựng hệ thống các chính sách Marketing cho mỗi phân đoạn với các sản phẩm khác nhau.</p>
+<p class="l1">+ <em><strong>Chiến lược phân đoạn tập trung</strong></em></p>
+<p class="l2">++ Doanh nghiệp cũng coi thị trường là một thể thống nhất nhưng không đồng nhất.</p>
+<p class="l2">++ Do nguồn lực bị hạn chế nên doanh nghiệp chọn một phân đoạn thích hợp nhất và tập trung cho phân đoạn đó.</p>
+<p>- <em><strong>Căn cứ lựa chọn chiến lược phân đoạn:</strong></em></p>
+<p class="l1">+ Khả năng tài chính của mình,</p>
+<p class="l1">+ Mức độ đồng nhất của sản phẩm,</p>
+<p class="l1">+ Giai đoạn trong chu kỳ sống của sản phẩm,</p>
+<p class="l1">+ Mức độ đồng nhất của thị trường,</p>
+<p class="l1">+ Chiến lược Marketing của đối thủ cạnh tranh.</p>
+<p>- <em><strong>Yêu cầu khi phân đoạn thị trường:</strong></em></p>
+<p class="l1">+ Có thể đo lường được</p>
+<p class="l1">+ Có thể tiếp cận được</p>
+<p class="l1">+ Có thể phân biệt được rõ ràng và khả thi</p>
+<p class="l1">+ Có quy mô đáng kể)</p>
+</blockquote>
+</div></div></article>
+<article id="a5" data-q="5" hidden><h2>Câu 5: Các cấp độ của vòng đời sản phẩm</h2><div class="body">
+<p class="l1">+ Khái niệm về sản phẩm</p>
+<p class="l1">+ Phân tích 3 cấp độ cấu thành sản phẩm.</p>
+<p>Trả lời:</p>
+<p>- <em><strong>Sản phẩm</strong></em> là bất cứ thứ gì có thể chào bán trên thị trường với mục đích thu được sự chú ý, sự chấp nhận, sử dụng hoặc tiêu thụ, có khả năng thỏa mãn được 1 nhu cầu hay mong muốn.</p>
+<p>- Theo quan niệm marketing, sản phẩm là một tập hợp các yếu tố đáp ứng nhu cầu của khách hàng. Các yếu tố này có thể là những đặc tính hữu hình nằm trong sản phẩm hoặc cũng có thể là các dịch vụ và lợi ích kèm theo sản phẩm.</p>
+<p>- Có <em><strong>3 cấp độ cấu thành sản phẩm</strong></em></p>
+<p class="l1">+ <em><strong>Cốt lõi sản phẩm:</strong></em></p>
+<p class="l2">++ Doanh nghiệp cần xác định được lợi ích mà khách hàng cần tìm kiếm ở sản phẩm. Mỗi khách hàng, nhóm khách hàng khác nhau sẽ có những nhu cầu khác nhau làm với những lợi ích khác nhau đó chính là cơ sở cho việc ra quyết định liên quan đến sản phẩm.</p>
+<p class="l2">++ Điều quan trọng sống còn đối với doanh nghiệp là phải nghiên cứu tìm hiểu khách hàng để phát hiện ra những đòi hỏi về các khía cạnh khác nhau tiềm ẩn trong nhu cầu của họ. Từ đó, doanh nghiệp tạo ra những sản phẩm có khả năng thỏa mãn những lợi ích mà khách hàng mong đợi.</p>
+<p>VD: Mua kem đánh răng không phải chỉ để làm sạch răng miệng mà còn cả khả năng bảo vệ men răng, trắng răng, chống sâu răng, hơi thở thơm tho đem lại sự tự tin, bảo vệ sức khỏe...</p>
+<p class="l1">+ <em><strong>Sản phẩm hiện thực</strong></em></p>
+<p class="l2">++ Sau khi nghiên cứu nhu cầu và những lợi ích mà khách hàng muốn có sẽ đưa những yếu tố những sản phẩm cụ thể.</p>
+<p class="l2">++ Sản phẩm hiện thực phản ánh sự có mặt trên thực tế của hàng hóa, bao gồm những yếu tố: Nhãn hiệu, Bao bì, Tính năng, Thiết kế kiểu dáng.</p>
+<p class="l2">++ Những yếu tố này giúp DN đã khẳng định sự hiện diện của mình trên thị trường, để khách hàng tìm mua sản phẩm của doanh nghiệp cũng như phân biệt sản phẩm của doanh nghiệp này với sản phẩm của doanh nghiệp khác.</p>
+<p class="l1">+ <em><strong>Sản phẩm bổ sung</strong></em></p>
+<p class="l2">++ Bao gồm những yếu tố như điều kiện Bảo hành, Tính tiện lợi cho việc lắp đặt, những dịch vụ bổ sung sau khi bán,…</p>
+<p class="l2">++ Các yếu tố này được xem như là 1 thành phần của sản phẩm góp phần tạo nên sản phẩm hoàn chỉnh.</p>
+<p class="l2">++ Những yếu tố này sẽ giúp cho sự gia tăng nhận thức của khách hàng về chất lượng sản phẩm và sự hài lòng của khách hàng về sản phẩm.</p>
+<p class="l2">++ Một số doanh nghiệp còn sử dụng yếu tố bổ sung này để tăng khả năng cạnh tranh của sản phẩm.</p>
+<p>=&gt; Như vậy, sản phẩm trong kinh doanh không chỉ là 1 tập hợp đơn sơ những thuộc tính cụ thể mà trên thực tế còn kèm theo cả những dịch vụ sau khi hàng hóa đã bán cho khách hàng. Đó là chú trọng chất lượng sản phẩm đảm bảo đáp ứng nhu cầu cho khách hàng cả về chất lượng lẫn hình thức. Người tiêu dùng cảm nhận những sản phẩm như 1 tập hợp những lợi ích đem lại sự thỏa mãn nhu cầu của họ.</p>
+<p><strong>VD</strong>:* Iphone</p>
+<p>– Giá trị cốt lõi: iPhone mang lại lợi ích nền tảng là sự kết nối và tiện ích trong giao tiếp, giải trí, làm việc mọi lúc mọi nơi.</p>
+<p>– Giá trị thực tế: iPhone 15 được thiết kế khung titan sang trọng, màn hình Super Retina XDR sắc nét, camera chụp ảnh chuyên nghiệp, chip xử lý mạnh mẽ và logo Apple mang tính biểu tượng.</p>
+<p>– Giá trị gia tăng: iPhone vượt xa một thiết bị di động thông thường nhờ hệ sinh thái Apple toàn diện (AirPods, Apple Watch, iCloud, App Store…), dịch vụ bảo hành, nâng cấp phần mềm lâu dài cùng trải nghiệm đẳng cấp tại Apple Store.</p>
+<p>Chính sự kết hợp chặt chẽ của ba cấp độ này đã giúp iPhone không chỉ là một chiếc điện thoại, mà còn trở thành biểu tượng về phong cách sống và công nghệ</p>
+<p>* Đối với sản phẩm Sữa tươi tiệt trùng <strong>Vinamilk</strong> 100%</p>
+<p class="l1">+ C<strong>ốt lõi sản phẩm</strong> tập trung hoàn toàn vào việc giải quyết nhu cầu dinh dưỡng căn bản của người tiêu dùng. Đó là nguồn dinh dưỡng dồi dào với hàm lượng canxi, vitamin và khoáng chất thiết yếu giúp tăng cường sức khỏe, hỗ trợ phát triển chiều cao và giải khát cho cả gia đình.</p>
+<p class="l1"><strong>+ Sản phẩm hiện thực</strong> được Vinamilk cụ thể hóa qua nhãn hiệu "Vinamilk 100% Sữa Tươi" nổi bật trên lớp bao bì giấy Tetrapak màu xanh lá đậm chất thiên nhiên. Doanh nghiệp thiết kế đa dạng quy cách như hộp 180ml kèm ống hút tiện lợi cho di chuyển, hoặc hộp lớn 1L có nắp vặn bảo quản dễ dàng, cùng các tùy chọn khẩu vị đa dạng như có đường, ít đường, không đường và socola.</p>
+<p class="l1">+ Về <strong>sản phẩm bổ sung</strong>, Vinamilk gia tăng giá trị nhận thức cho khách hàng thông qua chuỗi dịch vụ tiện ích đi kèm. Doanh nghiệp triển khai hệ thống tư vấn dinh dưỡng qua tổng đài, chính sách đổi trả nhanh chóng nếu sản phẩm gặp sự cố vỏ hộp, dịch vụ giao hàng tận nơi qua trang thương mại điện tử "Giấc Mơ Sữa Việt" cùng các chương trình tích điểm thưởng tri ân người tiêu dùng.</p>
+</div></article>
+<article id="a6" data-q="6" hidden><h2>Câu 6: Các giai đoạn vòng đời sản phẩm.</h2><div class="body">
+<p class="l1">+ Khái niệm chu kỳ sống của sản phẩm</p>
+<p class="l1">+ Phân tích các giai đoạn chu kỳ sống của sản phẩm (đặc điểm, mục tiêu, giải pháp Marketing)</p>
+<p>Trả lời</p>
+<p>- <em><strong>Sản phẩm</strong></em> là bất cứ thứ gì có thể chào bán trên thị trường với mục đích thu được sự chú ý, sự chấp nhận, sử dụng hoặc tiêu thụ, có khả năng thỏa mãn được 1 nhu cầu hay mong muốn.</p>
+<p>- <em><strong>Chu kỳ sống của sản phẩm</strong></em> là khoảng thời gian phản ánh <strong>sự hiện diện</strong> của sản phẩm trên thị trường. Đó là khoảng thời gian được tính từ khi sản phẩm được tung ra thị trường cho đến khi phải rút lui khỏi thị trường.</p>
+<p>* Có 4 giai đoạn của chu kì sống sản phẩm</p>
+<blockquote>
+<p>- <strong>GĐ tung sản phẩm ra thị trường</strong></p>
+</blockquote>
+<p class="l1"><em>+ <strong>Đặc điểm</strong></em></p>
+<blockquote>
+<p class="l2">++ Khối lượng hàng hoá tiêu thụ và doanh thu tăng chậm</p>
+<p class="l2">++ Khách hàng vẫn phân vân, lưỡng lự trước quyết định thử sản phẩm mới do chưa có đầy đủ thông tin về sản phẩm mới hoặc họ vẫn tồn tại thói quen sử dụng sản phẩm hiện tại ,</p>
+<p class="l2">++ Chi phí Marketing rất lớn (quảng cáo, xây dựng hệ thống phân phối),</p>
+<p class="l2">++ Các công ty chưa có lợi nhuận thậm chí là lỗ.</p>
+</blockquote>
+<p class="l1"><em>+ <strong>Mục tiêu:</strong></em> Xâm nhập và tăng nhận thức của khách hàng về thị trường, từ đó đứng vững trên TT</p>
+<p class="l1"><em>+ <strong>Giải pháp Marketing</strong></em></p>
+<blockquote>
+<p>Đẩy mạnh hoạt động xúc tiến hỗn hợp chủ yếu là quảng cáo, truyền thông, cung cấp thông tin cho khách hàng</p>
+<p>Xác định chiến lược giá xâm nhập thị trường</p>
+<p>Xây dựng hệ thống phân phối chọn lọc vì nguồn lực DN có hạn và kiểm soát dc rủi ro.</p>
+</blockquote>
+<p class="l1"><em>+ <strong>Chiến lược Marketing có thể sử dụng:</strong></em></p>
+<blockquote>
+<p>Chiến lược hớt váng chớp nhoáng (giá cao và hoạt động xúc tiến mạnh)</p>
+<p>Chiến lược hớt váng từ từ (giá cao và hoạt động xúc tiến yếu)</p>
+<p>Chiến lược xâm nhập ồ ạt (giá thấp và hoạt động xúc tiến mạnh)</p>
+<p>Chiến lược xâm nhập từ từ (giá thấp và hoạt động xúc tiến yếu)</p>
+<p>- <em><strong>Giai đoạn phát triển</strong></em></p>
+<p class="l1"><em><strong>+ Đặc điểm</strong></em></p>
+<p>Khối lượng tiêu thụ và doanh thu tăng mạnh</p>
+<p>Thị trường được mở rộng và tấn công vào đoạn thị trường hiện tại</p>
+<p>Áp lực cạnh tranh trên thị trường tăng do xuất hiện thêm nhiều đối thủ cạnh tranh.</p>
+<p>Chi phí Marketing cao nhưng do sản xuất số lượng lớn, doanh nghiệp bắt đầu có lời.</p>
+</blockquote>
+<p class="l1"><em>+ <strong>Mục tiêu:</strong></em> Giành thị phần, mở rộng thị trường và đề phòng cạnh tranh</p>
+<p class="l1"><em>+ <strong>Giải pháp Marketing</strong></em></p>
+<blockquote>
+<p>Giữ vững và nâng cao chất lượng sản phẩm, hoặc bổ sung các mẫu mới, đặc tính mới.</p>
+<p>Đa dạng hóa chủng loại sản phẩm.</p>
+<p>Mở rộng kênh phân phối để mở rộng thị trường.</p>
+<p>Hoạt động xúc tiến hỗn hợp tập trung vào việc xây dựng, củng cố thương hiệu và quảng cáo để tạo niềm tin cho khách hàng về sản phẩm và khuyến khích họ sử dụng sản phẩm..</p>
+<p>Xem xét lại giá bán: Giảm giá dần để thu hút thêm người mua/ Giữ nguyên giá bán để tăng lợi nhuận</p>
+<p>- <em><strong>Giai đoạn chín muồi/ trưởng thành và bão hoà</strong></em></p>
+<p class="l1">+ <em><strong>Giai đoạn trưởng thành và bão hoà có thể chia làm 3 thời kỳ</strong></em></p>
+<p><em>Trưởng thành tăng trưởng:</em> Nhịp độ tăng trưởng về số lượng và doanh thu bắt đầu giảm. Không có kênh phân phối mới để tăng cường, mặc dù một số người mua vẫn còn tiếp tục tham gia thị trường.</p>
+<p><em>Trưởng thành ổn định</em>: Mức tiêu thụ tính trên đầu người không thay đổi vì thị trường đã bão hoà. Hầu hết NTD tiềm ẩn đã dùng thử sản phẩm và mức tiêu thụ tương lai chịu sự chi phối của mức tăng dân số và nhu cầu thay thế.</p>
+<p><em>Trưởng thành suy thoái:</em> Mức tiêu thụ tuyệt đối bắt đầu giảm, khách hàng chuyển sang những sản phẩm khác và những sản phẩm thay thế.</p>
+</blockquote>
+<p class="l1"><em>+ <strong>Chiến lược cải biến thị trường</strong></em></p>
+<blockquote>
+<p><em>Tăng số người sử dụng</em>: Thay đổi thái độ của người không sử dụng, xâm nhập những đoạn thị trường mới, giành khách hàng của đối thủ cạnh tranh.</p>
+<p><em>Tăng mức sử dụng</em>: Làm cho khách hàng sử dụng sản phẩm đó nhiều lần hơn: tăng mức sử dụng mỗi lần, thuyết phục khách hàng sử dụng sản phẩm theo nhiều cách khác nhau.</p>
+</blockquote>
+<p class="l1"><em>+ <strong>Chiến lược cải biến sản phẩm</strong></em></p>
+<blockquote>
+<p><em>Chiến lược cải biến chất lượng</em>: Nâng cao tính năng của sản phẩm (như độ bền, độ tin cậy, tốc độ, hương vị...)</p>
+<p><em>Chất lượng cải tiến tính chất</em>: Bổ sung thêm tính chất mới làm tăng thêm công dụng, mức độ an toàn hay thuận tiện của sản phẩm (như kích cỡ, trọng lượng, vật liệu, chất phụ gia, phụ tùng kèm theo...)</p>
+<p><em>Chất lượng cải tiến kiểu dáng</em>: Làm tăng tính hấp dẫn về thẩm mỹ của sản phẩm.</p>
+</blockquote>
+<p class="l1"><em>+ <strong>Chiến lược cải biến Marketing Mix</strong></em></p>
+<blockquote>
+<p><em>Kích thích tiêu thụ bằng cách cải biến một hay nhiều yếu tố trong Marketing Mix</em></p>
+<p><em>Giá cả:</em> Tiến hành cắt giảm giá</p>
+<p><em>Phân phối:</em> Củng cố KPI hiện có đồng thời phát triển những kênh phân phối mới</p>
+<p><em>Kích thích tiêu thụ:</em>Gia tăng các HĐ xúc tiến như QC, KM, tăng dịch vụ KH</p>
+<p><em>Quảng cáo</em></p>
+<p><em>Bán hàng trực tiếp</em></p>
+<p><em>Dịch vụ sau bán hàng</em></p>
+<p>- <em><strong>Giai đoạn suy thoái</strong></em></p>
+</blockquote>
+<p class="l1"><em>+ <strong>Đặc điểm</strong></em></p>
+<blockquote>
+<p>Khối lượng, doanh thu, lợi nhuận giảm sút</p>
+<p>Thay đổi trong thị hiếu tiêu dùng</p>
+<p>Hệ thống phân phối gặp khó khăn</p>
+<p>Có thể xuất hiện sản phẩm thay thế</p>
+<p>Phát hiện những sản phẩm yếu kém</p>
+<p>Quyết định loại bỏ hoặc kéo dài vòng đời sản phẩm</p>
+</blockquote>
+<p class="l1"><em>+<strong>Giải pháp Marketing:</strong></em></p>
+<p class="l2"><em>++ <strong>Phát hiện những sản phẩm yếu kém</strong></em></p>
+<p class="l3">+++ Các tiêu chuẩn để đánh giá một sản phẩm yếu kém bao gồm</p>
+<blockquote>
+<p>Mức tiêu thụ giảm</p>
+<p>Xu hướng thị phần đi xuống</p>
+<p>Mức lãi gộp và tỷ suất lợi nhuận trên vốn đầu tư thấp</p>
+</blockquote>
+<p class="l2"><em>++</em> Quyết định loại bỏ hoặc kéo dài vòng đời sp</p>
+<p class="l1"><em>+ <strong>Xác định chiến lược Marketing</strong> (5 kiểu chiến lược)</em></p>
+<blockquote>
+<p>Tăng vốn đầu tư để khống chế hay củng cố vị trí cạnh tranh.</p>
+<p>Duy trì mức độ đầu tư của công ty cho đến khi giải quyết xong tình trạng không chắc chắn của ngành.</p>
+<p>Giảm có chọn lọc mức độ đầu tư bằng cách loại bỏ những nhóm khách hàng không có lời, củng cố vốn đầu tư của công ty ở những nơi sinh lời.</p>
+<p>Thu hoạch vốn để trả nhanh các khoản tiền mặt.</p>
+<p>Giải thể DN bằng cách bán tài sản một cách có lợi nhất.</p>
+</blockquote>
+<p>- <em><strong>Các nhân tố ảnh hưởng đến vòng đời sản phẩm</strong></em></p>
+<blockquote>
+<p>Đặc điểm của từng loại sản phẩm</p>
+<p>Thị hiếu, tập quán tiêu dùng của từng thị trường</p>
+<p>Thu nhập và khả năng thanh toán của khách hàng</p>
+<p>Cách mạng KHKT và việc áp dụng thành tựu vào sản xuất</p>
+<p>Tác động từ môi trường vĩ mô</p>
+<p>Tác động của hoạt động Marketing doanh nghiệp</p>
+</blockquote>
+<p>Vd:Nokia</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAADAFBMVEVHcEwdHyUbHSMeICcTFBkkJS0cHSQXGB4yND8mKDAhIioZGyEWFx0YGR8tLzkVFhs0NkEhIyomKDBCRFFGSVcrLTYwMjw4OkY0NkE8P0saGyHU1dfh4uPw8PFmZ25XWWJ1dn3FxsidnqQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMSQwlAAAAEXRSTlMAai2A4CPdI97fvBsLBsn19b0lS+UAAAFKSURBVHhefVPbbsMgDLUNSdSq3dY97P+/by9Vte4SGvCwSYph1Y4jB45PbEMAQXHgUAZ3jHjVtxdHmJJrwgBucZzyGwGO1+kUsItnDOf58CECfHYPwhkcLwwOaJoexwFzZc6CVynVhVgMYP/N/pCo8upZHrHc/UReW13xNGc3plCXnNAHn8Z1FliSLQgbkeOBagEYI+IAjDUnAclG3YkZUPW2a9paU0jnlsCy1VZhfAG1CXVciVQy/NmorgeLvD/8aaci0MYsGkJKGCKqtwpauQ1dP1FKWIWeq+YTKdHmyAUsUVbhVpPwqHnu8yKIq63txY0pgn+WmUfe3xoJjuCDmXs3oZe/s1lcbrc6ByYX0stSP4AU7RJ2l9kBfjWKBmfOx56Z9g8VuyH8sNQ5Xt1bH1S8x3L15PJOS38oyM96I/R2J6Chr+KxdPsLJ5+BTHgejMsAAAAASUVORK5CYII=" style="width:0.16667in;height:0.16667in" alt="1️⃣" /> Giai đoạn Tung ra thị trường</p>
+<p>- Nokia tập trung vào điện thoại cơ bản: độ bền, pin lâu, nghe gọi ổn định.</p>
+<p>- Xây dựng hình ảnh thương hiệu gắn liền với chất lượng và sự tin cậy.</p>
+<p>- Phủ sóng sản phẩm rộng khắp toàn cầu, thâu tóm nhiều phân khúc khách hàng.</p>
+<p>→ Chiến lược đúng: Khẳng định giá trị cốt lõi và mở rộng thị trường nhanh chóng.</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAADAFBMVEUbHCIbHSMhIioWFx0TFBgeHyYnKTFHcEwfICY0NkEYGR8UFRoxMz0rLTYhIipERlUxND4mKDA2OEMtLzk6PUc/QU4qKzQaGyFIS1nDxMXW19n09PWPj5Tp6eteYGh5e4Lf3+C1trmfoKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAz36aMAAAADnRSTlMiLbwL3nXfAN7eBuLi1pagNqIAAAGPSURBVHheZVOLcsQgCEQxJt5j2un//2SnaXM+wCp6xl43mRhYJBsQtUJFIllmoJFFnsFk94es8JwsSADG66bCK++O5eEXArUC3xFfacGBX7pkCFf8t13gANdvi0Zd0uS1OOQmoDUqk7Im21LY8KYgl4hg+wXECu6rajvCezAMkLefkST7osJ3Az+Shpy18u7U7EHXuApag14Vs7IQLuIpqPsAF/mEigvuPrNPjpLiloAD1Up268HyGmOp8vnjevBjxdPHrRfV0k+6BKTMI7pmEM0nvz309ujv2Ls5AZVLpM5ySsDcqvwWUe+TS4Oeebowps9hYu3mnCHcDKS9npOBWsmyUe7GH7abTUcJiJIDIdLNhHRwN+sdm8jYkzkOS+G72XH+ZuFBf3PrvRlRI4Du5WDR0oxtJ1FOokH0kHT9Gd1IUakw35pjO6td9vVi78oYdkdRTPCs/xO13O7QaGK+JviTvKG6vC+1LGf3/9wJnAu2Thaw7TJesIc2enV4qZV8RulaH946TjxPVwNqadovQ2q6ZJTl9/0AAAAASUVORK5CYII=" style="width:0.16667in;height:0.16667in" alt="2️⃣" /> Giai đoạn Tăng trưởng</p>
+<p>- Đa dạng hóa danh mục: từ điện thoại phổ thông đến smartphone đời đầu.</p>
+<p>- Chiến dịch marketing mạnh mẽ, củng cố hình ảnh "điện thoại quốc dân".</p>
+<p>- Gia tăng cải tiến về mẫu mã nhưng còn hạn chế đổi mới về công nghệ phần mềm.</p>
+<p>→ Chiến lược đúng: Mở rộng phân khúc, gia tăng độ phủ thương hiệu.</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAADAFBMVEUXGB0bHCI0NkETFBkjJCssLjcaGyEZGyEbHSMeICchIiooKjISExgVFhshIypGSVcmKC8qKzRCRVI9QEw3OkU0NkEtLzkxMz0aGyHZ2dvp6epnaW+vsLN3eH+7vL9UVl719fbLy82dnqKBgogAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB5LfCQAAAADnRSTlMBI97g39/cGy2AvGpq9bDRgBQAAAGiSURBVHhedVPtktsgDJQEJv7K5WY6ff8HzI82HRs7GNCBsB2aXncYG63EWhYSQsHF7ZsD5lnemB8t4lo7BS1zJnPA4D44vPsB9K9uloChi9+4ExQtMxC07rvjgujapNANseKQKwNoXnRFIV89QZz0yTCCuoQLAsrqjDdE4ap8sdOaDLn0FczJ8idrfOITOHxK8nkpR4caoAOP9mHV09hRyiPQ2VW2Ci02QGvrLuHgUp6nH+wqO06U2TnMCpxfLIw8yIOTtCQ6K+Q0dpuI0KPRx82Q5JA1d6wjtJuPmDPL4HL8BP9gXjw9lorLsa/qpqNqDbew/RWwNac1QeRBrdzYwm1FoYpP+KPaiOZssJJDU61UT262YpQkWTQ2YFeJsVCiQMACuKkgG8MQVCHFfeCDhmuTSqjGAM0rraMkEH9fA3QaXLNAN53+1DDpFiFiJE5XpFefmqKdF6EwstcI/SkCXSo1aLuPTIa3qdFuVvZU9+7O9I8l/cO9F/MfP8T+Lr0w4lA03tHPPEkjjMvPd5/gnv9GOiUNr3+fLqVfw5vx3/H/Ai3jsk2+g352AAAAAElFTkSuQmCC" style="width:0.16667in;height:0.16667in" alt="3️⃣" /> Giai đoạn Trưởng thành</p>
+<p>- Vẫn giữ thị phần lớn nhưng bắt đầu cho thấy dấu hiệu bão hòa.</p>
+<p>- Nokia chậm đổi mới công nghệ khi xu hướng smartphone màn hình cảm ứng bùng nổ.</p>
+<p>- Tự mãn với vị thế dẫn đầu, không kịp thời tái định vị thương hiệu.</p>
+<p>→ Sai lầm chiến lược: Không nhanh chóng thích nghi với sự thay đổi trong nhu cầu thị trường.</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAADAFBMVEUXGB0eICchIioZGyEnKDEeHyYbHSMbHCIyND8TFBkSExgoKjIxMz1CRFFGSVcgIik7PkomKDAjJCwrLDY2OEMaGyHl5eaLjJB2d327vL/z8/Pe3t+XmJ3Oz9CsrK9kZWyhoqcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADHQFY+AAAADHRSTlMBgLwb394tI97famrCMz4VAAABc0lEQVR4XnVT2XKDMAy0ZGNIyHR6/P8nNg8dmgHjozowV9INxPJqLSTZBqOwbjEqYtJReD9Ds3cymlKaQCPQ26cu8XgCjvaXQpP/UkR3RsEOZhJ4U165CRAjJmvy+5LOC1wHg6RjU4JoJIA1YgTjrOZf6p9tvQlTDepn5yInuqHLyVymSkVHfXDyDYXrI24zxnHqQije0ro6105uXY6fodx72FMUYVwnYxvsr2ejEipdFV/RYK6eBZpDJw/mOX1Xh1IiaGXBSBVMfhDnXKl2idDK75a6gcbRcNlKEaDNb7Jqutk8ONb7BKFW/4NrPdhM9iqWS+jNg4sR3hjN+yM3WARsOFB26Uim4u59LSmjTSlbYVWQOYjjA8iAPk1zaZTd91Q2nAUrI8AnZg/eFdreoyJnhI2KtpjmdAIecaznJY0ZTfHHQwu2rH7PF8LbWy3gCSFRTwNpzg6F9xAkm2u5nX2CAR5LjXR5ZecOmLbLy/j3+v8BgSSLvfWa6r8AAAAASUVORK5CYII=" style="width:0.16667in;height:0.16667in" alt="4️⃣" /> Giai đoạn Suy thoái</p>
+<p>- iPhone và Android nhanh chóng chiếm lĩnh thị trường smartphone.</p>
+<p>- Các sản phẩm Nokia mất dần sức hút với người tiêu dùng.</p>
+<p>- Cuối cùng, Nokia bán lại mảng thiết bị di động cho Microsoft vào năm 2013.</p>
+<p>→ Sai lầm chiến lược: Thiếu sự chuyển đổi và đổi mới kịp thời khi sản phẩm bước vào giai đoạn suy thoái.</p>
+<p>Nokia là minh chứng rõ ràng rằng: Dù một thương hiệu có lớn mạnh đến đâu, nếu không kịp thời thích ứng với vòng đời sản phẩm và xu hướng thị trường, thất bại là điều khó tránh khỏi. Vì vậy, để thành công trong môi trường kinh doanh đầy biến động, hãy luôn: Chiến lược chỉ thực sự hiệu quả khi được lựa chọn đúng thời điểm!</p>
+</div></article>
+<article id="a7" data-q="7" hidden><h2>Câu 7: Các nhóm nhân tố ảnh hưởng đến chiến lược giá (tác động bên trong).</h2><div class="body">
+<p class="l1">+ Khái niệm về giá cả sản phẩm</p>
+<p class="l1">+ Các nhân tố bên trong ảnh hưởng đến giá.</p>
+<p>Trả lời</p>
+<p>- Xét từ <em><strong>góc độ của kinh tế chính trị học</strong></em>:</p>
+<p class="l1">+ Giá cả là biểu hiện bằng tiền của giá trị hàng hóa’.</p>
+<p>- Xét về <em><strong>bản chất:</strong></em></p>
+<p class="l1">+ ‘Giá cả phản ánh mối quan hệ kinh tế trong quá trình trao đổi, là tín hiệu của quan hệ cung cầu về hàng hóa trong từng thời điểm; là sự dung hòa về lợi ích và là kết quả của quá trình cạnh tranh giữa hai chủ thể trên thị trường.’</p>
+<p>- Xét từ <em><strong>góc độ của hành vi mua, bán thì người mua và người bán</strong></em> có quan niệm khác nhau về giá cả:</p>
+<blockquote>
+<p>Với người mua: Giá cả của hàng hóa là số tiền mà người mua phải trả cho người bán để được sở hữu hoặc sử dụng hàng hóa, dịch vụ.</p>
+<p>Với người bán: Giá cả là số tiền mà người bán thu được của người mua từ việc cung cấp hàng hóa, dịch vụ đó.</p>
+</blockquote>
+<p>- Xét từ <em><strong>góc độ của kinh doanh</strong></em></p>
+<p class="l1">+ Giá cả là 1 biến số tạo nên doanh thu và lợi nhuận của doanh nghiệp.</p>
+<p>* Các nhân tố bên trong ảnh hưởng đến giá cả sản phẩm</p>
+<p>- <em><strong>Mục tiêu chiến lược marketing trong từng thời kỳ</strong></em>: mục tiêu này được xác định phụ thuộc vào từng hoàn cảnh kinh doanh cụ thể</p>
+<p class="l1">+ <em><strong>Mục tiêu đảm bảo sống còn</strong></em>: các nhà kinh doanh đang gặp những khó khăn rất căn bản do sự biến động của nhu cầu thị trường hoặc sự cạnh tranh gay gắt trên thị trường đem lại. Lúc này, mục tiêu sống còn quan trọng hơn lợi nhuận nên DN chấp nhận hạ giá bán để giải phóng hàng tồn kho. Nhờ đó mà cầm cự được trong 1 khoảng thời gian để vượt qua khó khăn và chờ đợi cơ hội mới.</p>
+<p class="l1">+ <em><strong>Mục tiêu tối đa hóa lợi nhuận trước mắt:</strong></em> trong trường hợp các nhà kinh doanh có những lợi thế đặc biệt như: có độc quyền sản phẩm do công nghệ và kĩ thuật mới, sự tăng trưởng về cầu sản phẩm rất mạnh mẽ, vị thế và uy tín trong kinh doanh cao…, Với mục tiêu này, giá bán được tính toán sao cho lợi nhuận tối đa. Lúc này đối với các nhà kinh doanh, các chỉ tiêu tài chính trước mắt quan trọng hơn các chỉ tiêu tài chính lâu dài. Có thể thấy cách định giá này thể hiện trong chính sách “hớt váng sữa” hoặc định giá trong ưu thế độc quyền tuyệt đối.</p>
+<p class="l1">+ <em><strong>Mục tiêu dẫn đầu về thị phần:</strong></em> nhiều DN có mong muốn đứng đầu về các chỉ tiêu thị phần, họ hy vọng với thị phần lớn nó sẽ gặt hái được lợi nhuận trong kinh doanh 1 cách lâu dài nhờ hiệu quả gia tăng theo quy mô. Để giành được vị trí đứng đầu, họ chấp nhận hạ giá sản phẩm tới mức có thể</p>
+<p class="l2">++ Cạnh tranh về giá: giá bán thấp hơn so với đối thủ cạnh tranh----&gt; Thu hút khách hàng, tăng khối lượng tiêu thụ và mở rộng thị phần.</p>
+<p class="l2">++ Lợi thế cạnh tranh dài hạn: thị phần bằng số lượng hàng hoá tiêu thụ</p>
+<p class="l1">+ <em><strong>Mục tiêu giành vị trí hàng đầu về chất lượng sản phẩm:</strong></em></p>
+<p class="l2">++ Doanh nghiệp đặt ra mục tiêu đứng đầu về chất lượng sản phẩm, tức là sản phẩm của họ có chất lượng cao nhất trong tất cả các sản phẩm cùng loại trên thị trường.</p>
+<p>=&gt; Trong trường hợp này, các nhà kinh doanh thường phải định giá cao cho khách hàng để bù đắp các chi phí đầu tư lớn cho nghiên cứu, thiết kế, công nghệ kỹ thuật cao.</p>
+<p class="l2">++ DN thay đổi nhận thức của KH về giá cả, chất lượng sản phẩm</p>
+<p class="l2">++ Hoạt động nghiên cứu, hỗ trợ sản phẩm, phát triển hoạt động chăm sóc khách hàng trước, trong và sau mua hàng.</p>
+<p class="l1">+ <em><strong>Mục tiêu khác:</strong></em> tùy thuộc vào từng thời kỳ phát triển của kinh doanh, chu kỳ sống của sản phẩm cũng như hoàn cảnh cụ thể trên thị trường các nhà kinh doanh có thể xác định cho mình các mục tiêu khác của chiến lược Marketing hợp lý.</p>
+<p>=&gt; Ảnh hưởng mạnh mẽ tới việc xác định giá bán.</p>
+<p>- <em><strong>Chi phí sản xuất kinh doanh</strong></em> là nhân tố ảnh hưởng có ý nghĩa quyết định đến giá bán sản phẩm nếu nhìn từ góc độ bản chất vấn đề. Cũng là bước đầu tiên để các nhà kinh doanh đưa ra quyết định về giá bán.</p>
+<p class="l1">+ Giá bán được hình thành dựa trên chi phí sản xuất và chi phí Marketing. Ngược lại, giá bán tác động đến khối lượng hàng hóa tiêu thụ, từ đó, ảnh hưởng tới chi phí sản xuất.</p>
+<p class="l1">+ Giá thành là chi phí cho việc sản xuất và kinh doanh 1 đơn vị sản phẩm. Về nguyên tắc, giá thành là giới hạn tối thiểu mà DN phải tính đến khi xác định giá bán.</p>
+<p class="l2">++ Trong ngắn hạn, quyết định đó nhằm thực hiện những mục tiêu trong kinh doanh mang tính chất tạm thời.</p>
+<p class="l2">++ Trong dài hạn, quyết định đó sẽ dẫn tới doanh nghiệp đến nguy cơ phá sản tất yếu.</p>
+<p class="l1">+ Khi doanh nghiệp có khả năng kiểm soát được chi phí sản xuất kinh doanh của mình, họ có thể hoàn toàn chủ động để đưa ra các quyết định marketing phù hợp, ngoài ra các quyết định về giá bán sẽ giúp họ đảm bảo ổn định và đảm bảo kinh doanh hiệu quả hơn.</p>
+<p>- <em><strong>Uy tín và chất lượng sản phẩm:</strong></em> chất lượng, uy tín sản phẩm là những nhân tố quan trọng ảnh hưởng đến giá bán, vì vậy, DN cần tính toán khi xác định giá bán sản phẩm. Thực tế cho thấy: giá cả của sản phẩm chịu sự chi phối chủ yếu ở chất lượng, giá trị thương hiệu của sản phẩm chứ không phải là chi phí sản xuất, chi phí Marketing</p>
+<p class="l1">+ Phân tích cảm nhận của KH về chất lượng sản phẩm</p>
+<p class="l1">+ Những sản phẩm có uy tín và chất lượng cao trên thị trường cho phép DN khai thác triệt để yếu tố giá để tăng cường cạnh tranh trên thị trường. Có thể định giá cao thu nhiều lợi nhuận mà không bị phản ứng gay gắt từ phía KH.</p>
+<p>- <strong>Các nhân tố khác:</strong></p>
+<p class="l1">+ Giá cả còn chịu tác động của đặc tính của sản phẩm, việc phân cấp trong quản lý điều hành giá của doanh nghiệp tùy thuộc vào đặc tính của các sản phẩm cụ thể để các nhà kinh doanh đưa ra những quyết định hợp lý về giá cả.</p>
+<p class="l2">++ Những sản phẩm tiêu thụ mang tính thời vụ -----&gt;ảnh hưởng mạnh mẽ của quan hệ cung cầu đến giá bán</p>
+<p class="l2">++ Những sản phẩm khó bảo quản -------&gt; giá bán chịu ảnh hưởng quyết định của chất lượng sản phẩm</p>
+<p class="l2">++ Những hàng hóa sản xuất theo số lượng bị hạn chế ----------&gt;định giá rất cao.</p>
+<p class="l1">+ Các doanh nghiệp có thể thực hiện những mô hình quản lý khác nhau</p>
+<p class="l2">++ Trong cơ chế quản lý giá cứng doanh nghiệp sẽ quyết định giá bán cho từng sản phẩm và danh mục hàng hóa</p>
+<p class="l2">++ Trong cơ chế quản lý giá mềm doanh nghiệp sẽ quản lý khung giá và có khả năng linh hoạt hơn trong quyết định giá bán sản phẩm của mình.</p>
+<p>===&gt; Như vậy, các nhân tố này doanh nghiệp hoàn toàn có thể kiểm soát được tác động của nó tới quyết định về giá.</p>
+<p><strong>VD: iPhone của Apple</strong></p>
+<ul>
+<li><blockquote>
+<p>Mục tiêu Marketing: Apple định vị iPhone là sản phẩm công nghệ cao cấp, đồng thời duy trì hình ảnh thương hiệu và tạo sự khác biệt trên thị trường. Vì vậy, Apple áp dụng mức giá tương đối cao thay vì cạnh tranh chủ yếu bằng giá thấp.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Chi phí sản xuất: iPhone có chi phí lớn cho nghiên cứu và phát triển công nghệ, chip, camera, màn hình, thiết kế, phần mềm và Marketing. Do đó, mức giá bán phải đủ để bù đắp chi phí và đảm bảo lợi nhuận cho doanh nghiệp.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Định vị sản phẩm: iPhone được định vị ở phân khúc smartphone cao cấp, gắn với chất lượng, thiết kế, công nghệ và hệ sinh thái Apple. Vì vậy, Apple duy trì mức giá cao để phù hợp với định vị và hình ảnh thương hiệu.</p>
+</blockquote></li>
+</ul>
+<h3 id="các-nhân-tố-bên-trong-ảnh-hưởng-đến-chiến-lược-giá-của-vinamilk">(Các nhân tố bên trong ảnh hưởng đến chiến lược giá của Vinamilk</h3>
+<ul>
+<li><blockquote>
+<p>Mục tiêu của doanh nghiệp quyết định mức giá mà Vinamilk lựa chọn.</p>
+</blockquote></li>
+</ul>
+<blockquote>
+<p class="l2">++ Mục tiêu tồn tại: Khi sản phẩm tiêu thụ chậm hoặc cạnh tranh gay gắt, Vinamilk có thể giảm giá, khuyến mại để kích thích nhu cầu và duy trì sản phẩm trên thị trường.</p>
+<p class="l2">++ Tối đa hóa lợi nhuận ngắn hạn: Với sản phẩm có giá trị cảm nhận cao như Vinamilk Green Farm, doanh nghiệp có thể định giá cao hơn để khai thác khả năng chi trả của khách hàng và tăng lợi nhuận.</p>
+<p class="l2">++ Dẫn đầu thị phần: Với các sản phẩm hướng tới thị trường đại chúng, Vinamilk có thể duy trì mức giá phù hợp, nhiều quy cách đóng gói và chương trình khuyến mại để sản phẩm dễ tiếp cận, từ đó mở rộng thị phần.</p>
+<p class="l2">++ Dẫn đầu về chất lượng: Với sản phẩm cao cấp, doanh nghiệp có thể áp dụng mức giá cao hơn để phù hợp với định vị chất lượng và bù đắp nguồn lực đầu tư cho chất lượng.</p>
+</blockquote>
+<p>→ Tác dụng: Mỗi mục tiêu Marketing khác nhau sẽ dẫn Vinamilk đến một cách định giá khác nhau.</p>
+<ul>
+<li><blockquote>
+<p>Chi phí là cơ sở để Vinamilk xác định mức giá tối thiểu nhằm đảm bảo hoạt động kinh doanh có hiệu quả.</p>
+</blockquote></li>
+</ul>
+<blockquote>
+<p class="l2">++ Chi phí nguyên liệu, sản xuất, đóng gói, vận chuyển, Marketing và phân phối càng cao thì áp lực lên giá bán càng lớn.</p>
+<p class="l2">++ Việc sản xuất quy mô lớn, ứng dụng công nghệ và nâng cao năng suất giúp doanh nghiệp kiểm soát chi phí tốt hơn, từ đó có khả năng xây dựng mức giá cạnh tranh.</p>
+</blockquote>
+<p>→ Tác dụng: Chi phí quyết định giới hạn thấp của giá, giúp Vinamilk vừa cạnh tranh vừa đảm bảo lợi nhuận.</p>
+<ul>
+<li><blockquote>
+<p>Với các dòng sản phẩm cao cấp như Green Farm, Vinamilk có thể định vị giá cao hơn sản phẩm đại trà nhờ sự kết hợp giữa thương hiệu, chất lượng và giá trị mà khách hàng cảm nhận.</p>
+</blockquote></li>
+</ul>
+<p>→ Tác dụng: Uy tín và chất lượng giúp Vinamilk tăng khả năng chấp nhận mức giá và hỗ trợ định giá theo giá trị cảm nhận.</p>
+<ul>
+<li><blockquote>
+<p>Vinamilk không thể sử dụng một mức giá cho tất cả sản phẩm mà phải phân biệt giá theo dòng sản phẩm, chất lượng, đối tượng khách hàng và quy cách đóng gói.</p>
+</blockquote></li>
+</ul>
+<p>→ Tác dụng: Giúp Vinamilk xây dựng cơ cấu giá phù hợp với từng phân khúc, vừa đáp ứng nhu cầu khách hàng vừa tối ưu doanh thu và lợi nhuận.</p>
+<p>→ Kết luận: Chiến lược giá của Vinamilk chịu tác động đồng thời của mục tiêu Marketing, chi phí, uy tín – chất lượng và đặc điểm sản phẩm. Trong đó, mục tiêu quyết định doanh nghiệp muốn đạt gì; chi phí xác định giới hạn giá; uy tín và chất lượng quyết định khả năng khách hàng chấp nhận giá; còn đặc điểm sản phẩm giúp doanh nghiệp điều chỉnh giá cho từng phân khúc.)</p>
+</div></article>
+<article id="a8" data-q="8" hidden><h2>Câu 8: Nêu ưu và nhược điểm của kênh phân phối trực tiếp hoặc kênh phân phối gián tiếp.</h2><div class="body">
+<p class="l1">+ Khái niệm về phân phối, kênh phân phối</p>
+<p class="l1">+ Các loại kênh phân phối</p>
+<p class="l1">+ Khái niệm về kênh phân phối trực tiếp, ưu nhược điểm, điều kiện áp dụng</p>
+<p class="l1">+ Khái niệm gì kinh phân phối gián tiếp, ưu và nhược điểm, đk áp dụng</p>
+<p>Trả lời:</p>
+<p>- Trong Marketing, <em><strong>phân phối</strong></em> được hiểu là các quá trình tổ chức, kinh tế và kĩ thuật nhằm điều hành và vận chuyển hàng hóa từ nơi sản xuất đến người tiêu dùng đạt hiệu quả kinh tế cao</p>
+<p>- Kênh phân phối là đường đi và phương thức di chuyển hàng hóa từ người sản xuất đến người tiêu dùng cuối cùng.</p>
+<p>- Doanh nghiệp có thể sử dụng 2 loại hình kênh phân phối cơ bản là kênh phân phối trực tiếp và kênh phân phối gián tiếp</p>
+<p class="l1">+ <strong>Kênh phân phối trực tiếp</strong> (kênh phân phối không cấp) là loại kênh không có sự tham gia của trung gian phân phối; hàng hóa không qua trung gian phân phối và được chuyển trực tiếp từ người sản xuất đến người tiêu dùng.</p>
+<p class="l2">++ <strong>Ưu điểm:</strong></p>
+<p class="l3">+++ Đảm bảo mối quan hệ trực tiếp giữa người sản xuất và người tiêu dùng. Nhờ đó hàng hóa đáp ứng nhu cầu kịp thời cụ thị trường, người sản xuất nắm chắc thông tin về thị trường và khách hàng hơn.</p>
+<p class="l3">+++ Giảm chi phí lưu thông và tiêu thụ sản phẩm, hạ giá thành, tạo cơ hội tập trung lợi nhuận và tăng khả năng cạnh tranh về giá bán</p>
+<p class="l2">++ <em><strong>Nhược điểm:</strong></em></p>
+<p class="l3">+++ Làm tăng khối lượng công việc cho nhà sản xuất do vừa phải sản xuất vừa làm nhiệm vụ tiêu thụ bị phân tán lực lượng.</p>
+<p class="l3">+++ Nếu trình độ chuyên môn hóa thấp sẽ dẫn đến hiệu quả kinh doanh nói chung bị hạn chế</p>
+<p class="l3">+++ 1 số vấn đề khác như: khả năng mở rộng thị trường hạn chế, vốn ứ động, khó khăn về tài chính, người sx chịu hoàn toàn rủi ro…</p>
+<p class="l2">++ <strong>Điều kiện áp dụng:</strong></p>
+<p class="l3">+++ Những mặt hàng đặc biệt như nông sản, thực phẩm tươi sống, hàng dễ vỡ, hàng hóa có khối lượng vận chuyển và bốc xếp lớn.</p>
+<p class="l3">+++ Dùng trong kinh doanh dịch vụ, tiêu thụ nội bộ hoặc các nhà kinh doanh có quy mô nhỏ, liên kết.</p>
+<p><strong>VD: TH true milk</strong></p>
+<ul>
+<li><blockquote>
+<p>Khi mới tham gia thị trường sữa tươi, để cạnh tranh với Vinamilk, TH true milk đã lựa chọn kênh phân phối trực tiếp thông qua phát triển hệ thống TH true mart nhằm đưa sản phẩm trực tiếp đến người tiêu dùng.</p>
+</blockquote></li>
+<li><blockquote>
+<p>Kênh trực tiếp giúp TH true milk chủ động kiểm soát giá bán, trưng bày, hình ảnh thương hiệu và tương tác trực tiếp với khách hàng, từ đó thu thập phản hồi và xây dựng niềm tin. Tuy nhiên, doanh nghiệp phải tự đầu tư cửa hàng và chịu chi phí vận hành cao.</p>
+</blockquote></li>
+</ul>
+<p>→ Qua đó cho thấy kênh trực tiếp phù hợp với doanh nghiệp muốn kiểm soát chặt hoạt động bán hàng và xây dựng thương hiệu trong giai đoạn cạnh tranh.</p>
+<p class="l1">+ <em><strong>Kênh phân phối gián tiếp</strong></em>: là loại kênh phân phối có sự tham gia của các trung gian phân phối. Khi đưa hàng hóa từ người sx đến người tiêu dùng, hàng hóa đã trải qua 1 số lần thay đổi quyền sở hữu tài sản.</p>
+<p class="l2">++ Ưu điểm:</p>
+<p class="l3">+++ Hàng hóa được phân phối rộng khắp trên nhiều vùng thị trường khác nhau</p>
+<p class="l3">+++ Do chuyên môn hoá trong sx và hoạt động thương mại nên cho phép người sản xuất tập trung được mọi nguồn lực của mình vào sản xuất</p>
+<p class="l3">+++ Phát huy lợi thế của những nhà trung gian phân phối</p>
+<p>=&gt; Làm tăng khả năng cạnh tranh và chi phối thị trường</p>
+<p class="l3">+++ Giúp người sản xuất tránh tình trạng ứ đọng vốn vào dự trữ hàng hóa, giảm rủi ro kinh doanh</p>
+<p class="l2">++ Nhược điểm:</p>
+<p class="l3">+++ Kéo dài khoảng cách giữa người sản xuất và người tiêu dùng cả về không gian và thời gian, làm hàng hóa đến tay người tiêu dùng chậm.</p>
+<p class="l3">+++ Khó nắm bắt các thông tin về thị trường và khách hàng</p>
+<p class="l3">+++ Tăng chi phí cho hoạt động thương mại, nhất là hàng trong trường hợp tổ chức các khâu trung gian bất hợp lý và nếu không quản lý hiệu quả sẽ đẩy giá lên cao.(không tập trung được lợi nhuận)</p>
+<p class="l2">++ <strong>Điều kiện áp dụng:</strong> doanh nghiệp sản xuất quy mô lớn (có lợi thế về chi phí, danh mục sản phẩm đa dạng,...), hàng hóa công nghiệp tiêu dùng, các sản phẩm chuyên môn hóa cao.</p>
+<p>Ví dụ: Vinamilk</p>
+<p class="l1">+ Vinamilk sử dụng kênh phân phối gián tiếp thông qua nhà phân phối, đại lý và các cửa hàng bán lẻ (VinMart, Lotte Mart, Bách Hóa Xanh, Circle K,...) để đưa sản phẩm đến người tiêu dùng.</p>
+<p class="l1">+ Kênh Pp gián tiếp giúp Vinamilk mở rộng độ bao phủ thị trường, sản phẩm được trưng bày trong môi trường mua sắm hiện đại, thuận tiện cho khách hàng so sánh và lựa chọn. Vinamilk cũng có thể phối hợp với các điểm bán để thực hiện trưng bày sản phẩm, khuyến mại, dùng thử, từ đó vừa tăng khả năng tiếp cận khách hàng vừa kích thích quyết định mua.Tuy nhiên, doanh nghiệp phải chia sẻ một phần quyền kiểm soát hoạt động bán hàng với các trung gian và phát sinh chi phí quản lý, chiết khấu cho kênh.</p>
+<p>→ Qua đó cho thấy kênh gián tiếp phù hợp với Vinamilk khi doanh nghiệp muốn mở rộng thị trường, tăng độ phủ sản phẩm và nâng cao khả năng tiêu thụ thông qua mạng lưới trung gian.</p>
+</div></article>
+<article id="a9" data-q="9" hidden><h2>Câu 9: Nêu chức năng của quảng cáo.</h2><div class="body">
+<p>- Quảng cáo bao gồm các hoạt động giới thiệu và truyền đi các thông tin về SP và hình ảnh của DN nhằm kích thích khách hàng tiêu thụ SP, nâng cao uy tín của DN và tăng cường khả năng cạnh tranh thị trường.</p>
+<p><strong>- Theo Philip Kotler</strong>: <em><strong>Quảng cáo</strong></em> là hình thức truyền thông <em><strong>không trực tiếp, phi các nhân</strong></em> nhằm khuếch trương ý tưởng, hàng hóa hay dịch vụ và chủ thể quảng cáo <em><strong>phải chịu chi phí.</strong></em></p>
+<p>- Năm quyết định quan trọng khi xây dựng chương trình quảng cáo</p>
+<p class="l1">+ Mục tiêu của quảng cáo là gì?</p>
+<p class="l1">+ Có thể chi bao nhiêu tiền?</p>
+<p class="l1">+ Cần phải gửi đi thông điệp nào?</p>
+<p class="l1">+ Cần phải sử dụng phương tiện truyền thông nào?</p>
+<p class="l1">+ Cần đánh giá kết quả như thế nào?</p>
+<p><strong>- <em>Vì sao cần phải qcao</em></strong></p>
+<p class="l1"><strong>+ S</strong>ự thiếu thông tin của khách hàng</p>
+<p class="l1">+ Sự thiếu kiến thức về sản phẩm của khách hàng</p>
+<p class="l1">+ Quảng cáo là công cụ truyền thông marketing có ảnh hưởng mạnh mẽ đến tâm lý và nhận thức của khách hàng.</p>
+<p>- <em><strong>Chức năng của quảng cáo</strong></em></p>
+<p class="l1">+ <em><strong>Thu hút sự chú ý của khách hàng với sản phẩm và doanh nghiệp</strong></em></p>
+<p class="l2">++ Đây là chức năng đầu tiên, rất quan trọng, đòi hỏi mọi chương trình quảng cáo cần phải quán triệt bởi thông tin đến với khách hàng bị hạn chế và họ thường có tâm lý thờ ơ trước chương trình quảng cáo của nhà kinh doanh.</p>
+<p class="l2">++ Để gây được sự chú ý của khách hàng, đòi hỏi chương trình quảng cáo phải tác động vào các tất cả các giác quan của con người, nhắm đánh đúng vào tâm lý của khách hàng, tạo ra bầu không khí thuận lợi cho sự giao lưu, thông tin giữa doanh nghiệp và khách hàng.</p>
+<p class="l2">++ Các doanh nghiệp cần chú ý tới những vấn đề:</p>
+<p>Lựa chọn phương tiện quảng cáo</p>
+<p>Lựa chọn vị trí đặt quảng cáo</p>
+<p>Chọn thời điểm quảng cáo</p>
+<p>Chọn hình thức quảng cáo.</p>
+<p class="l1">+ <em><strong>Thuyết phục khách hàng tiêu dùng hàng hóa, dịch vụ</strong></em></p>
+<p class="l2">++ Thuyết phục KH là chức năng quan trọng nhất, thể hiện rõ mục tiêu của quảng cáo. Quảng cáo là nhằm để bán hàng hóa hoặc dịch vụ và vì vậy, trong 1 chương trình, nội dung của thông tin quảng cáo có ý nghĩa đặc biệt quan trọng.</p>
+<p class="l2">++ Để thuyết phục khách hàng tiêu dùng hàng hóa, dịch vụ các DN cần thực hiện việc nghiên cứu kĩ lưỡng về khách hàng trên các phương diện như: đối tượng mua hàng, mục đích tiêu dùng, đặc điểm và yêu cầu tiêu dùng, khối lượng và thời gian tiêu dùng, ...</p>
+<p class="l2">++ Trong chương trình quảng cáo cần phải thuyết phục khách hàng bằng những thông tin như: lợi ích của việc tiêu dùng sản phẩm, chất lượng của sản phẩm, ưu thế về giá cả, dịch vụ hoặc phương thức mua hàng,…</p>
+<p class="l1">+ <em><strong>Hướng dẫn, giáo dục tiêu dùng.</strong></em></p>
+<p class="l2">++ Doanh nghiệp thực hiện nhiệm vụ định hướng và giáo dục tiêu dùng đến với khách hàng.</p>
+<p class="l2">++ Thông tin trong chương trình quảng cáo chỉ rõ cho khách hàng thấy cái lợi và cái hại khi tiêu dùng sản phẩm, hướng dẫn sử dụng hợp lý sản phẩm, khuyến khích hoặc hạn chế việc tiêu dùng 1 số sản phẩm.</p>
+<p class="l2">++ Khi xây dựng chương trình quảng cáo, các doanh nghiệp cần nghiên cứu kỹ đặc điểm của khách hàng ở từng vùng thị trường khác nhau, đặc điểm và ảnh hưởng của các yếu tố môi trường, đặc điểm của việc tiêu dùng sản phẩm, các giải pháp hữu hiệu để làm tăng hiệu quả tiêu dùng ...</p>
+<p>=&gt;Từ đó, có những định hướng tiêu dùng phù hợp và hữu hiệu nhất</p>
+<p>VD: Quảng cáo sữa tươi 100% Vinamilk</p>
+<p class="l1">+ Vinamilk sử dụng hình ảnh những chú bò vui nhộn, đồng cỏ xanh tươi, màu sắc bắt mắt và âm nhạc sôi động để tạo ấn tượng ngay từ đầu với người xem. Hình ảnh những chú bò khỏe mạnh, vui vẻ trên đồng cỏ giúp quảng cáo trở nên sinh động, dễ nhớ, đồng thời tạo liên tưởng đến nguồn sữa tươi tự nhiên. Nhờ đó, sản phẩm sữa tươi 100% Vinamilk dễ dàng nổi bật và được ghi nhớ trong tâm trí khách hàng.</p>
+<p class="l1">+ Sau khi thu hút sự chú ý, Vinamilk tập trung làm nổi bật chất lượng và độ an toàn của sản phẩm thông qua thông điệp “Tiêu chuẩn 3 không”: <em>không sử dụng hoóc-môn tăng trưởng cho bò, không có dư lượng thuốc kháng sinh và thuốc trừ sâu, không sử dụng chất bảo quản</em>. Những thông tin này đánh đúng vào mối quan tâm của khách hàng về sức khỏe, chất lượng và an toàn thực phẩm, từ đó tạo niềm tin và làm khách hàng có thêm lý do lựa chọn sữa tươi 100% Vinamilk.</p>
+<p class="l1">+ Thông qua quảng cáo, Vinamilk không chỉ giới thiệu sản phẩm mà còn cung cấp cho người tiêu dùng những thông tin cần quan tâm khi lựa chọn sữa như nguồn nguyên liệu, độ an toàn, chất lượng và quy trình tạo ra sản phẩm. Thông điệp “3 không” giúp khách hàng hiểu rõ hơn về những yếu tố liên quan đến chất lượng sữa, từ đó có cơ sở lựa chọn sản phẩm phù hợp và an tâm hơn khi tiêu dùng.</p>
+<p>⇒ Qua đó, quảng cáo vừa kích thích tiêu dùng, vừa góp phần xây dựng niềm tin và hình ảnh thương hiệu Vinamilk.</p>
+</div></article>
+<div class="ctl"><button class="btn" id="prev">Câu trước</button><button class="btn p" id="dn"></button><button class="btn" id="next">Câu sau</button></div>
+</section>
+<section id="p-tom" hidden>
+<div class="top" style="margin-bottom:1rem"><p class="sub">Ý chính từng câu. Bật che nội dung, tự nhớ rồi bấm từng dòng để kiểm tra.</p><button class="btn" id="mk">Che nội dung</button></div>
+<div id="sm"></div>
+</section>
+<section id="p-kt" hidden><div id="kz"></div></section>
+<section id="p-tc" hidden>
+<div class="gt"><button class="btn p" data-g="m">Ghép cặp</button><button class="btn" data-g="o">Sắp xếp thứ tự</button><button class="btn" data-g="t">Đúng hay sai</button><button class="btn" data-g="c">Điền chỗ trống</button></div>
+<div id="gm"><p class="stat">Mỗi lượt chơi xáo ngẫu nhiên câu hỏi và đáp án, lấy nội dung từ cả 9 câu, các lượt liên tiếp không lặp lại cho đến khi hết bộ. Ghép cặp và Đúng hay sai được tính vào lộ trình; Sắp xếp thứ tự và Điền chỗ trống để chơi thêm nếu còn thời gian.</p></div>
+</section>
+</main>
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const T=["Các giai đoạn phát triển của lý thuyết Marketing", "Phân tích 1 nhân tố ảnh hưởng của môi trường vĩ mô (kinh tế, công nghệ, nhân khẩu học)", "Các giai đoạn quá trình thông qua quyết định mua của người tiêu dùng", "Phân đoạn thị trường (4đ)", "Các cấp độ của vòng đời sản phẩm", "Các giai đoạn vòng đời sản phẩm.", "Các nhóm nhân tố ảnh hưởng đến chiến lược giá (tác động bên trong).", "Nêu ưu và nhược điểm của kênh phân phối trực tiếp hoặc kênh phân phối gián tiếp.", "Nêu chức năng của quảng cáo."];
+const S=[
+["<b>Thị trường</b>: mọi khách hàng hiện tại và tương lai có cùng nhu cầu, mong muốn cụ thể và có khả năng tham gia trao đổi.","<b>MKT cổ điển</b> (cuối TK19 – giữa TK20, phổ biến ở Mỹ): thị trường của người bán; tư tưởng “bán cái DN có”; mục tiêu sản xuất và bán thật nhiều; hoạt động tìm thị trường, kích thích tiêu thụ.","<b>MKT hiện đại</b> (giữa TK20 – nay; Kotler: hoạt động nhằm thỏa mãn nhu cầu, mong muốn thông qua trao đổi): tư tưởng “bán cái thị trường cần”; triết lý “khách hàng luôn đúng”; hoạt động: nghiên cứu TT → thiết kế, sản xuất → tiêu thụ → dịch vụ sau bán.","<b>Bản chất</b>: thỏa mãn nhu cầu khách hàng bằng sản phẩm tốt hơn đối thủ, qua trao đổi, trong tương quan giá trị – chi phí. MKT hiện đại kế thừa cổ điển (tư tưởng KD, nội dung hoạt động) và bổ sung phương châm, triết lý."],
+["<b>Môi trường MKT</b> (Kotler): các tác nhân, lực lượng bên ngoài công ty có ảnh hưởng đến hoạt động marketing.","<b>Môi trường vĩ mô có 6 yếu tố</b>: kinh tế, nhân khẩu học, tự nhiên, công nghệ, chính trị – pháp luật, văn hóa – xã hội.","Đề chọn 1 trong 3: kinh tế / nhân khẩu học / công nghệ. Khung trả lời: khái niệm, vai trò → yếu tố cấu thành → tác động đến chiến lược MKT → ví dụ.","<b>Kinh tế</b>: quan trọng nhất với sự vận động, phát triển của thị trường. <b>Nhân khẩu học</b>: đặc điểm dân cư; đô thị hóa ảnh hưởng mạnh tới marketing. <b>Công nghệ</b>: CMKHKT và CNTT. Ví dụ đều lấy từ Vinamilk."],
+["<b>Hành vi người tiêu dùng</b>: toàn bộ hành động NTD bộc lộ trong quá trình trao đổi sản phẩm.","<b>5 giai đoạn mua</b>: Ý thức nhu cầu → Tìm kiếm thông tin → Đánh giá các phương án → Quyết định mua sắm → Hành vi hậu mãi.","<b>Ý thức nhu cầu</b>: do tác nhân bên trong (sinh lý: đói, khát…) hoặc bên ngoài (môi trường KD, chính sách MKT). <b>Tìm kiếm thông tin</b>: trạng thái chú ý tương đối hoặc tích cực tìm kiếm.","<b>Quyết định mua</b>: 2 yếu tố xen giữa ý định và quyết định là thái độ của người khác và tình huống bất ngờ. <b>Hậu mãi</b>: hài lòng hay không; “khách hàng hài lòng là cách quảng cáo tốt nhất”. Ví dụ: mua Macbook."],
+["<b>Phân đoạn thị trường</b>: chia thị trường thành các bộ phận theo tiêu thức nhất định, sao cho trong cùng một đoạn khách hàng đồng nhất về nhu cầu và phản ứng.","<b>Lý do</b>: phía thị trường (một sản phẩm không thỏa mãn mọi khách hàng); phía doanh nghiệp (nguồn lực hạn chế); nâng hiệu quả giải pháp marketing.","<b>4 nhóm tiêu thức</b>: vị trí địa lý, dân cư, xã hội và tâm lý, hành vi.","<b>2 phương pháp</b>: chia cắt, tập hợp. <b>3 chiến lược</b>: không phân biệt, đa phân đoạn, phân đoạn tập trung.","<b>Căn cứ chọn chiến lược</b>: tài chính; mức đồng nhất của sản phẩm; giai đoạn chu kỳ sống; mức đồng nhất của thị trường; chiến lược của đối thủ. <b>Yêu cầu</b>: đo lường được, tiếp cận được, phân biệt rõ và khả thi, quy mô đáng kể."],
+["<i>Lưu ý: đề ghi “cấp độ của vòng đời sản phẩm”, nhưng nội dung là 3 cấp độ cấu thành sản phẩm.</i>","<b>Sản phẩm</b>: bất cứ thứ gì chào bán trên thị trường để thu hút chú ý, được chấp nhận, sử dụng hoặc tiêu thụ và thỏa mãn nhu cầu.","<b>Cốt lõi</b>: lợi ích khách hàng tìm kiếm (VD kem đánh răng: bảo vệ men, chống sâu răng). <b>Hiện thực</b>: nhãn hiệu, bao bì, tính năng, thiết kế kiểu dáng. <b>Bổ sung</b>: bảo hành, lắp đặt, dịch vụ sau bán.","Ví dụ Vinamilk 100%: cốt lõi là dinh dưỡng căn bản; hiện thực là nhãn hiệu và bao bì Tetrapak; bổ sung là chuỗi dịch vụ tiện ích đi kèm."],
+["<b>Chu kỳ sống</b>: thời gian sản phẩm hiện diện trên thị trường; <b>4 giai đoạn</b>: tung ra → phát triển → chín muồi → suy thoái.","<b>Tung ra</b>: tiêu thụ tăng chậm, chi phí MKT lớn, chưa có lãi. Mục tiêu: xâm nhập, tăng nhận thức. 4 chiến lược: hớt váng chớp nhoáng (giá cao, xúc tiến mạnh), hớt váng từ từ (giá cao, xúc tiến yếu), xâm nhập ồ ạt (giá thấp, xúc tiến mạnh), xâm nhập từ từ (giá thấp, xúc tiến yếu).","<b>Phát triển</b>: mục tiêu giành thị phần, mở rộng thị trường, đề phòng cạnh tranh.","<b>Chín muồi</b>: 3 thời kỳ (trưởng thành tăng trưởng, ổn định, suy thoái); 3 chiến lược: cải biến thị trường, cải biến sản phẩm, cải biến Marketing Mix.","<b>Suy thoái</b>: doanh số, lợi nhuận giảm; phát hiện sản phẩm yếu kém; 5 kiểu chiến lược: tăng vốn đầu tư, duy trì, giảm có chọn lọc, thu hoạch vốn, giải thể. <b>6 nhân tố ảnh hưởng</b>: đặc điểm sản phẩm; thị hiếu, tập quán; thu nhập; cách mạng KHKT; môi trường vĩ mô; hoạt động MKT của DN. Ví dụ: Nokia."],
+["<b>Nhân tố bên trong</b> (DN kiểm soát được): mục tiêu chiến lược MKT từng thời kỳ; chi phí sản xuất kinh doanh; uy tín và chất lượng sản phẩm; các nhân tố khác.","<b>Mục tiêu</b>: đảm bảo sống còn; tối đa hóa lợi nhuận trước mắt; dẫn đầu thị phần; dẫn đầu chất lượng; mục tiêu khác.","<b>Chi phí</b>: quyết định tới giá bán; giá thành là giới hạn tối thiểu, dài hạn bán dưới giá thành dẫn tới phá sản.","<b>Uy tín, chất lượng</b>: sản phẩm uy tín cho phép định giá cao (VD iPhone). <b>Khác</b>: đặc tính sản phẩm (thời vụ, khó bảo quản, số lượng hạn chế); quản lý giá cứng hay mềm."],
+["<b>Phân phối</b>: các quá trình tổ chức, kinh tế, kỹ thuật vận chuyển hàng từ nơi sản xuất tới NTD. <b>Kênh phân phối</b>: đường đi và phương thức di chuyển hàng hóa tới NTD cuối cùng.","<b>Kênh trực tiếp</b> (không cấp). Ưu: quan hệ trực tiếp, nắm thông tin, giảm chi phí lưu thông. Nhược: tăng khối lượng công việc, khó mở rộng thị trường, vốn ứ đọng, chịu hoàn toàn rủi ro. Dùng cho nông sản, hàng tươi sống, dễ vỡ, quy mô nhỏ. VD TH true milk.","<b>Kênh gián tiếp</b> (có trung gian). Ưu: phủ rộng, tập trung nguồn lực sản xuất, giảm ứ đọng vốn và rủi ro. Nhược: xa khách hàng, khó nắm thông tin, tăng chi phí thương mại. Dùng cho DN quy mô lớn, hàng công nghiệp tiêu dùng. VD Vinamilk."],
+["<b>Quảng cáo</b> (Kotler): truyền thông không trực tiếp, phi cá nhân, nhằm khuếch trương ý tưởng, hàng hóa, dịch vụ; chủ thể phải chi trả.","<b>5 quyết định</b>: mục tiêu; ngân sách; thông điệp; phương tiện; đánh giá kết quả. <b>Vì sao cần</b>: khách hàng thiếu thông tin, thiếu kiến thức sản phẩm; quảng cáo tác động mạnh tới tâm lý, nhận thức.","<b>3 chức năng</b>: thu hút sự chú ý (đầu tiên); thuyết phục khách hàng (quan trọng nhất); hướng dẫn, giáo dục tiêu dùng. Ví dụ: quảng cáo sữa tươi 100% Vinamilk, thông điệp “Tiêu chuẩn 3 không”."]];
+const QZ=["MKT cổ điển gắn với tư tưởng kinh doanh nào?|Bán cái doanh nghiệp có|Bán cái thị trường cần|Khách hàng luôn đúng|Thỏa mãn tốt nhất nhu cầu thị trường|1",
+"Triết lý kinh doanh của MKT hiện đại là gì?|“Khách hàng luôn đúng”|“Bán cái doanh nghiệp có”|“Sản xuất thật nhiều, bán thật nhiều”|“Độc quyền để thu lợi”|1",
+"Môi trường vĩ mô gồm bao nhiêu yếu tố?|6 yếu tố|4 yếu tố|5 yếu tố|8 yếu tố|2",
+"Yếu tố nào được nêu là quan trọng nhất với sự vận động và phát triển của thị trường?|Môi trường kinh tế|Môi trường tự nhiên|Môi trường văn hóa – xã hội|Môi trường chính trị – pháp luật|2",
+"Quá trình mua hàng của người tiêu dùng trải qua mấy giai đoạn?|5 giai đoạn|3 giai đoạn|4 giai đoạn|6 giai đoạn|3",
+"Hai yếu tố có thể xen giữa ý định mua và quyết định mua là gì?|Thái độ của người khác và tình huống bất ngờ|Giá cả và bao bì|Thu nhập và nghề nghiệp|Quảng cáo và khuyến mại|3",
+"Đoạn thị trường là gì?|Nhóm khách hàng đồng nhất về nhu cầu, phản ứng như nhau với hoạt động MKT|Toàn bộ khách hàng trên thị trường|Nhóm các đối thủ cạnh tranh|Nhóm sản phẩm cùng loại|4",
+"Cách nào KHÔNG thuộc 4 nhóm tiêu thức phân đoạn thị trường?|Theo giá thành sản xuất|Theo vị trí địa lý|Theo dân cư|Theo hành vi|4",
+"Chiến lược phân đoạn nào coi thị trường là một thể đồng nhất?|Không phân biệt|Đa phân đoạn|Phân đoạn tập trung|Cả ba chiến lược|4",
+"Ba cấp độ cấu thành sản phẩm là gì?|Cốt lõi – Hiện thực – Bổ sung|Cốt lõi – Mở rộng – Tiềm năng|Hiện thực – Phụ trợ – Cao cấp|Cơ bản – Hiện thực – Tương lai|5",
+"Nhãn hiệu, bao bì, tính năng, kiểu dáng thuộc cấp độ nào?|Sản phẩm hiện thực|Cốt lõi sản phẩm|Sản phẩm bổ sung|Sản phẩm tiềm năng|5",
+"Giai đoạn nào có chi phí MKT rất lớn và DN chưa có lãi, thậm chí lỗ?|Tung sản phẩm ra thị trường|Phát triển|Chín muồi|Suy thoái|6",
+"Chiến lược “giá cao, xúc tiến mạnh” khi tung sản phẩm là gì?|Hớt váng chớp nhoáng|Hớt váng từ từ|Xâm nhập ồ ạt|Xâm nhập từ từ|6",
+"Mục tiêu của giai đoạn phát triển là gì?|Giành thị phần, mở rộng thị trường, đề phòng cạnh tranh|Xâm nhập và tăng nhận thức khách hàng|Thu hoạch vốn|Giải thể doanh nghiệp|6",
+"Giai đoạn chín muồi chia thành mấy thời kỳ?|3 thời kỳ|2 thời kỳ|4 thời kỳ|5 thời kỳ|6",
+"Giai đoạn suy thoái có mấy kiểu chiến lược marketing?|5 kiểu|3 kiểu|4 kiểu|6 kiểu|6",
+"Nhân tố nào thuộc nhóm tác động bên trong đến chiến lược giá?|Chi phí sản xuất kinh doanh|Hành vi của đối thủ cạnh tranh|Chính sách của Nhà nước|Sức mua của thị trường|7",
+"DN đang gặp những khó khăn rất căn bản thường theo đuổi mục tiêu giá nào?|Đảm bảo sống còn|Tối đa hóa lợi nhuận trước mắt|Dẫn đầu thị phần|Dẫn đầu chất lượng|7",
+"Kênh phân phối trực tiếp còn được gọi là gì?|Kênh không cấp|Kênh một cấp|Kênh hai cấp|Kênh ba cấp|8",
+"Ưu điểm của kênh phân phối gián tiếp là gì?|Phân phối rộng khắp, giảm ứ đọng vốn và rủi ro|Nắm chắc thông tin khách hàng|Hàng đến tay khách nhanh nhất|Tập trung toàn bộ lợi nhuận|8",
+"TH true milk ban đầu chọn kênh nào để cạnh tranh với Vinamilk?|Kênh trực tiếp qua TH true mart|Kênh gián tiếp qua đại lý|Chỉ xuất khẩu|Chỉ bán qua siêu thị|8",
+"Chức năng nào được nêu là quan trọng nhất của quảng cáo?|Thuyết phục khách hàng|Thu hút sự chú ý|Hướng dẫn, giáo dục tiêu dùng|Giảm giá bán|9"
+].map(r=>{const a=r.split('|');return{q:a[0],c:a[1],o:a.slice(1,5),n:+a[5]}});
+const PR=["Hớt váng chớp nhoáng|Giá cao, xúc tiến mạnh","Xâm nhập ồ ạt|Giá thấp, xúc tiến mạnh","Hớt váng từ từ|Giá cao, xúc tiến yếu","Xâm nhập từ từ|Giá thấp, xúc tiến yếu","Cốt lõi sản phẩm|Lợi ích khách hàng tìm kiếm","Sản phẩm hiện thực|Nhãn hiệu, bao bì, tính năng, kiểu dáng","Sản phẩm bổ sung|Bảo hành, lắp đặt, dịch vụ sau bán","Kênh trực tiếp|Không qua trung gian (kênh không cấp)","Kênh gián tiếp|Có trung gian, phủ rộng, chi phí cao","Chiến lược không phân biệt|Coi thị trường là một thể đồng nhất","Phân đoạn tập trung|Chọn một phân đoạn vì nguồn lực hạn chế","Chức năng thuyết phục|Chức năng quan trọng nhất của quảng cáo","MKT cổ điển|Bán cái doanh nghiệp có","MKT hiện đại|Khách hàng luôn đúng","Hành vi hậu mãi|Giai đoạn cuối của quá trình mua","Giai đoạn suy thoái|Doanh số, lợi nhuận giảm","Giá thành|Giới hạn tối thiểu của giá bán","Môi trường vĩ mô|6 yếu tố: kinh tế, nhân khẩu, tự nhiên, công nghệ, chính trị – pháp luật, văn hóa – xã hội","Đoạn thị trường|Nhóm khách hàng đồng nhất về nhu cầu và phản ứng", "Phương pháp chia cắt|Chia thị trường theo các tiêu thức đã chọn", "Phương pháp tập hợp|Gom nhóm người tiêu dùng có thái độ, đặc điểm giống nhau", "Chiến lược đa phân đoạn|Mỗi phân đoạn một chính sách marketing riêng", "Ý thức nhu cầu|Giai đoạn đầu của quá trình mua", "Giai đoạn tung ra|Chi phí marketing lớn, chưa có lãi", "Giai đoạn chín muồi|Có 3 thời kỳ; cải biến thị trường, sản phẩm, Marketing Mix", "Mục tiêu sống còn|Mục tiêu giá khi doanh nghiệp gặp khó khăn căn bản", "Quản lý giá mềm|Doanh nghiệp quản lý khung giá, linh hoạt hơn", "Chức năng đầu tiên của quảng cáo|Thu hút sự chú ý của khách hàng", "Hướng dẫn, giáo dục tiêu dùng|Chức năng định hướng tiêu dùng của quảng cáo", "Nokia|Ví dụ không thích ứng kịp vòng đời sản phẩm", "TH true milk|Ví dụ kênh trực tiếp qua TH true mart", "Vinamilk (phân phối)|Ví dụ kênh gián tiếp qua đại lý, siêu thị", "Nhân khẩu học|Đặc điểm dân cư; đô thị hóa ảnh hưởng mạnh", "Môi trường kinh tế|Quan trọng nhất với sự vận động của thị trường"];
+const OR=["5 giai đoạn mua hàng của người tiêu dùng|Ý thức nhu cầu|Tìm kiếm thông tin|Đánh giá các phương án|Quyết định mua sắm|Hành vi hậu mãi","4 giai đoạn của chu kỳ sống sản phẩm|Tung ra thị trường|Phát triển|Chín muồi|Suy thoái","3 thời kỳ của giai đoạn chín muồi|Trưởng thành tăng trưởng|Trưởng thành ổn định|Trưởng thành suy thoái","5 kiểu chiến lược ở giai đoạn suy thoái|Tăng vốn đầu tư|Duy trì mức đầu tư|Giảm đầu tư có chọn lọc|Thu hoạch vốn|Giải thể doanh nghiệp","4 nội dung hoạt động của MKT hiện đại|Nghiên cứu thị trường|Thiết kế và sản xuất sản phẩm|Tiêu thụ sản phẩm|Dịch vụ sau bán hàng","5 quyết định khi xây dựng chương trình quảng cáo|Mục tiêu|Ngân sách|Thông điệp|Phương tiện|Đánh giá kết quả","Khung trả lời Câu 2 (môi trường vĩ mô)|Khái niệm, vai trò|Các yếu tố cấu thành|Tác động đến chiến lược marketing|Ví dụ Vinamilk", "3 cấp độ sản phẩm, từ trong ra ngoài|Cốt lõi sản phẩm|Sản phẩm hiện thực|Sản phẩm bổ sung", "3 chức năng của quảng cáo|Thu hút sự chú ý|Thuyết phục khách hàng|Hướng dẫn, giáo dục tiêu dùng", "Khung trả lời Câu 8 (một loại kênh)|Khái niệm|Ưu điểm|Nhược điểm|Điều kiện áp dụng|Ví dụ"];
+const K='mcb-8h',TOT=120;let st={done:{},t0:0,q:1,best:0,g:{}},cur=0;
+try{Object.assign(st,JSON.parse(localStorage.getItem(K)||'{}'))}catch(e){}
+const save=()=>{try{localStorage.setItem(K,JSON.stringify(st))}catch(e){}};
+const sh=a=>a.map(x=>[Math.random(),x]).sort((p,q)=>p[0]-q[0]).map(x=>x[1]);
+const fm=m=>Math.floor(m/60)+':'+String(m%60).padStart(2,'0');
+const L=[["k", "q", 5, "tom", "Nhìn toàn cảnh 9 câu", "Lướt tab Tóm tắt, chưa cần nhớ. Chỉ để biết trước mình sẽ học những gì."], ["q1", "q", 10, "h1", "", "Trọng tâm: cổ điển khác hiện đại ở tư tưởng kinh doanh."], ["q2", "q", 13, "h2", "", "Trọng tâm: 6 yếu tố vĩ mô, 3 yếu tố hay ra đề và khung trả lời 4 bước. Đây là bài dài nhất."], ["q3", "q", 12, "h3", "", "Trọng tâm: 5 bước mua hàng."], ["r1", "r", 6, "v1", "Ôn lại Câu 1–3 bằng thẻ", "Thẻ nào chưa nhớ sẽ quay lại cuối hàng, bạn không cần lo."], ["b1", "b", 4, null, "Nghỉ 4 phút", "Đứng dậy, uống nước, đi lại. Không lướt điện thoại."], ["q4", "q", 11, "h4", "", "Trọng tâm: 4 tiêu thức và 3 chiến lược phân đoạn."], ["q5", "q", 5, "h5", "", "Trọng tâm: 3 cấp độ sản phẩm."], ["q6", "q", 9, "h6", "", "Trọng tâm: 4 giai đoạn, mỗi giai đoạn một cách làm, kèm ví dụ Nokia."], ["r2", "r", 7, "v2", "Ôn lại Câu 4–6 bằng thẻ", "Các thẻ được trộn lẫn các câu để nhớ lâu hơn."], ["b2", "b", 4, null, "Nghỉ 4 phút", "Đứng dậy, uống nước, nhìn ra xa."], ["q7", "q", 10, "h7", "", "Trọng tâm: 4 nhóm nhân tố bên trong ảnh hưởng đến giá."], ["q8", "q", 5, "h8", "", "Trọng tâm: so sánh kênh trực tiếp và gián tiếp."], ["q9", "q", 5, "h9", "", "Trọng tâm: 3 chức năng và 5 quyết định của quảng cáo."], ["r3", "r", 6, "v3", "Ôn lại Câu 7–9 bằng thẻ", "Thẻ nào chưa nhớ sẽ quay lại cuối hàng."], ["quiz", "x", 8, "kt", "Kiểm tra cuối (đạt từ 70%)", "Câu nào sai thì bấm “Xem lại” để đọc lại câu đó. Sai là chuyện bình thường, chỉ cần xem lại là được."]];
+const B=L.map(a=>({id:a[0],k:a[1],m:a[2],t:a[3],l:/^q\d$/.test(a[0])?'Câu '+a[0][1]+' · '+T[a[0][1]-1]:a[4],d:a[5]}));
+const PH={"k": "Khởi động", "q1": "Chặng 1 · Nền tảng (Câu 1–3)", "q4": "Chặng 2 · Phân đoạn, sản phẩm, vòng đời (Câu 4–6)", "q7": "Chặng 3 · Giá, phân phối, quảng cáo (Câu 7–9)", "quiz": "Kiểm tra cuối"};
+function pace(){const n=new Date(),d=new Date(n);d.setHours(14,0,0,0);const l=Math.floor((d-n)/6e4),need=TOT-cur;$('#pace').textContent=l<=0?'Đã qua 14:00':'Còn '+fm(l)+' đến 14:00 · '+(l>=need?'đủ thời gian':'ưu tiên học đủ 9 câu trước')}
+function prog(){cur=B.filter(b=>st.done[b.id]).reduce((a,b)=>a+b.m,0);$('#pct').textContent=Math.round(cur/TOT*100)+'%';$('#hrs').textContent='Đã xong '+fm(cur)+' / 2:00';
+$('#segs').innerHTML=B.map(b=>`<button class="seg ${b.k}${st.done[b.id]?' on':''}" style="flex:${b.m}"${b.t?` data-go="${b.t}"`:''} aria-label="${b.l}" title="${b.l}"></button>`).join('');pace()}
+function plan(){let c=0;$('#plan').innerHTML=B.map(b=>{const s=c;c+=b.m;return `${PH[b.id]?`<li class="ph">${PH[b.id]}</li>`:''}<li class="${b.k}"><label><input type="checkbox" data-id="${b.id}"${st.done[b.id]?' checked':''}><span class="t">${fm(s)}</span><span class="w"><b>${b.l}</b><small>${b.d}</small></span><span class="m">${b.m} phút</span></label>${b.t?`<button class="btn" data-go="${b.t}">Mở</button>`:''}</li>`}).join('');}
+function showQ(n){st.q=n;$$('article').forEach(a=>a.hidden=a.dataset.q!=n);$('#qn').innerHTML=T.map((t,i)=>`<button class="chip${st.q==i+1?' on':''}${st.done['q'+(i+1)]?' dn':''}" data-q="${i+1}" title="${t}">Câu ${i+1}</button>`).join('');const d=st.done['q'+n];$('#dn').textContent=d?'Đã thuộc — bấm để bỏ đánh dấu':'Đánh dấu đã thuộc';$('#dn').classList.toggle('p',!d);$('#prev').hidden=n<2;$('#next').hidden=n>8}
+function tab(n){$$('.tab').forEach(t=>t.setAttribute('aria-selected',t.dataset.t==n));$$('main>section').forEach(s=>s.hidden=s.id!='p-'+n);if(n=='hoc'&&!LS)pick();scrollTo(0,0)}
+function go(id){let m;if(/^q\d$/.test(id)){tab('ly');showQ(+id[1])}else if(m=id.match(/^([hv])(\d)$/)){tab('hoc');m[1]=='h'?lesson(+m[2]):review(+m[2])}else tab(id)}
+function render(){plan();prog();showQ(st.q||1);save()}
+function tog(id,v){st.done[id]=v;render()}
+$('#sm').innerHTML=S.map((a,i)=>`<div class="sc"><h3>Câu ${i+1} · ${T[i]}</h3><ul>${a.map(x=>`<li>${x}</li>`).join('')}</ul><button class="btn" data-go="q${i+1}">Đọc nguyên văn</button></div>`).join('');
+let qs=[],qi=0,qw=[];
+function qstart(){qs=sh(QZ).slice(0,15);qi=0;qw=[];qshow()}
+function qshow(){const k=$('#kz');if(qi>=qs.length)return qend();const q=qs[qi];k.dataset.l=-1;
+k.innerHTML=`<p class="stat">Câu ${qi+1}/${qs.length} · đúng ${qi-qw.length}</p><h3>${q.q}</h3>`+sh(q.o).map(x=>`<button class="opt">${x}</button>`).join('')+'<div id="fb"></div>';
+$$('.opt',k).forEach(b=>b.onclick=()=>{if(k.dataset.l==qi)return;k.dataset.l=qi;const r=b.textContent==q.c;if(!r)qw.push(q.n);b.classList.add(r?'ok':'no');$$('.opt',k).forEach(x=>x.textContent==q.c&&x.classList.add('ok'));
+$('#fb').innerHTML=(r?'':`<button class="btn" data-go="q${q.n}">Xem lại Câu ${q.n}</button>`)+`<button class="btn p" id="nx">${qi+1<qs.length?'Câu tiếp theo':'Xem kết quả'}</button>`;$('#nx').onclick=()=>{qi++;qshow()}})}
+function qend(){const k=$('#kz'),s=qs.length-qw.length,ok=s>=Math.ceil(qs.length*.7),u=[...new Set(qw)].sort();st.best=Math.max(st.best||0,s);if(ok)st.done.quiz=true;render();
+k.innerHTML=`<h2>Kết quả: ${s}/${qs.length}</h2><p>${ok?'Đạt — chặng Kiểm tra đã được tính vào tiến độ.':'Chưa đạt 70%. Ôn lại các câu sai rồi làm lại.'} Điểm cao nhất: ${st.best}.</p>`+(u.length?'<p>Câu cần xem lại:</p><div class="gt">'+u.map(n=>`<button class="btn" data-go="q${n}">Câu ${n}</button>`).join('')+'</div>':'')+'<button class="btn p" id="qr">Làm bài mới (xáo trộn câu hỏi)</button>';$('#qr').onclick=qstart}
+function gdone(k){st.g=st.g||{};st.g[k]=1;if(st.g.m&&st.g.t)st.done.g1=true;if(st.g.o&&st.g.c)st.done.g2=true;render()}
+function mg(){const P=deal('m',PR,6).map(r=>r.split('|')),g=$('#gm');let a=null,ok=0,t=Date.now();
+const col=(s,j)=>'<div>'+sh(P.map((p,i)=>[i,p[j]])).map(x=>`<button class="opt" data-s="${s}" data-i="${x[0]}">${x[1]}</button>`).join('')+'</div>';
+g.innerHTML='<p class="stat">Bấm một thuật ngữ bên trái, rồi bấm định nghĩa tương ứng bên phải.</p><div class="grid">'+col('l',0)+col('r',1)+'</div><div id="gr"></div>';
+$$('.opt',g).forEach(b=>b.onclick=()=>{if(b.dataset.s=='l'){$$('[data-s=l]',g).forEach(x=>x.classList.remove('sel'));b.classList.add('sel');a=b;return}if(!a)return;
+if(a.dataset.i==b.dataset.i){[a,b].forEach(x=>{x.classList.remove('sel');x.classList.add('ok');x.disabled=true});a=null;if(++ok==6){gdone('m');$('#gr').innerHTML=`<p><b>Xong trong ${Math.round((Date.now()-t)/1e3)} giây.</b></p><button class="btn p" id="ag">Chơi lại với bộ mới</button>`;$('#ag').onclick=mg}}
+else{b.classList.add('no');setTimeout(()=>b.classList.remove('no'),500)}})}
+let oi=0;
+function og(){const s=deal('o',OR,1)[0].split('|'),n=s.slice(1),g=$('#gm');let k=0,e=0;
+g.innerHTML=`<h3>${s[0]}</h3><p class="stat">Bấm các bước theo đúng thứ tự.</p><ol id="ol"></ol><div>${sh(n).map(x=>`<button class="opt">${x}</button>`).join('')}</div><div id="gr"></div>`;
+$$('.opt',g).forEach(b=>b.onclick=()=>{if(b.disabled)return;if(b.textContent==n[k]){b.disabled=true;b.classList.add('ok');$('#ol').insertAdjacentHTML('beforeend',`<li>${b.textContent}</li>`);
+if(++k==n.length){gdone('o');$('#gr').innerHTML=`<p><b>Đúng thứ tự${e?', sai '+e+' lần':' ngay lần đầu'}.</b></p><button class="btn p" id="ag">Bộ tiếp theo</button>`;$('#ag').onclick=og}}else{e++;b.classList.add('no');setTimeout(()=>b.classList.remove('no'),400)}})}
+const TF=["MKT cổ điển hoạt động theo tư tưởng “bán cái thị trường cần”.|0|1", "MKT hiện đại ra đời từ giữa thế kỷ 20 đến nay.|1|1", "MKT cổ điển phổ biến chủ yếu ở Mỹ.|1|1", "Môi trường vĩ mô gồm 6 yếu tố.|1|2", "Môi trường vi mô gồm các lực lượng xã hội rộng lớn ảnh hưởng đến mọi nhân tố trong môi trường vĩ mô.|0|2", "Môi trường kinh tế được nêu là quan trọng nhất với sự vận động và phát triển của thị trường.|1|2", "Quá trình mua của người tiêu dùng gồm 5 giai đoạn.|1|3", "Giai đoạn đầu tiên của quá trình mua là đánh giá các phương án.|0|3", "Sau khi mua, người tiêu dùng có thể hài lòng hoặc không hài lòng.|1|3", "Đoạn thị trường là nhóm khách hàng đồng nhất về nhu cầu, phản ứng như nhau với hoạt động marketing.|1|4", "Phân đoạn thị trường có 4 nhóm tiêu thức chủ yếu.|1|4", "Chiến lược phân đoạn tập trung chia thị trường thành nhiều đoạn, mỗi đoạn một chính sách marketing riêng.|0|4", "Doanh nghiệp chọn phân đoạn tập trung vì nguồn lực bị hạn chế.|1|4", "Nhãn hiệu và bao bì thuộc cốt lõi sản phẩm.|0|5", "Bảo hành và dịch vụ sau bán thuộc sản phẩm bổ sung.|1|5", "Giai đoạn tung sản phẩm ra thị trường có chi phí marketing rất lớn và có thể chưa có lợi nhuận.|1|6", "Chiến lược xâm nhập ồ ạt là giá cao và xúc tiến mạnh.|0|6", "Chu kỳ sống của sản phẩm có 4 giai đoạn.|1|6", "Giai đoạn suy thoái có 3 kiểu chiến lược marketing.|0|6", "Nokia bán lại mảng thiết bị di động cho Microsoft vào năm 2013.|1|6", "Giá thành là giới hạn tối thiểu doanh nghiệp phải tính khi xác định giá bán.|1|7", "Mục tiêu đảm bảo sống còn áp dụng khi doanh nghiệp gặp những khó khăn rất căn bản.|1|7", "Giá cả không chịu tác động của đặc tính sản phẩm như tính thời vụ.|0|7", "Kênh phân phối trực tiếp có sự tham gia của trung gian phân phối.|0|8", "Kênh gián tiếp giúp hàng hóa được phân phối rộng khắp nhiều vùng thị trường.|1|8", "Nhược điểm của kênh trực tiếp gồm khó mở rộng thị trường và vốn ứ đọng.|1|8", "Chức năng đầu tiên của quảng cáo là thu hút sự chú ý của khách hàng.|1|9", "Chức năng quan trọng nhất của quảng cáo là hướng dẫn, giáo dục tiêu dùng.|0|9", "Quảng cáo có 5 quyết định quan trọng khi xây dựng chương trình.|1|9"],CL=["MKT cổ điển có tư tưởng kinh doanh “bán cái ____”.|doanh nghiệp có|thị trường cần|khách hàng muốn|đối thủ có|1", "Triết lý của MKT hiện đại: “Khách hàng ____”.|luôn đúng|là thượng đế|quyết định giá|là trung gian|1", "Phương châm của MKT hiện đại: thỏa mãn tốt nhất nhu cầu của ____.|thị trường và khách hàng|doanh nghiệp|nhà phân phối|đối thủ|1", "Môi trường vĩ mô gồm kinh tế, nhân khẩu học, tự nhiên, công nghệ, chính trị – pháp luật và ____.|văn hóa – xã hội|đối thủ cạnh tranh|nhà cung ứng|khách hàng|2", "Quá trình mua: Ý thức nhu cầu → Tìm kiếm thông tin → ____ → Quyết định mua → Hậu mãi.|Đánh giá các phương án|Thử sản phẩm|Truyền miệng|Mặc cả giá|3", "Đoạn thị trường là nhóm khách hàng đồng nhất về ____.|nhu cầu|thu nhập|độ tuổi|nơi ở|4", "Bốn nhóm tiêu thức phân đoạn: vị trí địa lý, dân cư, xã hội – tâm lý và ____.|hành vi|giá bán|sản phẩm|kênh phân phối|4", "Ba chiến lược phân đoạn: không phân biệt, đa phân đoạn và ____.|phân đoạn tập trung|phân đoạn vĩ mô|phân đoạn ngẫu nhiên|phân đoạn nội bộ|4", "Ba cấp độ sản phẩm: cốt lõi, hiện thực và ____.|bổ sung|tiềm năng|cao cấp|mở rộng|5", "Chiến lược tung sản phẩm “giá thấp, xúc tiến mạnh” gọi là ____.|xâm nhập ồ ạt|hớt váng chớp nhoáng|hớt váng từ từ|xâm nhập từ từ|6", "Giai đoạn chín muồi có chiến lược cải biến thị trường, cải biến sản phẩm và cải biến ____.|Marketing Mix|giá bán|thương hiệu|đối thủ|6", "Nokia bán mảng thiết bị di động cho Microsoft vào năm ____.|2013|2007|2010|2016|6", "Trong dài hạn, bán dưới ____ sẽ dẫn doanh nghiệp tới nguy cơ phá sản.|giá thành|giá thị trường|giá trần|giá khuyến mại|7", "Kênh phân phối ____ là kênh không cấp, không có trung gian.|trực tiếp|gián tiếp|hỗn hợp|đa cấp|8", "Kênh gián tiếp phù hợp với doanh nghiệp sản xuất quy mô ____.|lớn|nhỏ|gia đình|thủ công|8", "Quảng cáo (Kotler) là hình thức truyền thông không trực tiếp, phi ____.|cá nhân|chính thức|thương mại|đại chúng|9", "Chức năng quan trọng nhất của quảng cáo là ____ khách hàng.|thuyết phục|thu hút|giáo dục|thăm dò|9"];
+const dk={},deal=(k,a,n)=>{if(!dk[k]||dk[k].length<n)dk[k]=sh(a);return dk[k].splice(0,n)};
+function rnd(k,P,fn,tit){const I=deal(k,P,10).map(r=>fn(r.split('|'))),g=$('#gm');let i=0,w=[];
+const nx=()=>{if(i>=I.length){gdone(k);const u=[...new Set(w)].sort();g.innerHTML=`<h3>Đúng ${I.length-w.length}/${I.length}</h3>`+(u.length?'<p class="stat">Câu nên đọc lại:</p><div class="gt">'+u.map(n=>`<button class="btn" data-go="q${n}">Câu ${n}</button>`).join('')+'</div>':'<p>Không sai câu nào.</p>')+'<button class="btn p" id="ag">Chơi lại với bộ câu khác</button>';$('#ag').onclick=()=>rnd(k,P,fn,tit);return}
+const q=I[i];g.innerHTML=`<p class="stat">${tit} ${i+1}/${I.length} · đúng ${i-w.length}</p><h3>${q.s}</h3><div class="${q.o.length<3?'grid':''}">`+(q.o.length<3?q.o:sh(q.o)).map(x=>`<button class="opt">${x}</button>`).join('')+'</div><div id="gf"></div>';
+$$('.opt',g).forEach(b=>b.onclick=()=>{const r=b.textContent==q.c;if(!r)w.push(q.n);$$('.opt',g).forEach(x=>{x.disabled=true;x.textContent==q.c&&x.classList.add('ok')});if(!r)b.classList.add('no');$('#gf').innerHTML=(r?'':`<button class="btn" data-go="q${q.n}">Xem lại Câu ${q.n}</button>`)+`<button class="btn p" id="gx">${i+1<I.length?'Tiếp theo':'Xem kết quả'}</button>`;$('#gx').onclick=()=>{i++;nx()}})};nx()}
+const tf=()=>rnd('t',TF,a=>({s:a[0],c:a[1]=='1'?'Đúng':'Sai',o:['Đúng','Sai'],n:+a[2]}),'Nhận định');
+const cl=()=>rnd('c',CL,a=>({s:a[0],c:a[1],o:a.slice(1,5),n:+a[5]}),'Chỗ trống');
+const H=[["Giống người bán rau. Kiểu cũ: trồng được gì thì bán nấy. Kiểu mới: hỏi khách cần gì rồi mới trồng.", "Cổ điển = “bán cái MÌNH CÓ”. Hiện đại = “bán cái KHÁCH CẦN”, với triết lý “khách hàng luôn đúng”."], ["Giống thời tiết: bạn không điều khiển được mưa nắng, chỉ chọn mặc áo gì. Công ty cũng không điều khiển được kinh tế, dân số, công nghệ, chỉ chọn cách thích ứng.", "6 yếu tố: Kinh tế, Nhân khẩu, Tự nhiên, Công nghệ, Chính trị, Văn hóa. Đề chỉ hỏi 1 trong 3: kinh tế, nhân khẩu, công nghệ. Viết theo khung: khái niệm → yếu tố → tác động → ví dụ."], ["Nhớ lần bạn mua laptop: thấy cần, tìm hiểu, so sánh, chốt mua, rồi dùng xong thấy ưng hay không.", "CẦN → TÌM → SO → MUA → DÙNG = Ý thức nhu cầu → Tìm kiếm thông tin → Đánh giá phương án → Quyết định mua → Hậu mãi."], ["Giống chia lớp theo trình độ: một bài giảng không hợp mọi bạn, nên chia thành nhóm có nhu cầu giống nhau.", "4 tiêu thức: ĐỊA LÝ – DÂN CƯ – XÃ HỘI, TÂM LÝ – HÀNH VI. 3 chiến lược: KHÔNG chia – CHIA NHIỀU – CHỌN MỘT."], ["Giống mua điện thoại: lõi là để liên lạc; vỏ ngoài là hãng, kiểu dáng, bao bì; dịch vụ đi kèm là bảo hành.", "LÕI – VỎ – DỊCH VỤ ĐI KÈM = Cốt lõi – Hiện thực – Bổ sung."], ["Giống đời người: sinh ra, lớn lên, trưởng thành, già đi. Mỗi giai đoạn cần cách chăm khác nhau.", "SINH – LỚN – CHÍN – GIÀ = Tung ra – Phát triển – Chín muồi – Suy thoái. Tung ra có 4 chiến lược = (giá cao/thấp) × (xúc tiến mạnh/yếu). Chín muồi 3 cải biến, suy thoái 5 kiểu."], ["Giống quán trà sữa: giá bán không thể thấp hơn vốn, và quán nổi tiếng thì bán được giá cao hơn.", "4 nhóm bên trong: MỤC TIÊU – CHI PHÍ – UY TÍN VÀ CHẤT LƯỢNG – KHÁC. Giá thành là sàn của giá bán."], ["Trực tiếp giống bán ở sạp nhà mình: gần khách nhưng bán được ít nơi. Gián tiếp giống gửi hàng cho nhiều cửa hàng bán hộ: phủ rộng nhưng xa khách.", "TRỰC TIẾP = gần khách, khó mở rộng (TH true milk). GIÁN TIẾP = phủ rộng, xa khách (Vinamilk)."], ["Giống một người giới thiệu: gây chú ý, thuyết phục, rồi chỉ cách dùng.", "3 chức năng: CHÚ Ý → THUYẾT PHỤC (quan trọng nhất) → GIÁO DỤC. 5 quyết định: Mục tiêu, Ngân sách, Thông điệp, Phương tiện, Đánh giá."]];
+let LS=null,spi=0,spm='f',sps=600;
+const mmss=s=>Math.floor(s/60)+':'+String(s%60).padStart(2,'0');
+function sprint(){clearInterval(spi);spm='f';sps=600;const e=$('#spt'),f=()=>{e.textContent=spm=='f'?'Tập trung, còn '+mmss(sps):'Nghỉ 2 phút: đứng dậy, uống nước, nhìn ra xa ('+mmss(sps)+')';e.className='stat'+(spm=='b'?' brk':'');if(--sps<0){spm=spm=='f'?'b':'f';sps=spm=='f'?600:120}};f();spi=setInterval(f,1000)}
+const cloze=x=>x.replace(/<b>.*?<\/b>/g,'<span class="bl">▢▢▢▢</span>');
+const cards=n=>S[n-1].filter(x=>x.includes('<b>')).map(x=>({x,n,r:0}));
+function pick(){LS=null;$('#ls').innerHTML='<p class="stat">Chọn một bài. Mỗi bài chỉ hiện một thẻ mỗi lần: ví dụ đời thường → từng ý chính rút gọn nhưng đủ ý, kèm ví dụ → mẹo nhớ → tự nhắc lại.</p>'+T.map((t,i)=>`<button class="opt" data-go="h${i+1}">${st.done['q'+(i+1)]?'✓ ':''}Câu ${i+1} · ${t}</button>`).join('')+'<p class="stat">Ôn lại nhiều câu cùng lúc:</p><div class="gt"><button class="btn" data-go="v1">Câu 1–3</button><button class="btn" data-go="v2">Câu 4–6</button><button class="btn" data-go="v3">Câu 7–9</button></div>'}
+function lesson(n){LS={n,m:'u',i:0,c:[{h:'Hình dung đời thường',k:'a',t:H[n-1][0]}].concat(CK[n-1],[{h:'Mẹo nhớ',k:'a',t:H[n-1][1]}]),q:cards(n),j:0};draw()}
+function review(k){const a=[[1,2,3],[4,5,6],[7,8,9]][k-1];LS={k,m:'r',q:sh(a.flatMap(n=>cards(n))),j:0};draw()}
+function fin(){const L=LS;st.done[L.n?'q'+L.n:'r'+L.k]=true;render();$('#ls').innerHTML=`<div class="sc"><h3>Xong ${L.n?'Câu '+L.n:'phần ôn lại'}</h3><p class="ct">Bây giờ nghỉ 2 phút: đứng dậy, uống nước, nhìn ra xa. Bước này đã được tính vào tiến độ.</p></div><div class="ctl"><button class="btn" data-go="plan">Về lộ trình</button>${L.n&&L.n<9?`<button class="btn p" data-go="h${L.n+1}">Học Câu ${L.n+1}</button>`:''}</div>`}
+const fmt=s=>{let o='',u=0;s.split('\n').forEach(l=>{l=l.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');if(l.startsWith('• ')){if(!u){o+='<ul>';u=1}o+='<li>'+l.slice(2)+'</li>'}else{if(u){o+='</ul>';u=0}o+=l.startsWith('– ')?'<p class="l1">'+l+'</p>':'<p>'+l+'</p>'}});return o+(u?'</ul>':'')};
+const CK=[[["c", "Thị trường và sự ra đời của Marketing", "**Thị trường**: tất cả khách hàng hiện tại và tương lai có cùng nhu cầu, mong muốn cụ thể và có khả năng tham gia trao đổi để thỏa mãn nhu cầu đó.\nMarketing là môn học kinh doanh ra đời muộn (cuối TK 19 – đầu TK 20), phát triển trong TK 20 và không ngừng thay đổi về nội dung, tư tưởng kinh doanh, lĩnh vực ứng dụng. Có 2 giai đoạn: **cổ điển** và **hiện đại**."], ["c", "Marketing cổ điển (cuối TK 19 – giữa TK 20)", "Gồm các hoạt động liên quan đến luồng di chuyển sản phẩm, dịch vụ từ người sản xuất đến người tiêu dùng cuối cùng.\n• Bối cảnh: xã hội tương đối ổn định; thị trường của người bán (cung – cầu chưa mâu thuẫn, cạnh tranh chưa quyết liệt, độc quyền còn mạnh); người bán quyết định sản xuất cái gì, bao nhiêu, thế nào.\n• Mục tiêu: sản xuất và bán thật nhiều hàng. Hoạt động: thúc đẩy bán hàng.\n• Tư tưởng “**bán cái doanh nghiệp có**”: áp đặt, ít quan tâm nhu cầu, thiếu giải pháp nắm bắt nhu cầu.\n• Nội dung: tìm thị trường để bán, các giải pháp kích thích tiêu thụ. Phổ biến ở Mỹ, áp dụng cho hàng hóa và dịch vụ."], ["c", "Marketing hiện đại (giữa TK 20 – nay)", "Theo Kotler: hoạt động của con người nhằm thỏa mãn nhu cầu và mong muốn thông qua trao đổi.\n• Bối cảnh: sau Thế chiến 2, cách mạng KHKT mạnh, kinh tế hàng hóa phát triển, cung vượt cầu → từ thị trường của người bán sang **thị trường của người mua**; cạnh tranh quyết liệt, Nhà nước chống độc quyền; người mua quyết định sản xuất gì, bao nhiêu, tiêu thụ ra sao.\n• Mục tiêu: thỏa mãn tốt nhất nhu cầu khách hàng. Hoạt động: tìm hiểu, nghiên cứu nhu cầu, mong muốn.\n• Kotler: “tiêu thụ chỉ là phần nổi của tảng băng marketing”; cốt lõi là **thấu hiểu khách hàng**."], ["c", "Tư tưởng “bán cái thị trường cần”", "Khách hàng là nhân vật trung tâm.\n• Đáp ứng nhu cầu là vấn đề cơ bản nhất: không ép người mua mua cái mình bán; doanh nghiệp chỉ thành công khi thỏa mãn tốt nhất khách hàng.\n• Coi trọng nghiên cứu, nắm bắt nhu cầu: thu thập, phân tích thông tin về xu hướng tiêu dùng, độ tuổi, thu nhập, lối sống, thói quen.\n• Xây dựng giải pháp đáp ứng: tạo sản phẩm, dịch vụ phù hợp nhất; cải tiến chất lượng, điều chỉnh giá, dịch vụ, phương thức bán. Hiểu khách hàng là quan trọng, nhưng **thỏa mãn khách hàng mới quyết định sự sống còn**."], ["c", "Triết lý “khách hàng luôn đúng” và 4 giải pháp", "Phản ánh tư duy kinh doanh hiện đại, với 3 quan điểm:\n• Khách hàng là trung tâm của mọi hoạt động; DN bắt đầu từ nhu cầu của họ, không bán cái mình có.\n• Chăm sóc khách hàng là việc quan trọng nhất.\n• Luôn đặt mình vào vị trí và cách nghĩ của khách hàng.\n**4 giải pháp**: (1) đa dạng hóa giải pháp cho nhu cầu đa dạng; (2) hệ thống chăm sóc, phục vụ tốt nhất; (3) coi trọng nghiên cứu thị trường; (4) hệ thống thu thập phản hồi của khách hàng."], ["e", "Ví dụ Vinamilk cho 4 giải pháp", "• Đa dạng hóa: nhiều dòng sữa cho từng nhóm khách hàng.\n• Phục vụ: phân phối rộng từ siêu thị, cửa hàng tiện lợi, đại lý truyền thống đến thương mại điện tử.\n• Nghiên cứu thị trường: khảo sát thói quen tiêu dùng.\n• Phản hồi: nhận ý kiến qua đường dây nóng, email, website, mạng xã hội, khảo sát."], ["c", "So sánh cổ điển và hiện đại", "Khẳng định: marketing hiện đại với tư tưởng “bán cái thị trường cần” gắn với triết lý “khách hàng luôn đúng”; phương châm: thỏa mãn tốt nhất nhu cầu của thị trường và khách hàng.\n**Bản chất**: thỏa mãn nhu cầu khách hàng bằng sản phẩm tốt hơn đối thủ, thông qua trao đổi, trong tương quan giá trị – chi phí.\nHiện đại **kế thừa** cổ điển về tư tưởng kinh doanh và nội dung hoạt động, đồng thời bổ sung phương châm và triết lý kinh doanh mới."]], [["c", "Môi trường marketing và môi trường vĩ mô", "Theo Kotler: môi trường marketing của công ty là tập hợp các tác nhân và lực lượng bên ngoài công ty, ảnh hưởng đến khả năng quản trị marketing của công ty.\nChia thành **vi mô** và **vĩ mô**. Môi trường vĩ mô là các lực lượng xã hội rộng lớn, ảnh hưởng đến mọi nhân tố vi mô và các quyết định marketing của DN.\n**6 yếu tố vĩ mô**: kinh tế, nhân khẩu học, tự nhiên, công nghệ, chính trị – pháp luật, văn hóa – xã hội.\nĐề chỉ yêu cầu chọn 1 trong 3 (kinh tế / công nghệ / nhân khẩu học). Khung trả lời: khái niệm, vai trò → gồm những yếu tố nào → tác động đến chiến lược marketing → ví dụ."], ["c", "Môi trường kinh tế", "**Vai trò**: quan trọng nhất với sự vận động, phát triển của thị trường; ảnh hưởng trực tiếp hoặc gián tiếp đến cung, cầu, sức mua và đặc điểm mua hàng.\n**Gồm**: tốc độ tăng trưởng, xu hướng GDP, lạm phát, thất nghiệp, thu nhập và tốc độ tăng thu nhập, cơ cấu chi tiêu và sự thay đổi cơ cấu chi tiêu.\n**Tác động**: tăng trưởng, GDP, lạm phát ảnh hưởng sức mua; kinh tế phát triển làm đổi cơ cấu hàng hóa của đối thủ và cơ cấu chi tiêu của khách.\n• Kinh tế tăng trưởng, thu nhập tăng → chi nhiều hơn cho sản phẩm cao cấp, tốt cho sức khỏe → DN đa dạng hóa danh mục, nâng chất lượng, giá cao.\n• Suy thoái, lạm phát cao → thắt chặt chi tiêu, ưu tiên hàng thiết yếu, giá rẻ → DN điều chỉnh cơ cấu sản phẩm, chính sách giá (gói dung tích lớn), tăng quảng cáo về giá trị, lợi ích."], ["e", "Ví dụ Vinamilk (môi trường kinh tế)", "• Thu nhập và nhu cầu chăm sóc sức khỏe tăng → ra sản phẩm giá trị gia tăng cao như sữa tươi Vinamilk 100% Organic: đáp ứng nhu cầu tăng và thích ứng thay đổi cơ cấu nhu cầu.\n• Người tiêu dùng chịu áp lực thu nhập, chi phí → tăng cường sản phẩm hợp khả năng chi trả, giữ sức mua và thị phần."], ["c", "Môi trường nhân khẩu học (1): vai trò và dân số, độ tuổi", "**Vai trò**: nhà quản trị marketing quan tâm hàng đầu vì con người tạo ra thị trường; ảnh hưởng số lượng, đặc điểm, tính chất nhu cầu.\n**Gồm**: quy mô, mật độ dân số, phân bố dân cư, tốc độ tăng dân số, độ tuổi, giới tính, sắc tộc, nghề nghiệp.\n• Quy mô, tốc độ tăng dân số quyết định quy mô thị trường hiện tại và tương lai.\n• Cơ cấu độ tuổi: mỗi nhóm có nhu cầu, hành vi mua khác nhau (trẻ chuộng thời trang, người cao tuổi thận trọng, ưa văn hóa truyền thống) → DN đa dạng hóa, cải tiến sản phẩm kịp thời; còn quyết định lực lượng lao động, ảnh hưởng chất lượng và hiệu quả kinh doanh."], ["c", "Môi trường nhân khẩu học (2): gia đình, hôn nhân, văn hóa", "• Hộ gia đình: gia đình lớn nhiều thế hệ dần thay bằng hộ nhỏ → đối tượng marketing thay đổi.\n• Hôn nhân: cần nắm tuổi kết hôn, ly dị để có sản phẩm phù hợp (ở Mỹ, sau ly hôn người ta sắm lại đồ gia dụng với yêu cầu khác lúc kết hôn). Đô thị hóa ảnh hưởng mạnh vì dân cư dồn về nơi sống, làm việc thuận lợi.\n• Trình độ văn hóa tăng → nhu cầu đa dạng, đòi hỏi cả giá trị sử dụng lẫn yếu tố tâm lý; khác biệt thu nhập, khả năng thanh toán, địa vị → yêu cầu khác nhau với cùng sản phẩm.\n→ DN cần chính sách marketing phù hợp từng nhóm khách hàng."], ["e", "Ví dụ Vinamilk (nhân khẩu học)", "Việt Nam dân số lớn, tỷ lệ trẻ em cao, hộ gia đình nhỏ đầu tư cho con; dân số già hóa; thu nhập và học vấn đô thị tăng, hướng tới sản phẩm cao cấp, lành mạnh → Vinamilk mở rộng sang sữa tươi Organic chuẩn châu Âu, sữa chua Probi hỗ trợ tiêu hóa, các loại sữa hạt."], ["c", "Môi trường công nghệ", "**Vai trò**: yếu tố quan trọng định hình cuộc sống, ảnh hưởng sáng tạo sản phẩm và tạo cơ hội thị trường mới. **Gồm**: tiến bộ KHKT và công nghệ thông tin.\n**Tác động**:\n• Cạnh tranh công nghệ mới giúp giành lợi thế toàn cầu và thay đổi bản chất cạnh tranh.\n• Tiến bộ kỹ thuật thúc đẩy nghiên cứu và phát triển (nghiên cứu cơ bản là nền cho nghiên cứu ứng dụng, đưa công nghệ từ phòng thí nghiệm ra đời sống) → sản phẩm mới, lợi thế cạnh tranh.\n• Chu kỳ sống sản phẩm bị rút ngắn → DN phát triển và mở rộng thị trường mới.\nNhà quản trị cần nắm bản chất thay đổi công nghệ."], ["e", "Ví dụ Vinamilk (công nghệ)", "Ứng dụng công nghệ toàn chuỗi giá trị: trang trại sinh thái Green Farm (nông nghiệp 4.0); “siêu nhà máy sữa” với công nghệ tiệt trùng UHT, kho tự động bằng robot (LGV); đội ngũ nghiên cứu liên tục cải tiến để đối phó chu kỳ sống ngắn → tăng giá trị sử dụng, giữ thế chủ động."]], [["c", "Khái niệm và 5 giai đoạn mua", "**Người tiêu dùng cá nhân**: các cá nhân và hộ gia đình hiện có và tiềm ẩn mua hàng hóa, dịch vụ cho nhu cầu cá nhân, gia đình.\n**Hành vi người tiêu dùng**: toàn bộ hành động bộc lộ trong quá trình trao đổi sản phẩm.\nQuá trình mua trải qua **5 giai đoạn**: Ý thức nhu cầu → Tìm kiếm thông tin → Đánh giá các phương án → Quyết định mua → Hành vi hậu mãi."], ["c", "Bước 1: Ý thức nhu cầu", "Bắt đầu khi người mua ý thức được vấn đề hoặc nhu cầu.\n• Tác nhân bên trong: nhu cầu sinh lý (đói, khát…) tăng đến mức vượt ngưỡng thành sự thôi thúc.\n• Tác nhân bên ngoài: môi trường kinh doanh, chính sách marketing của DN đánh thức, gợi mở nhu cầu.\n• Hai nhóm độc lập, nhưng nhóm này có thể là tiền đề cho nhóm kia."], ["c", "Bước 2: Tìm kiếm thông tin", "• Trạng thái tìm kiếm tương đối (chú ý): chú ý thông tin ngẫu nhiên gặp, hoặc mới bắt đầu tìm.\n• Trạng thái tích cực tìm kiếm: chủ động, dành nhiều thời gian. Có 4 nguồn thông tin:\n• **Cá nhân** (gia đình, bạn bè, hàng xóm, người quen): tin cậy, hiệu quả nhất, chức năng khẳng định hoặc đánh giá.\n• **Thương mại** (quảng cáo, nhân viên bán hàng, đại lý, bao bì, triển lãm): nhận nhiều thông tin nhất, chức năng thông báo.\n• **Thực nghiệm**: sờ mó, nghiên cứu, dùng thử sản phẩm.\n• **Công cộng**: phương tiện thông tin đại chúng, tổ chức nghiên cứu người tiêu dùng."], ["c", "Bước 3: Đánh giá các phương án", "• Người tiêu dùng tìm sản phẩm thỏa mãn tối đa nhu cầu; xem mỗi sản phẩm là tập hợp các thuộc tính đem lại lợi ích.\n• Mỗi người nhìn khác nhau về thuộc tính nổi bật, chú ý thuộc tính đem lại lợi ích mình cần.\n• Có khuynh hướng hình thành niềm tin vào các nhãn hiệu; quy trình đánh giá khác nhau tùy sản phẩm.\n• Vẫn tiếp tục thu thập thông tin để mở rộng căn cứ đánh giá; số nhãn hiệu tìm hiểu có xu hướng giảm dần."], ["c", "Bước 4: Quyết định mua", "Đã có nhóm nhãn hiệu lựa chọn, nhưng còn **2 yếu tố xen giữa ý định mua và quyết định mua**:\n• Thái độ của người khác: ảnh hưởng tích cực hoặc tiêu cực, tùy mức quyết liệt của người ảnh hưởng và động cơ làm theo họ.\n• Tình huống bất ngờ: rất đa dạng nên người tiêu dùng và doanh nghiệp khó kiểm soát."], ["c", "Bước 5: Hành vi hậu mãi", "Hài lòng hay không phụ thuộc chênh lệch giữa **kỳ vọng** và thực tế: vượt kỳ vọng → rất hài lòng; đáp ứng → hài lòng; không tương xứng → không hài lòng; kém xa, có khuyết tật → khó chịu. Kỳ vọng đến từ thông tin tự thu thập hoặc từ tác động của doanh nghiệp.\n• Hài lòng: dễ mua lại, chia sẻ, quảng cáo hộ (“khách hàng hài lòng là cách quảng cáo tốt nhất”).\n• Không hài lòng: tìm thông tin khẳng định sản phẩm có giá trị, bỏ qua thông tin chê; phản ứng mạnh (đổi, trả, vứt bỏ), phàn nàn với người khác.\n• Số phận sản phẩm: giữ dùng đúng mục đích, sửa để dùng việc khác, không dùng, cho thuê/mượn, hoặc đẩy đi vĩnh viễn (bán lại, cho, vứt, đổi)."], ["e", "Ví dụ: bạn muốn mua MacBook", "1. Ý thức nhu cầu: laptop cũ chậm, pin yếu, không đáp ứng học tập. → DN dùng quảng cáo, truyền thông, KOL/KOC để gợi mở nhu cầu.\n2. Tìm kiếm: xem website Apple, video review, đánh giá người dùng. → DN cung cấp thông tin đầy đủ, dễ tiếp cận.\n3. Đánh giá: cân nhắc MacBook, Dell, Asus theo giá, cấu hình, thiết kế, pin. → DN xác định thuộc tính khách quan tâm, đào tạo nhân viên tư vấn.\n4. Quyết định: chọn MacBook Air; nhưng hết hàng, giá tăng hay thiếu tiền có thể khiến trì hoãn, đổi, bỏ. → Không thể cho rằng có ý định là sẽ mua.\n5. Hậu mãi: hài lòng thì dùng tiếp, mua lại, giới thiệu; không hài lòng thì đổi trả, phàn nàn. → DN phải tiếp tục chăm sóc, bảo hành, đổi trả, nhận phản hồi."]], [["c", "Khái niệm và lý do phân đoạn thị trường", "**Phân đoạn thị trường**: chia thị trường thành các bộ phận khác nhau theo kỹ thuật và tiêu thức nhất định. **Đoạn thị trường**: nhóm khách hàng đồng nhất về nhu cầu và phản ứng như nhau với hoạt động marketing của DN.\n**Lý do**:\n• Phía thị trường: một sản phẩm đồng nhất không thể thỏa mãn mọi khách hàng vì họ khác nhau.\n• Phía doanh nghiệp: nguồn lực hạn chế, không thể khai thác hiệu quả toàn bộ thị trường; phân đoạn giúp tiếp cận từng nhóm có đặc điểm riêng.\n• Hiệu quả giải pháp marketing: định hướng rõ hơn, giảm hoạt động dư thừa, tiết kiệm chi phí, nâng hiệu quả."], ["c", "4 nhóm tiêu thức (1): địa lý và dân cư", "Có **4 nhóm tiêu thức chủ yếu**.\n• **Vị trí địa lý**: mỗi khu vực khác nhau về phong tục, tập quán, văn hóa, thói quen tiêu dùng; chia theo tỉnh thành, miền, quy mô vùng, mật độ dân số.\n• **Dân cư**: giới tính (nam nữ mua sắm khác nhau, nhất là quần áo); độ tuổi (mong muốn đổi theo tuổi); thu nhập (hay dùng cho xe hơi, quần áo, mỹ phẩm)."], ["c", "4 nhóm tiêu thức (2): xã hội, tâm lý và hành vi", "• **Xã hội và tâm lý**: tầng lớp xã hội (sở thích nhãn hiệu, sản phẩm khác nhau), lối sống, cá tính (chọn đồ dùng cá nhân khác nhau).\n• **Hành vi**: dựa trên phản ứng, thái độ của người tiêu dùng với sản phẩm: động cơ tiêu dùng; lợi ích tìm kiếm; thái độ với sản phẩm; cường độ tiêu dùng (dùng nhiều, vừa, ít; hãng bia hay dùng); mức trung thành nhãn hiệu (trung thành, hay dao động, thay đổi, xoay vòng).\nKhi chọn tiêu thức phải bảo đảm **tính khoa học và tính thực tiễn**."], ["e", "Ví dụ: kem đánh răng và Vinamilk", "• Kem đánh răng: trẻ em tìm lợi ích chống sâu răng; thanh niên muốn răng trắng, miệng thơm (phân đoạn theo lợi ích).\n• Vinamilk theo độ tuổi: nhu cầu dinh dưỡng khác nhau ở từng giai đoạn cuộc đời.\n• Vinamilk theo động cơ tiêu thụ: lý do và mục đích mua sản phẩm của khách hàng."], ["c", "Phương pháp, chiến lược, căn cứ và yêu cầu (phần bổ sung cuối file)", "**2 phương pháp**: chia cắt (chia theo các tiêu thức đã chọn); tập hợp (gom nhóm người tiêu dùng có thái độ, đặc điểm giống nhau).\n**3 chiến lược**:\n• Không phân biệt: coi thị trường đồng nhất; một chiến lược cho cả thị trường (1 sản phẩm, 1 giá, cùng kênh phân phối và xúc tiến).\n• Đa phân đoạn: thị trường thống nhất nhưng không đồng nhất; chia nhiều đoạn, mỗi đoạn một hệ thống chính sách marketing, sản phẩm khác nhau.\n• Tập trung: cũng coi thị trường không đồng nhất, nhưng do nguồn lực hạn chế nên chọn một phân đoạn phù hợp nhất để tập trung.\n**Căn cứ chọn chiến lược**: khả năng tài chính; mức đồng nhất của sản phẩm; giai đoạn chu kỳ sống; mức đồng nhất của thị trường; chiến lược của đối thủ.\n**Yêu cầu khi phân đoạn**: đo lường được; tiếp cận được; phân biệt rõ và khả thi; quy mô đáng kể."]], [["c", "Khái niệm sản phẩm", "**Sản phẩm** là bất cứ thứ gì có thể chào bán trên thị trường để thu hút chú ý, được chấp nhận, sử dụng hoặc tiêu thụ, có khả năng thỏa mãn một nhu cầu hay mong muốn. Theo quan niệm marketing, sản phẩm là tập hợp các yếu tố đáp ứng nhu cầu khách hàng; trong kinh doanh không chỉ là thuộc tính cụ thể mà còn kèm dịch vụ sau bán.\nCó **3 cấp độ** cấu thành: cốt lõi, hiện thực, bổ sung."], ["c", "Ba cấp độ cấu thành sản phẩm", "• **Cốt lõi**: lợi ích khách hàng thực sự tìm kiếm. DN phải nghiên cứu để phát hiện các đòi hỏi tiềm ẩn trong nhu cầu (sống còn với DN). Ví dụ kem đánh răng: không chỉ làm sạch mà còn bảo vệ men, trắng răng, chống sâu răng, hơi thở thơm, tự tin, bảo vệ sức khỏe.\n• **Hiện thực**: sự có mặt thực tế của hàng hóa, gồm nhãn hiệu, bao bì, tính năng, thiết kế kiểu dáng; khẳng định sự hiện diện của DN trên thị trường.\n• **Bổ sung**: bảo hành, tiện lợi lắp đặt, dịch vụ sau bán; là một phần của sản phẩm hoàn chỉnh, tăng nhận thức về chất lượng, sự hài lòng và khả năng cạnh tranh."], ["e", "Ví dụ: iPhone và sữa tươi Vinamilk 100%", "**iPhone**: cốt lõi là kết nối, tiện ích giao tiếp, giải trí, làm việc mọi lúc mọi nơi; hiện thực là khung titan, màn hình Super Retina XDR, camera chuyên nghiệp (iPhone 15); bổ sung là hệ sinh thái Apple (AirPods, Apple Watch, iCloud) → trở thành biểu tượng phong cách sống và công nghệ.\n**Sữa tươi tiệt trùng Vinamilk 100%**: cốt lõi là nhu cầu dinh dưỡng căn bản; hiện thực là nhãn “Vinamilk 100% Sữa Tươi” trên bao bì giấy Tetrapak xanh lá; bổ sung là chuỗi dịch vụ tiện ích đi kèm."]], [["c", "Khái niệm và 4 giai đoạn chu kỳ sống", "**Chu kỳ sống của sản phẩm**: khoảng thời gian sản phẩm hiện diện trên thị trường.\nCó **4 giai đoạn**: tung ra thị trường → phát triển → chín muồi (trưởng thành, bão hòa) → suy thoái."], ["c", "Giai đoạn 1: tung sản phẩm ra thị trường", "• Đặc điểm: tiêu thụ, doanh thu tăng chậm; khách phân vân vì thiếu thông tin hoặc quen dùng sản phẩm cũ; chi phí marketing rất lớn (quảng cáo, xây phân phối); chưa có lợi nhuận, có thể lỗ.\n• Mục tiêu: xâm nhập, tăng nhận thức khách hàng, đứng vững trên thị trường.\n• Giải pháp: đẩy mạnh xúc tiến (quảng cáo, truyền thông, cung cấp thông tin); giá xâm nhập; phân phối chọn lọc vì nguồn lực hạn chế, dễ kiểm soát rủi ro.\n• **4 chiến lược**: hớt váng chớp nhoáng (giá cao, xúc tiến mạnh); hớt váng từ từ (giá cao, xúc tiến yếu); xâm nhập ồ ạt (giá thấp, xúc tiến mạnh); xâm nhập từ từ (giá thấp, xúc tiến yếu)."], ["c", "Giai đoạn 2: phát triển", "• Đặc điểm: tiêu thụ, doanh thu tăng mạnh; thị trường mở rộng; cạnh tranh tăng vì nhiều đối thủ; chi phí marketing cao nhưng sản xuất số lượng lớn nên bắt đầu có lời.\n• Mục tiêu: giành thị phần, mở rộng thị trường, đề phòng cạnh tranh.\n• Giải pháp: giữ vững, nâng cao chất lượng hoặc thêm mẫu mới, đặc tính mới; đa dạng hóa chủng loại; mở rộng kênh phân phối; xúc tiến tập trung xây dựng thương hiệu, tạo niềm tin; xem lại giá (giảm dần để thu hút thêm người mua, hoặc giữ giá để tăng lợi nhuận)."], ["c", "Giai đoạn 3: chín muồi", "Chia **3 thời kỳ**: trưởng thành tăng trưởng (nhịp tăng chậm lại); trưởng thành ổn định (mức tiêu thụ bình quân đầu người không đổi vì thị trường bão hòa); trưởng thành suy thoái (tiêu thụ tuyệt đối giảm, khách chuyển sang sản phẩm khác, sản phẩm thay thế).\n**3 chiến lược**:\n• Cải biến thị trường: tăng số người dùng (đổi thái độ người chưa dùng, vào đoạn mới, giành khách đối thủ) và tăng mức sử dụng (dùng nhiều lần hơn, theo nhiều cách).\n• Cải biến sản phẩm: cải tiến chất lượng, cải tiến tính chất (thêm công dụng, an toàn, tiện lợi), cải tiến kiểu dáng.\n• Cải biến Marketing Mix: giá (giảm giá); phân phối (củng cố kênh hiện có, phát triển kênh mới); xúc tiến (quảng cáo, khuyến mại, bán hàng trực tiếp, dịch vụ sau bán)."], ["c", "Giai đoạn 4: suy thoái và các nhân tố ảnh hưởng", "• Đặc điểm: khối lượng, doanh thu, lợi nhuận giảm; thị hiếu đổi; phân phối khó khăn; có thể xuất hiện sản phẩm thay thế.\n• Giải pháp: phát hiện sản phẩm yếu kém (tiêu thụ giảm, thị phần đi xuống, lãi gộp và tỷ suất lợi nhuận trên vốn đầu tư thấp), rồi quyết định loại bỏ hoặc kéo dài vòng đời.\n• **5 kiểu chiến lược**: tăng vốn đầu tư để củng cố vị thế; duy trì mức đầu tư đến khi hết bất định; giảm đầu tư có chọn lọc (bỏ nhóm khách không lời); thu hoạch vốn để thu tiền mặt nhanh; giải thể bằng cách bán tài sản có lợi nhất.\n**6 nhân tố ảnh hưởng vòng đời**: đặc điểm sản phẩm; thị hiếu, tập quán từng thị trường; thu nhập và khả năng thanh toán; cách mạng KHKT; môi trường vĩ mô; hoạt động marketing của DN."], ["e", "Ví dụ Nokia", "• Tung ra: tập trung điện thoại cơ bản (bền, pin lâu, nghe gọi ổn định), xây hình ảnh chất lượng, tin cậy, phủ sóng toàn cầu → chiến lược đúng.\n• Tăng trưởng: đa dạng hóa từ điện thoại phổ thông đến smartphone đời đầu, hình ảnh “điện thoại quốc dân”, nhưng hạn chế đổi mới phần mềm → mở rộng phân khúc là đúng.\n• Trưởng thành: giữ thị phần lớn nhưng bão hòa; chậm đổi mới khi smartphone cảm ứng bùng nổ; tự mãn, không tái định vị → sai lầm: không thích nghi với nhu cầu mới.\n• Suy thoái: iPhone và Android chiếm lĩnh; Nokia mất sức hút, bán mảng di động cho Microsoft năm 2013 → sai lầm: thiếu chuyển đổi, đổi mới kịp thời.\nBài học: thương hiệu lớn đến đâu cũng phải đổi mới theo thị trường."]], [["c", "Khái niệm giá cả", "• Kinh tế chính trị học: giá cả là biểu hiện bằng tiền của giá trị hàng hóa; về bản chất phản ánh quan hệ kinh tế trong trao đổi, là tín hiệu của quan hệ cung cầu.\n• Người mua: số tiền phải trả để sở hữu hoặc sử dụng hàng hóa, dịch vụ. Người bán: số tiền thu được từ việc cung cấp hàng hóa, dịch vụ.\n• Kinh doanh: giá là một biến số tạo nên doanh thu và lợi nhuận của DN."], ["c", "Nhân tố 1: mục tiêu chiến lược marketing", "Mục tiêu từng thời kỳ phụ thuộc hoàn cảnh kinh doanh, ảnh hưởng mạnh tới việc định giá:\n• **Đảm bảo sống còn**: DN gặp khó khăn rất căn bản do biến động nhu cầu thị trường hoặc cạnh tranh gay gắt.\n• **Tối đa hóa lợi nhuận trước mắt**: khi có lợi thế đặc biệt (như độc quyền sản phẩm).\n• **Dẫn đầu thị phần**: bán giá thấp hơn đối thủ để thu hút khách, tăng tiêu thụ, mở rộng thị phần; tạo lợi thế cạnh tranh dài hạn.\n• **Dẫn đầu chất lượng**: sản phẩm chất lượng cao nhất cùng loại nên thường định giá cao để bù chi phí nghiên cứu, đầu tư; đồng thời thay đổi nhận thức khách về giá và chất lượng, phát triển nghiên cứu, hỗ trợ sản phẩm, chăm sóc khách trước, trong, sau mua.\n• Mục tiêu khác: tùy thời kỳ phát triển kinh doanh."], ["c", "Nhân tố 2 và 3: chi phí, uy tín và chất lượng", "• **Chi phí sản xuất kinh doanh**: có ý nghĩa quyết định đến giá bán. Giá bán hình thành từ chi phí sản xuất và chi phí marketing. **Giá thành** (chi phí cho một đơn vị sản phẩm) là mức sàn: bán dưới giá thành, ngắn hạn có thể đạt mục tiêu tạm thời, dài hạn tất yếu dẫn tới phá sản. DN kiểm soát tốt chi phí thì có khả năng định giá cạnh tranh.\n• **Uy tín và chất lượng**: DN phân tích cảm nhận của khách hàng về chất lượng. Sản phẩm uy tín, chất lượng cao cho phép khai thác yếu tố giá để cạnh tranh."], ["c", "Nhân tố 4: các nhân tố khác", "• Đặc tính sản phẩm: hàng thời vụ → quan hệ cung cầu ảnh hưởng mạnh tới giá; hàng khó bảo quản → giá chịu ảnh hưởng quyết định của chất lượng; hàng sản xuất số lượng hạn chế → định giá rất cao.\n• Mô hình quản lý giá: **giá cứng** (DN quyết định giá từng sản phẩm, danh mục) và **giá mềm** (DN quản lý khung giá, linh hoạt hơn khi quyết định giá).\n→ Các nhân tố bên trong này DN hoàn toàn có thể kiểm soát."], ["e", "Ví dụ: iPhone và Vinamilk", "**iPhone**: định vị cao cấp, giữ hình ảnh thương hiệu (mục tiêu); chi phí lớn cho nghiên cứu chip, camera, màn hình, thiết kế, phần mềm, marketing; gắn với chất lượng, thiết kế, hệ sinh thái Apple → giá cao.\n**Vinamilk**:\n• Mục tiêu: tồn tại (tiêu thụ chậm thì giảm giá); tối đa lợi nhuận ngắn hạn (sản phẩm giá trị cảm nhận cao như Green Farm); dẫn đầu thị phần (giá phù hợp thị trường đại chúng); dẫn đầu chất lượng (sản phẩm cao cấp giá cao hơn).\n• Chi phí là cơ sở giá tối thiểu; sản xuất quy mô lớn, công nghệ giúp kiểm soát chi phí, giá cạnh tranh.\n• Uy tín, chất lượng: dòng Green Farm định giá cao hơn đại trà, theo giá trị cảm nhận.\n• Đặc điểm sản phẩm: giá khác nhau theo dòng sản phẩm, chất lượng, đối tượng khách, quy cách đóng gói.\n→ Giá chịu tác động đồng thời của cả 4 nhân tố."]], [["c", "Khái niệm phân phối và kênh phân phối", "**Phân phối** (trong marketing): các quá trình tổ chức, kinh tế, kỹ thuật điều hành và vận chuyển hàng hóa từ nơi sản xuất đến người tiêu dùng đạt hiệu quả kinh tế cao. **Kênh phân phối**: đường đi và phương thức di chuyển hàng hóa từ người sản xuất đến người tiêu dùng cuối cùng.\nCó 2 loại cơ bản: **kênh trực tiếp** và **kênh gián tiếp**."], ["c", "Kênh trực tiếp (kênh không cấp)", "Không có trung gian phân phối.\n• **Ưu điểm**: quan hệ trực tiếp giữa người sản xuất và người tiêu dùng; giảm chi phí lưu thông, hạ giá thành, tập trung lợi nhuận, cạnh tranh về giá.\n• **Nhược điểm**: tăng khối lượng công việc, lực lượng bị phân tán (vừa sản xuất vừa bán); chuyên môn hóa thấp thì kém hiệu quả; khó mở rộng thị trường, vốn ứ đọng, khó khăn tài chính, tự chịu hoàn toàn rủi ro.\n• **Điều kiện áp dụng**: nông sản, thực phẩm tươi sống, hàng dễ vỡ, hàng khối lượng vận chuyển lớn; kinh doanh dịch vụ, tiêu thụ nội bộ; nhà kinh doanh quy mô nhỏ, liên kết."], ["c", "Kênh gián tiếp (có trung gian)", "Có sự tham gia của các trung gian phân phối.\n• **Ưu điểm**: hàng phân phối rộng khắp nhiều vùng; chuyên môn hóa nên người sản xuất tập trung nguồn lực vào sản xuất; phát huy lợi thế trung gian, tăng khả năng cạnh tranh và chi phối thị trường; tránh ứ đọng vốn, giảm rủi ro.\n• **Nhược điểm**: xa người tiêu dùng cả về không gian và thời gian, hàng đến chậm; khó nắm thông tin thị trường và khách hàng; tăng chi phí thương mại, nhất là khi tổ chức trung gian bất hợp lý.\n• **Điều kiện áp dụng**: doanh nghiệp sản xuất quy mô lớn (lợi thế chi phí, danh mục đa dạng); hàng công nghiệp tiêu dùng; sản phẩm chuyên môn hóa cao."], ["e", "Ví dụ: TH true milk và Vinamilk", "• **TH true milk (kênh trực tiếp)**: khi mới vào thị trường sữa tươi, để cạnh tranh với Vinamilk, chọn bán trực tiếp qua hệ thống cửa hàng của mình; chủ động kiểm soát giá bán, trưng bày, hình ảnh thương hiệu, tương tác trực tiếp để thu phản hồi và tạo niềm tin → phù hợp DN muốn kiểm soát chặt bán hàng và xây thương hiệu khi cạnh tranh.\n• **Vinamilk (kênh gián tiếp)**: qua nhà phân phối, đại lý và cửa hàng bán lẻ (VinMart, Lotte Mart, Bách Hóa Xanh…) → mở rộng độ phủ, sản phẩm trưng bày hiện đại, khách dễ so sánh, lựa chọn → phù hợp khi muốn mở rộng thị trường, tăng tiêu thụ qua mạng lưới trung gian."]], [["c", "Khái niệm quảng cáo", "Quảng cáo gồm các hoạt động giới thiệu, truyền đi thông tin về sản phẩm và hình ảnh doanh nghiệp để kích thích khách hàng tiêu thụ. Theo Kotler: hình thức truyền thông **không trực tiếp, phi cá nhân**, nhằm khuếch trương ý tưởng, hàng hóa hay dịch vụ, và **chủ thể quảng cáo phải trả chi phí**."], ["c", "5 quyết định và lý do cần quảng cáo", "**5 quyết định** khi xây dựng chương trình quảng cáo: mục tiêu là gì; chi bao nhiêu tiền (ngân sách); gửi thông điệp nào; dùng phương tiện nào; đánh giá kết quả thế nào.\n**Vì sao cần quảng cáo**: khách hàng thiếu thông tin và thiếu kiến thức về sản phẩm; quảng cáo là công cụ truyền thông có ảnh hưởng mạnh đến tâm lý và nhận thức của khách hàng."], ["c", "3 chức năng của quảng cáo", "1. **Thu hút sự chú ý** (chức năng đầu tiên, rất quan trọng vì thông tin đến với khách hàng bị hạn chế): tác động vào các giác quan; chú ý chọn phương tiện, vị trí, thời điểm và hình thức quảng cáo.\n2. **Thuyết phục khách hàng** (quan trọng nhất, thể hiện rõ mục tiêu quảng cáo): nghiên cứu kỹ khách hàng; đưa thông tin thuyết phục như lợi ích khi tiêu dùng sản phẩm.\n3. **Hướng dẫn, giáo dục tiêu dùng**: định hướng tiêu dùng, chỉ rõ cái lợi và cái hại, nghiên cứu đặc điểm khách hàng từng vùng thị trường để định hướng phù hợp, hữu hiệu."], ["e", "Ví dụ: quảng cáo sữa tươi 100% Vinamilk", "• Thu hút chú ý: hình ảnh những chú bò vui nhộn, đồng cỏ xanh tươi, màu sắc bắt mắt, âm nhạc sôi động.\n• Thuyết phục: nhấn mạnh chất lượng và độ an toàn qua thông điệp “Tiêu chuẩn 3 không”.\n• Hướng dẫn tiêu dùng: cung cấp thông tin cần quan tâm khi chọn sản phẩm.\n→ Vừa kích thích tiêu dùng, vừa xây dựng niềm tin và hình ảnh thương hiệu."]]].map(q=>{let last='';return q.map(x=>{if(x[0]=='c')last=x[1];return{h:x[1],k:x[0],t:fmt(x[2]),p:last}})});
+const bindv=c=>{const b=$('#vb');if(b)b.onclick=()=>{const v=b.dataset.v=b.dataset.v?'':'1';$('#cb').innerHTML=v?c.v:c.t;b.textContent=v?'Xem bản gọn':'Xem nguyên văn'}};
+function draw(){const L=LS,e=$('#ls');
+if(L.m=='u'){const c=L.c[L.i],last=L.i+1==L.c.length;
+e.innerHTML=`<div class="sc"><p class="stat">Câu ${L.n} · Hiểu · thẻ ${L.i+1}/${L.c.length}</p><h3>${c.h}</h3>${c.k=='e'?`<div id="eg"><p class="ct">Trước khi đọc, thử tự nghĩ một ví dụ của riêng bạn cho ý “${c.p}” (10 giây).</p><button class="btn" id="sx">Xem ví dụ trong đề cương</button></div>`:c.k=='c'?`<div class="body tx">${c.t}</div>`:`<p class="ct">${c.t}</p>`}<p class="stat">Đọc chậm và nói to ý này bằng lời của bạn, rồi bấm Tiếp.</p></div><div class="ctl"><button class="btn" id="lb"${L.i?'':' disabled'}>Quay lại</button><button class="btn" data-go="q${L.n}">Nguyên văn</button><button class="btn p" id="ln">${last?'Sang phần tự nhắc lại':'Tiếp'}</button></div>`;
+if($('#sx'))$('#sx').onclick=()=>{$('#eg').innerHTML=`<div class="eg body tx">${c.t}</div>`};$('#lb').onclick=()=>{L.i--;draw()};$('#ln').onclick=()=>{if(last)L.m='r';else L.i++;draw()};return}
+const q=L.q[L.j];if(!q)return fin();
+e.innerHTML=`<div class="sc"><p class="stat">${L.n?'Câu '+L.n+' · Tự nhắc lại':'Ôn lại'} · còn ${L.q.length-L.j} thẻ</p><p class="ct">${cloze(q.x)}</p><div id="lr"></div></div><div class="ctl" id="rb"><button class="btn p" id="sh" style="flex:1">Nói to phần bị che, rồi hiện đáp án</button></div>`;
+$('#sh').onclick=()=>{$('#lr').innerHTML=`<p class="ct ans">${q.x}</p>`;$('#rb').innerHTML='<button class="btn" id="no">Chưa nhớ</button><button class="btn p" id="yes">Nhớ rồi</button>';$('#yes').onclick=()=>{L.j++;draw()};$('#no').onclick=()=>{if(q.r<2)L.q.push({...q,r:q.r+1});L.j++;draw()}}}
+document.addEventListener('click',e=>{const t=e.target;let x;
+if(x=t.closest('.tab'))tab(x.dataset.t);
+else if(x=t.closest('[data-go]'))go(x.dataset.go);
+else if(x=t.closest('.chip'))showQ(+x.dataset.q);
+else if(t.closest('#dn'))tog('q'+st.q,!st.done['q'+st.q]);
+else if(t.closest('#prev'))showQ(st.q-1);
+else if(t.closest('#next'))showQ(st.q+1);
+else if(x=t.closest('#rs')){if(x.dataset.a){st={done:{},t0:0,q:1,best:0,g:{}};render();x.textContent='Xóa tiến độ';delete x.dataset.a}else{x.dataset.a=1;x.textContent='Bấm lần nữa để xóa';setTimeout(()=>{delete x.dataset.a;x.textContent='Xóa tiến độ'},3000)}}
+else if(x=t.closest('#mk')){const m=document.body.classList.toggle('mask');x.textContent=m?'Hiện nội dung':'Che nội dung';$$('.sc li').forEach(l=>l.classList.remove('show'))}
+else if(x=t.closest('.sc li'))x.classList.toggle('show');
+else if(x=t.closest('[data-g]'))({m:mg,o:og,t:tf,c:cl})[x.dataset.g]()});
+$('#plan').addEventListener('change',e=>{if(e.target.dataset.id)tog(e.target.dataset.id,e.target.checked)});
+$('#pk').onclick=pick;$('#sp').onclick=sprint;$('#bg').onclick=()=>document.documentElement.classList.toggle('big');tab('plan');render();qstart();setInterval(pace,30000);
+</script>
+</body>
+</html>
